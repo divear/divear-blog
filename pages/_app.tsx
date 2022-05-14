@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<>
 			<Meta />
 			<Nav />
-			<Component {...pageProps} />
+			<Component {...pageProps} className="content" />
 		</>
 	);
 }

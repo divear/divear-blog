@@ -12,7 +12,25 @@ a {
 	color: rgb(174, 209, 219);
 	text-decoration: none;
 }
+li {
+	font-size: 1.5rem;
+}
+li > h5 {
+	font-size: 1rem;
+	margin: 0.5vw 0 2vw 0vw;
+}
 
 .content {
 	margin: 3vw;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.headerText {
+	text-decoration: underline double;
+}
+.nav {
+	cursor: pointer;
 }

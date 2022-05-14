@@ -5,7 +5,7 @@ import Image from "next/image";
 function Nav() {
 	return (
 		<div>
-			<h1>
+			<h1 className="nav" onClick={() => (window.location.href = "/")}>
 				<Image width={50} height={50} src={pfp} alt="i" />
 				divear
 			</h1>
