@@ -19,7 +19,13 @@ li > h5 {
 	font-size: 1rem;
 	margin: 0.5vw 0 2vw 0vw;
 }
+article {
+	width: 50%;
+}
 
+p {
+	font-size: 1.5rem;
+}
 .content {
 	margin: 3vw;
 }
@@ -33,4 +39,9 @@ li > h5 {
 }
 .nav {
 	cursor: pointer;
+}
+.floatRight {
+	float: right;
+}
+.bigImg {
 }
