@@ -18,7 +18,7 @@ function Linux() {
 					of your way just to find this article, then i think you
 					probably should. You will find a lot of linux "propaganda"
 					on the net and some of the points they make are true. Linux
-					for desktop useage isn't for everyone, so is windows, yet
+					for desktop usage isn't for everyone, so is windows, yet
 					like 90% of people use it. The only reason that may hold you
 					back is videogames and shitty proprietary legacy programs.
 				</p>

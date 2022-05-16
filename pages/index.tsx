@@ -22,12 +22,6 @@ const Home: NextPage = () => {
 						</h5>
 					</li>
 					<li>
-						<a href="/a/html-or-wordpress">
-							Should you learn html or just use wordpress?
-						</a>
-						<h5>That kinda depends on what you're doing...</h5>
-					</li>
-					<li>
 						<a href="/a/is-linux-that-hard">Is linux that hard?</a>
 						<h5>not really</h5>
 					</li>
