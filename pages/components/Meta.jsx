@@ -21,7 +21,7 @@ Meta.defaultProps = {
 	title: "divear",
 	keywords:
 		"personal, site, odehnal, lukas, lukáš, divear, person, lukas odehnal, ode, ",
-	description: "Hi, I'm Lukas and I make websites.",
+	description: "Hi, I'm divear and I make websites.",
 };
 
 export default Meta;

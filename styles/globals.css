@@ -43,5 +43,7 @@ p {
 .floatRight {
 	float: right;
 }
-.bigImg {
+.blogs {
+	float: right;
+	margin: 2vw;
 }
