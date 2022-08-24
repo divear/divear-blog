@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
 
+:root {
+	--bg: rgb(2, 32, 40);
+	--fr: rgb(234, 251, 248);
+}
 body {
-	background-color: rgb(2, 32, 40);
-	color: rgb(234, 251, 248);
+	background-color: var(--bg);
+	color: var(--fr);
 }
 
 * {
@@ -27,7 +31,7 @@ p {
 	font-size: 1.5rem;
 }
 .content {
-	margin: 3vw;
+	margin: 5vw 3vw;
 }
 .center {
 	display: flex;
@@ -38,7 +42,13 @@ p {
 	text-decoration: underline double;
 }
 .nav {
+	position: fixed;
+	top: -3%;
+	z-index: 9;
 	cursor: pointer;
+	background-color: var(--bg);
+	border-radius: 2vw;
+	padding: 0.4vw;
 }
 .floatRight {
 	float: right;
@@ -46,4 +56,12 @@ p {
 .blogs {
 	float: right;
 	margin: 2vw;
+}
+.projects {
+	float: left;
+	margin: 2vw;
+}
+.mapImg {
+	width: 50vw;
+	border-radius: 2vw;
 }
