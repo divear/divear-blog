@@ -11,13 +11,18 @@ const Home: NextPage = () => {
 			<br />
 			<Projects />
 			<Blogs />
-			<div
-				onClick={() => open("https://lukas-getout.itch.io/sewer-run")}
-				className="player"
-			>
-				{" "}
-			</div>
 			<Image draggable={false} className="footerImg" src={foot} />
+			<div className="footerPar">
+				<div
+					onClick={() =>
+						open("https://lukas-getout.itch.io/sewer-run")
+					}
+					className="player"
+				>
+					{" "}
+				</div>
+				<div className="blackboxNav"> </div>
+			</div>
 		</div>
 	);
 };

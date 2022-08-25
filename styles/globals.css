@@ -23,7 +23,7 @@ a {
 li {
 	font-size: 1.5rem;
 }
-li > h5 {
+h5 {
 	font-size: 1rem;
 	margin: 0.5vw 0 2vw 0vw;
 }
@@ -68,8 +68,8 @@ p {
 
 .project {
 	cursor: pointer;
-	background-color: var(--secBg);
-	color: var(--bg);
+	background-color: var(--sec);
+	color: var(--secBg);
 	border-radius: 2vw;
 	padding: 0 0 0.005vh 0;
 	text-align: center;
@@ -78,21 +78,38 @@ p {
 	border-radius: 2vw 2vw 0.1vw 0.1vw;
 }
 .projectLink {
-	color: var(--sec);
+	color: var(--fr);
 }
 .mapImg {
 	width: 50vw;
 	border-radius: 2vw;
 }
+.footerPar {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -142px;
+}
 .footerImg {
+	background-color: red;
+	margin: 0;
+	padding: 0 0 5vh 0;
 	position: relative;
 }
 .player {
 	cursor: pointer;
 	position: relative;
 	width: 5vw;
-	height: 5vw;
-	bottom: -148vh;
+	height: 10vh;
+	bottom: 17vh;
 	left: 47%;
 	z-index: 9;
+}
+.blackboxNav {
+	background-color: black;
+	left: 0;
+	right: 0;
+	/* width: 10vw; */
+	height: 10vh;
+	margin: -12vh 0 0 0;
 }
