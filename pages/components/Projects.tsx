@@ -50,6 +50,7 @@ function Projects() {
 					</a>
 					<h5>Posílejte drby z Bohunic.</h5>
 				</li>
+				<br />
 				<li
 					className="project"
 					onClick={() => open("https://malovani.netlify.app/")}
