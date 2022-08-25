@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
 
 :root {
-	--bg: rgb(2, 32, 40);
+	--bg: #022129;
 	--fr: rgb(234, 251, 248);
 	--sec: rgb(12, 118, 148);
 	--secBg: rgb(179, 230, 243);
@@ -9,6 +9,8 @@
 body {
 	background-color: var(--bg);
 	color: var(--fr);
+	padding: 0;
+	margin: 0;
 }
 
 * {
@@ -88,7 +90,6 @@ p {
 .player {
 	cursor: pointer;
 	position: relative;
-	background-color: rebeccapurple;
 	width: 5vw;
 	height: 5vw;
 	bottom: -148vh;
