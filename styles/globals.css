@@ -3,6 +3,8 @@
 :root {
 	--bg: rgb(2, 32, 40);
 	--fr: rgb(234, 251, 248);
+	--sec: rgb(12, 118, 148);
+	--secBg: rgb(179, 230, 243);
 }
 body {
 	background-color: var(--bg);
@@ -61,7 +63,35 @@ p {
 	float: left;
 	margin: 2vw;
 }
+
+.project {
+	cursor: pointer;
+	background-color: var(--secBg);
+	color: var(--bg);
+	border-radius: 2vw;
+	padding: 0 0 0.005vh 0;
+	text-align: center;
+}
+.showoffImage {
+	border-radius: 2vw 2vw 0.1vw 0.1vw;
+}
+.projectLink {
+	color: var(--sec);
+}
 .mapImg {
 	width: 50vw;
 	border-radius: 2vw;
+}
+.footerImg {
+	position: relative;
+}
+.player {
+	cursor: pointer;
+	position: relative;
+	background-color: rebeccapurple;
+	width: 5vw;
+	height: 5vw;
+	bottom: -148vh;
+	left: 47%;
+	z-index: 9;
 }

@@ -1,21 +1,14 @@
 import type { NextPage } from "next";
+import Image from "next/image";
+import Projects from "./components/Projects";
+import foot from "./components/imgs/footerImg.png";
 
 const Home: NextPage = () => {
 	return (
 		<div>
 			<h1 className="center">Hi, I'm divear</h1>
 			<br />
-			<div className="projects">
-				<h1 className="center headerText">My projects</h1>
-				<ul>
-					<li>
-						<a href="https://morava.lol/" target="_blank">
-							Morava test
-						</a>
-						<h5>Zjisti, jak moc jsi moravák</h5>
-					</li>
-				</ul>
-			</div>
+			<Projects />
 			<div className="blogs">
 				<h1 className="center headerText">Recent blogs</h1>
 				<div className="center">
@@ -33,6 +26,13 @@ const Home: NextPage = () => {
 					</ul>
 				</div>
 			</div>
+			<div
+				onClick={() => open("https://lukas-getout.itch.io/sewer-run")}
+				className="player"
+			>
+				{" "}
+			</div>
+			<Image className="footerImg" src={foot} />
 		</div>
 	);
 };
