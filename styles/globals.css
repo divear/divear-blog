@@ -117,3 +117,7 @@ p {
 	float: right;
 	padding: 1vh 1vw 0 0;
 }
+.smallImg {
+	width: 50%;
+	border-radius: 0.1vw;
+}

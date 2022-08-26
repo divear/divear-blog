@@ -6,7 +6,7 @@ function Linux() {
 			<h3>Is Linux that hard?</h3>
 
 			<img
-				className="floatRight bigImg"
+				className="floatRight"
 				src="https://blog.hboeck.de/uploads/tux.png"
 				alt=""
 			/>

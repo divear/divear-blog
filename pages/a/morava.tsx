@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import map from "../components/imgs/morava_screen.png";
+import Meta from "../components/Meta";
 
 function Morava() {
 	return (
 		<div className="content">
+			<Meta title="morava.lol" />
 			<h1 className="center">the story of morava.lol</h1>
 			<Image className="floatRight mapImg" src={map} alt="map image" />
 			<article>
