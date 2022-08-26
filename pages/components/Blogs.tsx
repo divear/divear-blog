@@ -21,7 +21,7 @@ function Blogs() {
 							<a href="/a/sewer-run">
 								How I got my profile picture
 							</a>
-							<h5>not really</h5>
+							<h5>story of sewer run </h5>
 						</li>
 					</ul>
 				</div>

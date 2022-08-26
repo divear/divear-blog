@@ -3,6 +3,7 @@ import Image from "next/image";
 import map from "./imgs/morava_screen.png";
 import drby from "./imgs/drby_screen.png";
 import malo from "./imgs/malo_screen.png";
+import chalky from "./imgs/chalky_screen.png";
 
 function Projects() {
 	return (
@@ -69,6 +70,27 @@ function Projects() {
 					Malo🖍
 				</a>
 				<h5>Sociální síť na posílání namalovaných obrázků.</h5>
+			</div>
+			<br />
+			<div
+				className="project"
+				onClick={() => open("https://chalky.netlify.app/")}
+			>
+				<Image
+					className="showoffImage"
+					width={480}
+					height={270}
+					src={chalky}
+				/>
+				<br />
+				<a
+					className="projectLink"
+					href="https://chalky.netlify.app/"
+					target="_blank"
+				>
+					Chálky ze školní jídelny
+				</a>
+				<h5>Posílejte ty nejhnusnější chálky</h5>
 			</div>
 		</div>
 	);

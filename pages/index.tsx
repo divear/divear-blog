@@ -21,7 +21,9 @@ const Home: NextPage = () => {
 				>
 					{" "}
 				</div>
-				<div className="blackboxNav"> </div>
+				<div className="blackboxNav">
+					<h3>divear</h3>
+				</div>
 			</div>
 		</div>
 	);
