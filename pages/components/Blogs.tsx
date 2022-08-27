@@ -17,12 +17,6 @@ function Blogs() {
 							<a href="/a/morava">My new site: morava.lol</a>
 							<h5>Find out how much of a moravian you are</h5>
 						</li>
-						<li>
-							<a href="/a/is-linux-that-hard">
-								Is linux that hard?
-							</a>
-							<h5>not really</h5>
-						</li>
 					</ul>
 				</div>
 			</div>

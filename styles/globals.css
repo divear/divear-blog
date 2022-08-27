@@ -121,3 +121,9 @@ p {
 	width: 50%;
 	border-radius: 0.1vw;
 }
+.language {
+	font-size: 2rem;
+	float: right;
+	margin: 0 1vw;
+	cursor: pointer;
+}
