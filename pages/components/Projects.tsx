@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import map from "./imgs/morava_screen.png";
-import drby from "./imgs/drby_screen.png";
-import malo from "./imgs/malo_screen.png";
-import chalky from "./imgs/chalky_screen.png";
+import map from "./imgs/projects/morava/morava_screen.png";
+import drby from "./imgs/projects/drby/drby_screen.png";
+import malo from "./imgs/projects/malo/malo_screen.png";
+import chalky from "./imgs/projects/chalky/chalky_screen.png";
 
 function Projects() {
 	return (
