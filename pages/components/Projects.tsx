@@ -1,11 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import map from "./imgs/projects/morava/morava_screen.png";
-import drby from "./imgs/projects/drby/drby_screen.png";
-import malo from "./imgs/projects/malo/malo_screen.png";
-import chalky from "./imgs/projects/chalky/chalky_screen.png";
+import morava from "./imgs/projects/morava/morava0.png";
+import drby from "./imgs/projects/drby/drby0.png";
+import malo from "./imgs/projects/malo/malo0.png";
+import chalky from "./imgs/projects/chalky/chalky0.png";
+import chalky1 from "./imgs/projects/chalky/chalky1.png";
+import chalky2 from "./imgs/projects/chalky/chalky2.png";
 
 function Projects() {
+	function changeImgs() {
+		console.log("change the image here");
+	}
 	return (
 		<div className="projects">
 			<h1 className="center headerText">My projects</h1>
@@ -17,7 +22,7 @@ function Projects() {
 					className="showoffImage"
 					width={480}
 					height={270}
-					src={map}
+					src={morava}
 				/>
 				<br />
 				<a
@@ -73,6 +78,7 @@ function Projects() {
 			</div>
 			<br />
 			<div
+				onMouseOver={changeImgs}
 				className="project"
 				onClick={() => open("https://chalky.netlify.app/")}
 			>
