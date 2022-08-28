@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import morava from "./imgs/projects/morava/morava0.png";
 import morava1 from "./imgs/projects/morava/morava1.png";
@@ -22,15 +22,19 @@ function Projects() {
 	const [imgIndex, setImgIndex] = useState(0);
 	const [isOver, setIsOver] = useState(false);
 
-	setInterval(() => {
-		if (!isOver) return;
+	useEffect(() => {
+		setTimeout(() => {
+			console.log(imgIndex);
 
-		if (imgIndex === 2) {
-			setImgIndex(0);
-			return;
-		}
-		setImgIndex(imgIndex + 1);
-	}, 5000);
+			if (imgIndex === 2) {
+				console.log("last");
+
+				setImgIndex(0);
+				return;
+			}
+			setImgIndex(imgIndex + 1);
+		}, 5000);
+	}, [imgIndex]);
 
 	return (
 		<div

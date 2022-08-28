@@ -4,6 +4,7 @@
 	--bg: #022129;
 	--fr: rgb(234, 251, 248);
 	--sec: rgb(12, 118, 148);
+	--secD: rgb(10, 100, 124);
 	--secBg: rgb(179, 230, 243);
 }
 body {
@@ -64,6 +65,13 @@ p {
 .projects {
 	float: left;
 	margin: 2vw;
+}
+.hoverProjects {
+	float: left;
+	margin: 1.8vw;
+}
+.hoverProjects > .project {
+	background-color: var(--secD);
 }
 
 .project {
