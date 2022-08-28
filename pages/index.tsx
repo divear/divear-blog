@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 					{" "}
 				</div>
 				<div className="blackboxNav">
-					<h3>divear</h3>
+					<h3>divear 2022</h3>
 				</div>
 			</div>
 		</div>
