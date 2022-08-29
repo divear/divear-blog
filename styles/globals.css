@@ -62,7 +62,8 @@ p {
 }
 .logoText {
 	cursor: pointer;
-	padding: 0.4vw;
+	padding: 0;
+	margin: 0;
 }
 .nav * {
 	z-index: 2;
@@ -72,8 +73,13 @@ p {
 	top: 0;
 	font-size: 2rem;
 	float: right;
-	margin: auto 1vw;
+	margin: 1vh 1vw;
 	cursor: pointer;
+}
+.redirs {
+	font-size: 2rem;
+	float: right;
+	margin: 1vh 0;
 }
 .floatRight {
 	float: right;
