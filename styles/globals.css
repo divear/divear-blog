@@ -135,3 +135,24 @@ p {
 	margin: 0 1vw;
 	cursor: pointer;
 }
+.intro {
+	border-radius: 2vw;
+	padding: 0 0 3vh 0;
+	width: 40%;
+	margin: 2vw auto;
+	background-color: rgba(0, 0, 0, 0.425);
+}
+.bigImgIntro {
+	background-color: var(--bg);
+	padding: 0vw;
+	margin: 0vh;
+	border-radius: 0 5vw 5vw 0;
+}
+.introText {
+	text-align: center;
+	float: right;
+	margin: 2vw;
+}
+.introText > a {
+	margin: 0 1vw;
+}

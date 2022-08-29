@@ -3,11 +3,26 @@ import Image from "next/image";
 import Projects from "./components/Projects";
 import Blogs from "./components/Blogs";
 import foot from "./components/imgs/footerImg.png";
+import pfp from "./components/imgs/introPfp.png";
 
 const Home: NextPage = () => {
 	return (
 		<div>
-			<h1 className="center">Hi, I'm divear</h1>
+			<div className="intro">
+				<Image
+					className="bigImgIntro"
+					width={400}
+					height={400}
+					src={pfp}
+					alt="introPfp"
+				/>
+				<div className="introText">
+					<h1> Hi, I'm divear</h1>
+					<a href="">My projects</a>
+					<a href="">Blogs</a>
+					<a href="">My github</a>
+				</div>
+			</div>
 			<br />
 			<Projects />
 			<Blogs />

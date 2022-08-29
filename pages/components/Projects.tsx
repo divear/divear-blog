@@ -33,7 +33,7 @@ function Projects() {
 				return;
 			}
 			setImgIndex(imgIndex + 1);
-		}, 5000);
+		}, 8000);
 	}, [imgIndex]);
 
 	return (
