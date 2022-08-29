@@ -5,6 +5,7 @@
 	--fr: rgb(234, 251, 248);
 	--sec: rgb(12, 118, 148);
 	--secD: rgb(10, 100, 124);
+	--dark: rgb(1, 22, 28);
 	--secBg: rgb(179, 230, 243);
 }
 body {
@@ -50,13 +51,29 @@ p {
 	text-decoration: underline double;
 }
 .nav {
+	white-space: nowrap;
+	width: 100%;
 	position: fixed;
-	top: -3%;
-	z-index: 9;
+	display: inline;
+	top: 0%;
+	z-index: 1;
+	background-color: var(--dark);
+	padding: 0.2vw;
+}
+.logoText {
 	cursor: pointer;
-	background-color: var(--bg);
-	border-radius: 2vw;
 	padding: 0.4vw;
+}
+.nav * {
+	z-index: 2;
+	display: inline;
+}
+.language {
+	top: 0;
+	font-size: 2rem;
+	float: right;
+	margin: auto 1vw;
+	cursor: pointer;
 }
 .floatRight {
 	float: right;
@@ -132,12 +149,6 @@ p {
 	width: 50%;
 	border-radius: 0.1vw;
 }
-.language {
-	font-size: 2rem;
-	float: right;
-	margin: 0 1vw;
-	cursor: pointer;
-}
 .intro {
 	border-radius: 2vw;
 	padding: 0 0 3vh 0;
@@ -150,6 +161,10 @@ p {
 	padding: 0vw;
 	margin: 0vh;
 	border-radius: 0 5vw 5vw 0;
+	border-bottom: 1px solid red;
+	width: 50%;
+	transform: rotate(5deg);
+	transform-origin: top left;
 }
 .introText {
 	box-sizing: border-box;

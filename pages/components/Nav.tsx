@@ -11,8 +11,11 @@ function Nav() {
 	}, [language]);
 
 	return (
-		<div>
-			<h1 className="nav" onClick={() => (window.location.href = "/")}>
+		<div className="nav">
+			<h1
+				className="logoText"
+				onClick={() => (window.location.href = "/")}
+			>
 				<Image width={50} height={50} src={pfp} alt="i" />
 				divear
 			</h1>
