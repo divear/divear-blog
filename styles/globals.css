@@ -21,6 +21,9 @@ a {
 	color: rgb(174, 209, 219);
 	text-decoration: none;
 }
+a:hover {
+	color: var(--secBg);
+}
 li {
 	font-size: 1.5rem;
 }
@@ -138,7 +141,7 @@ p {
 .intro {
 	border-radius: 2vw;
 	padding: 0 0 3vh 0;
-	width: 40%;
+	width: 42%;
 	margin: 2vw auto;
 	background-color: rgba(0, 0, 0, 0.425);
 }
@@ -149,10 +152,17 @@ p {
 	border-radius: 0 5vw 5vw 0;
 }
 .introText {
-	text-align: center;
+	box-sizing: border-box;
 	float: right;
 	margin: 2vw;
+	display: block;
+}
+.introText > h1 {
+	font-size: 3rem;
 }
 .introText > a {
-	margin: 0 1vw;
+	display: block;
+
+	text-align: center;
+	font-size: 1.8rem;
 }
