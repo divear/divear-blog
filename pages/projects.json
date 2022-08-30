@@ -1,0 +1,22 @@
+[
+	{
+		"link": "https://morava.lol/",
+		"name": "Morava test",
+		"desc": "Zjisti, jak moc jsi moravák."
+	},
+	{
+		"link": "https://drby.netlify.app/",
+		"name": "Drby u Bohunic",
+		"desc": "Posílejte drby z Bohunic"
+	},
+	{
+		"link": "https://malovani.netlify.app/",
+		"name": "Malo🖍",
+		"desc": "Sociální síť na posílání namalovaných obrázků"
+	},
+	{
+		"link": "https://chalky.netlify.app/",
+		"name": "Chálky ze školní jídelny",
+		"desc": "Posílejte ty nejhnusnější chálky"
+	}
+]

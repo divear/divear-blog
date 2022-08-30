@@ -23,10 +23,11 @@ function Nav() {
 			<h1 onClick={() => setLanguage(!language)} className="language">
 				{!language ? "🇬🇧" : "🇨🇿"}
 			</h1>
-			
+
 			<div className="redirs">
 				<a href="/projects">Projects </a>
-				<a href="/blogs">Blogs</a>
+				<a href="/blogs">Blogs </a>
+				<a href="/aboutme">About me</a>
 			</div>
 		</div>
 	);

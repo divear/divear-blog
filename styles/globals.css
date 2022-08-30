@@ -187,3 +187,14 @@ p {
 	text-align: center;
 	font-size: 1.8rem;
 }
+.bigProjects {
+	width: 80%;
+}
+.bigProject {
+	cursor: pointer;
+	background-color: var(--dark);
+	color: var(--secBg);
+	border-radius: 2vw;
+	padding: 0 0 0.005vh 0;
+	text-align: center;
+}
