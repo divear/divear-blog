@@ -43,7 +43,7 @@ function Projects() {
 		<div
 			onMouseEnter={() => setIsOver(true)}
 			onMouseLeave={() => setIsOver(false)}
-			className={"bigProjects"}
+			className={"bigProjects content"}
 		>
 			{/* <h1 className="center headerText">My projects</h1> */}
 
@@ -51,14 +51,28 @@ function Projects() {
 				return (
 					<div className="bigProject" onClick={() => open(e.link)}>
 						<Image
-							className="showoffImage"
+							className="showoffBigImage"
 							width={960}
 							height={540}
 							src={imgs[i][imgIndex]}
 						/>
-						<br />
-						<h3 className="projectLink">{e.name}</h3>
-						<h5>{e.desc}</h5>
+						{/* <div className="diaLine">
+							<svg
+								transform="rotate(90 50 50)"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 100 10"
+								preserveAspectRatio="none"
+							>
+								<polygon
+									fill="red"
+									points="100 0 100 10 0 10"
+								/>
+							</svg>
+						</div> */}
+						<div className="desc">
+							<h3 className="projectLink">{e.name}</h3>
+							<h5>{e.desc}</h5>
+						</div>
 					</div>
 				);
 			})}

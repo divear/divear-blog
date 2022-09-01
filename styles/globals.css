@@ -6,6 +6,7 @@
 	--sec: rgb(12, 118, 148);
 	--secD: rgb(10, 100, 124);
 	--dark: rgb(1, 22, 28);
+	--darkS: rgb(13, 46, 55);
 	--secBg: rgb(179, 230, 243);
 }
 body {
@@ -188,13 +189,27 @@ p {
 	font-size: 1.8rem;
 }
 .bigProjects {
-	width: 80%;
+	width: 85%;
 }
 .bigProject {
 	cursor: pointer;
-	background-color: var(--dark);
 	color: var(--secBg);
 	border-radius: 2vw;
-	padding: 0 0 0.005vh 0;
+	padding: 1vw;
 	text-align: center;
+	margin: 0 0 2vh 0;
+	background-color: var(--secD);
+	background: linear-gradient(to right, var(--darkS) 65%, var(--dark) 50%);
+}
+.desc {
+	flex: 1 1 auto;
+	font-size: 3rem;
+	float: right;
+	margin: 5vw;
+}
+.showoffBigImage {
+	border-radius: 2vw 0vw 0vw 2vw;
+	background-color: aliceblue;
+	padding: 0vw;
+	margin: 0;
 }
