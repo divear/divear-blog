@@ -40,6 +40,20 @@ article {
 p {
 	font-size: 1.5rem;
 }
+button {
+	cursor: pointer;
+	background-color: var(--secD);
+	color: var(--fr);
+	border: none;
+	font-size: 2rem;
+	border-radius: 0.5vw;
+	padding: 0.3vw;
+	text-align: center;
+}
+button:hover {
+	background-color: var(--sec);
+	border-radius: 0.8vw;
+}
 .content {
 	margin: 5vw 3vw;
 }
@@ -93,11 +107,7 @@ p {
 	float: left;
 	margin: 2vw;
 }
-.hoverProjects {
-	float: left;
-	margin: 1.8vw;
-}
-.hoverProjects > .project {
+.project:hover {
 	background-color: var(--secD);
 }
 
