@@ -104,6 +104,15 @@ button:hover {
 .redirs *:hover {
 	/* text-decoration: underline solid 1px; */
 	border-bottom: 0.6vh var(--secBg) solid;
+	animation: fade 0.5s;
+}
+@keyframes fade {
+	from {
+		border-bottom: 0vh var(--fr) solid;
+	}
+	to {
+		border-bottom: 0.6vh var(--secBg) solid;
+	}
 }
 .floatRight {
 	float: right;
