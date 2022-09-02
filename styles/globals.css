@@ -96,6 +96,9 @@ button:hover {
 	float: right;
 	margin: 1vh 0;
 }
+.redirs * {
+	margin: 1vw;
+}
 .floatRight {
 	float: right;
 }
@@ -199,9 +202,9 @@ button:hover {
 	font-size: 1.8rem;
 }
 .bigProjects {
-	width: 85%;
 }
 .bigProject {
+	max-width: 85%;
 	cursor: pointer;
 	color: var(--secBg);
 	border-radius: 2vw;
@@ -210,6 +213,15 @@ button:hover {
 	margin: 0 0 2vh 0;
 	background-color: var(--secD);
 	background: linear-gradient(to right, var(--darkS) 65%, var(--dark) 50%);
+}
+.bigProject:nth-child(odd) {
+	cursor: pointer;
+	color: var(--secBg);
+	border-radius: 2vw;
+	padding: 1vw;
+	/* margin: 0 0 2vh 15vw; */
+	text-align: center;
+	background-color: red !important;
 }
 .desc {
 	flex: 1 1 auto;
