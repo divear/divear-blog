@@ -6,6 +6,7 @@
 	--sec: rgb(12, 118, 148);
 	--secD: rgb(10, 100, 124);
 	--dark: rgb(1, 22, 28);
+	--darkM: rgba(0, 15, 19, 0.863);
 	--darkS: rgb(13, 46, 55);
 	--secBg: rgb(179, 230, 243);
 }
@@ -20,7 +21,7 @@ body {
 	font-family: "Inter", sans-serif;
 }
 a {
-	color: rgb(174, 209, 219);
+	color: var(--secBg);
 	text-decoration: none;
 }
 a:hover {
@@ -98,6 +99,11 @@ button:hover {
 }
 .redirs * {
 	margin: 1vw;
+	padding: 0.2vw;
+}
+.redirs *:hover {
+	/* text-decoration: underline solid 1px; */
+	border-bottom: 0.6vh var(--secBg) solid;
 }
 .floatRight {
 	float: right;
