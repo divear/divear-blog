@@ -1,22 +1,46 @@
 [
-	{
-		"link": "https://morava.lol/",
-		"name": "Morava test",
-		"desc": "Zjisti, jak moc jsi moravák."
-	},
-	{
-		"link": "https://malovani.netlify.app/",
-		"name": "Malo🖍",
-		"desc": "Stránka pro vaše namalované obrázky"
-	},
-	{
-		"link": "https://chalky.netlify.app/",
-		"name": "Chálky",
-		"desc": "Posílejte ty nejhnusnější chálky z jídelen"
-	},
-	{
-		"link": "https://drby.netlify.app/",
-		"name": "Drby",
-		"desc": "Posílejte drby a různé zprávy z Bohunic"
-	}
+	[
+		{
+			"link": "https://morava.lol/",
+			"name": "Morava test",
+			"desc": "Zjisti, jak moc jsi moravák."
+		},
+		{
+			"link": "https://malovani.netlify.app/",
+			"name": "Malo🖍",
+			"desc": "Stránka pro vaše namalované obrázky"
+		},
+		{
+			"link": "https://chalky.netlify.app/",
+			"name": "Chálky",
+			"desc": "Posílejte ty nejhnusnější chálky z jídelen"
+		},
+		{
+			"link": "https://drby.netlify.app/",
+			"name": "Drby",
+			"desc": "Posílejte drby a různé zprávy z Bohunic"
+		}
+	],
+	[
+		{
+			"link": "https://morava.lol/",
+			"name": "Moravia test",
+			"desc": "Find out how moravian you are"
+		},
+		{
+			"link": "https://malovani.netlify.app/",
+			"name": "Malo🖍",
+			"desc": "Site for posting your drawings"
+		},
+		{
+			"link": "https://chalky.netlify.app/",
+			"name": "Chálky",
+			"desc": "Send images of food from school kitchen"
+		},
+		{
+			"link": "https://drby.netlify.app/",
+			"name": "Drby",
+			"desc": "Post gossip about people"
+		}
+	]
 ]

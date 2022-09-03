@@ -13,6 +13,7 @@ import chalky from "./components/imgs/projects/chalky/chalky0.png";
 import chalky1 from "./components/imgs/projects/chalky/chalky1.png";
 import chalky2 from "./components/imgs/projects/chalky/chalky2.png";
 import projects from "./projects.json";
+
 // ^ this is hell
 const imgs = [
 	[morava, morava1, morava2],
@@ -23,6 +24,7 @@ const imgs = [
 
 function Projects() {
 	const [imgIndex, setImgIndex] = useState(0);
+	const [lang, setLang] = useState(false);
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -32,13 +34,16 @@ function Projects() {
 			}
 			setImgIndex(imgIndex + 1);
 		}, 9000);
+		setLang(localStorage.getItem("language") === "EN" ? false : true);
 	}, []);
 
 	return (
 		<div className="bigProjects content">
-			{/* <h1 className="center headerText">My projects</h1> */}
+			<h1 className="center headerText">
+				Interesting things I've created over the years...
+			</h1>
 
-			{projects.map((e, i) => {
+			{projects[+lang].map((e, i) => {
 				return (
 					<div className="bigProject">
 						<button

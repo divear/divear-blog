@@ -67,7 +67,7 @@ button:hover {
 	align-items: center;
 }
 .headerText {
-	text-decoration: underline double;
+	font-size: 2.3rem;
 }
 .nav {
 	white-space: nowrap;
