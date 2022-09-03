@@ -59,7 +59,11 @@ function Projects() {
 							src={imgs[i][imgIndex]}
 						/>
 						<button
-							onClick={() => setImgIndex(imgIndex + 1)}
+							onClick={() =>
+								imgIndex != 2
+									? setImgIndex(imgIndex + 1)
+									: setImgIndex(0)
+							}
 							className="scrollRight"
 						>
 							&gt;

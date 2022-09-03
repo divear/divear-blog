@@ -217,7 +217,6 @@ button:hover {
 }
 .bigProject {
 	max-width: 85%;
-	cursor: pointer;
 	color: var(--secBg);
 	border-radius: 2vw;
 	padding: 1vw;
@@ -246,6 +245,7 @@ button:hover {
 	margin: 5vw;
 }
 .showoffBigImage {
+	cursor: pointer;
 	border-radius: 2vw 0vw 0vw 2vw;
 	background-color: aliceblue;
 	padding: 0vw;
@@ -253,10 +253,13 @@ button:hover {
 }
 .scrollLeft,
 .scrollRight {
-	position: relative;
+	position: absolute;
 	z-index: 2;
 }
-.scrollRight {
-}
 .scrollLeft {
+	margin: 15% 0vw 0 0;
+}
+
+.scrollRight {
+	margin: 15% 0 0 -2%;
 }

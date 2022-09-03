@@ -7,16 +7,16 @@
 	{
 		"link": "https://malovani.netlify.app/",
 		"name": "Malo🖍",
-		"desc": "Sociální síť na posílání namalovaných obrázků"
+		"desc": "Stránka pro vaše namalované obrázky"
 	},
 	{
 		"link": "https://chalky.netlify.app/",
 		"name": "Chálky",
-		"desc": "Posílejte ty nejhnusnější chálky"
+		"desc": "Posílejte ty nejhnusnější chálky z jídelen"
 	},
 	{
 		"link": "https://drby.netlify.app/",
 		"name": "Drby",
-		"desc": "Posílejte drby a zprávy z Bohunic"
+		"desc": "Posílejte drby a různé zprávy z Bohunic"
 	}
 ]
