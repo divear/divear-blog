@@ -47,7 +47,7 @@ function Projects() {
 									? setImgIndex(imgIndex - 1)
 									: setImgIndex(2)
 							}
-							className="scrollLeft"
+							className="scrolls scrollLeft"
 						>
 							&lt;
 						</button>
@@ -64,7 +64,7 @@ function Projects() {
 									? setImgIndex(imgIndex + 1)
 									: setImgIndex(0)
 							}
-							className="scrollRight"
+							className="scrolls scrollRight"
 						>
 							&gt;
 						</button>

@@ -9,7 +9,10 @@
 	--darkM: rgba(0, 15, 19, 0.863);
 	--darkS: rgb(13, 46, 55);
 	--secBg: rgb(179, 230, 243);
+	--frTrans: rgba(179, 230, 243, 0.702);
+	--bgTrans: rgba(0, 15, 19, 0.711);
 }
+
 body {
 	background-color: var(--bg);
 	color: var(--fr);
@@ -247,19 +250,25 @@ button:hover {
 .showoffBigImage {
 	cursor: pointer;
 	border-radius: 2vw 0vw 0vw 2vw;
-	background-color: aliceblue;
 	padding: 0vw;
 	margin: 0;
 }
-.scrollLeft,
-.scrollRight {
+.scrolls {
+	border-radius: 100vw;
+	font-size: 3rem;
 	position: absolute;
 	z-index: 2;
+	background-color: var(--frTrans);
+	color: var(--bg);
+}
+.scrolls:hover {
+	background-color: var(--bgTrans);
+	color: var(--frTrans);
 }
 .scrollLeft {
-	margin: 15% 0vw 0 0;
+	margin: 13% 0vw 0 0;
 }
 
 .scrollRight {
-	margin: 15% 0 0 -2%;
+	margin: 13% 0 0 -2%;
 }
