@@ -254,16 +254,28 @@ button:hover {
 	margin: 0;
 }
 .scrolls {
-	border-radius: 100vw;
+	border-radius: 1vw;
 	font-size: 3rem;
 	position: absolute;
 	z-index: 2;
-	background-color: var(--frTrans);
-	color: var(--bg);
-}
-.scrolls:hover {
 	background-color: var(--bgTrans);
 	color: var(--frTrans);
+}
+.scrolls:hover {
+	font-size: 3.1rem;
+	background-color: var(--bgTrans);
+	color: var(--fr);
+	animation: colorLighten 0.4s;
+}
+@keyframes colorLighten {
+	from {
+		color: var(--frTrans);
+		border-radius: 1vw;
+	}
+	to {
+		color: var(--fr);
+		border-radius: 0.8;
+	}
 }
 .scrollLeft {
 	margin: 13% 0vw 0 0;
