@@ -108,7 +108,7 @@ button:hover {
 }
 @keyframes fade {
 	from {
-		border-bottom: 0vh var(--fr) solid;
+		border-bottom: 0vh rgba(234, 251, 248, 0) solid;
 	}
 	to {
 		border-bottom: 0.6vh var(--secBg) solid;
@@ -212,7 +212,6 @@ button:hover {
 }
 .introText > a {
 	display: block;
-
 	text-align: center;
 	font-size: 1.8rem;
 }
@@ -226,18 +225,24 @@ button:hover {
 	padding: 1vw;
 	text-align: center;
 	margin: 0 0 2vh 0;
-	background-color: var(--secD);
-	background: linear-gradient(to right, var(--darkS) 65%, var(--dark) 50%);
+	/* the color switch */
+	background: linear-gradient(to right, var(--darkS) 68%, var(--dark) 50%);
 }
 .bigProject:nth-child(odd) {
-	cursor: pointer;
+	cursor: cell;
 	color: var(--secBg);
 	border-radius: 2vw;
-	padding: 1vw;
-	/* margin: 0 0 2vh 15vw; */
+	margin: 0 0 2vh 15vw;
 	text-align: center;
-	background-color: red !important;
+	background: linear-gradient(to right, var(--dark) 28%, var(--darkS) 0%);
 }
+.bigProject:nth-child(odd) .desc {
+	cursor: alias;
+	float: left;
+	font-size: 3rem;
+	margin: 2vw;
+}
+
 .desc {
 	flex: 1 1 auto;
 	font-size: 3rem;

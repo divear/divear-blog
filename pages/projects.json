@@ -5,11 +5,6 @@
 		"desc": "Zjisti, jak moc jsi moravák."
 	},
 	{
-		"link": "https://drby.netlify.app/",
-		"name": "Drby u Bohunic",
-		"desc": "Posílejte drby z Bohunic"
-	},
-	{
 		"link": "https://malovani.netlify.app/",
 		"name": "Malo🖍",
 		"desc": "Sociální síť na posílání namalovaných obrázků"
@@ -18,5 +13,10 @@
 		"link": "https://chalky.netlify.app/",
 		"name": "Chálky",
 		"desc": "Posílejte ty nejhnusnější chálky"
+	},
+	{
+		"link": "https://drby.netlify.app/",
+		"name": "Drby",
+		"desc": "Posílejte drby a zprávy z Bohunic"
 	}
 ]

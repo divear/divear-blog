@@ -23,7 +23,6 @@ const imgs = [
 
 function Projects() {
 	const [imgIndex, setImgIndex] = useState(0);
-	const [isOver, setIsOver] = useState(false);
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -40,11 +39,7 @@ function Projects() {
 	}, [imgIndex]);
 
 	return (
-		<div
-			onMouseEnter={() => setIsOver(true)}
-			onMouseLeave={() => setIsOver(false)}
-			className={"bigProjects content"}
-		>
+		<div className="bigProjects content">
 			{/* <h1 className="center headerText">My projects</h1> */}
 
 			{projects.map((e, i) => {
@@ -56,19 +51,6 @@ function Projects() {
 							height={540}
 							src={imgs[i][imgIndex]}
 						/>
-						{/* <div className="diaLine">
-							<svg
-								transform="rotate(90 50 50)"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 100 10"
-								preserveAspectRatio="none"
-							>
-								<polygon
-									fill="red"
-									points="100 0 100 10 0 10"
-								/>
-							</svg>
-						</div> */}
 						<div className="desc">
 							<h3 className="projectLink">{e.name}</h3>
 							<h5>{e.desc}</h5>
