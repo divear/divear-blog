@@ -215,8 +215,6 @@ button:hover {
 	text-align: center;
 	font-size: 1.8rem;
 }
-.bigProjects {
-}
 .bigProject {
 	max-width: 85%;
 	cursor: pointer;
@@ -229,7 +227,6 @@ button:hover {
 	background: linear-gradient(to right, var(--darkS) 68%, var(--dark) 50%);
 }
 .bigProject:nth-child(odd) {
-	cursor: cell;
 	color: var(--secBg);
 	border-radius: 2vw;
 	margin: 0 0 2vh 15vw;
@@ -237,7 +234,6 @@ button:hover {
 	background: linear-gradient(to right, var(--dark) 28%, var(--darkS) 0%);
 }
 .bigProject:nth-child(odd) .desc {
-	cursor: alias;
 	float: left;
 	font-size: 3rem;
 	margin: 2vw;
@@ -254,4 +250,13 @@ button:hover {
 	background-color: aliceblue;
 	padding: 0vw;
 	margin: 0;
+}
+.scrollLeft,
+.scrollRight {
+	position: relative;
+	z-index: 2;
+}
+.scrollRight {
+}
+.scrollLeft {
 }

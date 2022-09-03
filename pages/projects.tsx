@@ -26,17 +26,13 @@ function Projects() {
 
 	useEffect(() => {
 		setTimeout(() => {
-			console.log(imgIndex);
-
 			if (imgIndex === 2) {
-				console.log("last");
-
 				setImgIndex(0);
 				return;
 			}
 			setImgIndex(imgIndex + 1);
-		}, 8000);
-	}, [imgIndex]);
+		}, 9000);
+	}, []);
 
 	return (
 		<div className="bigProjects content">
@@ -44,13 +40,30 @@ function Projects() {
 
 			{projects.map((e, i) => {
 				return (
-					<div className="bigProject" onClick={() => open(e.link)}>
+					<div className="bigProject">
+						<button
+							onClick={() =>
+								imgIndex != 0
+									? setImgIndex(imgIndex - 1)
+									: setImgIndex(2)
+							}
+							className="scrollLeft"
+						>
+							&lt;
+						</button>
 						<Image
+							onClick={() => open(e.link)}
 							className="showoffBigImage"
 							width={960}
 							height={540}
 							src={imgs[i][imgIndex]}
 						/>
+						<button
+							onClick={() => setImgIndex(imgIndex + 1)}
+							className="scrollRight"
+						>
+							&gt;
+						</button>
 						<div className="desc">
 							<h3 className="projectLink">{e.name}</h3>
 							<h5>{e.desc}</h5>
