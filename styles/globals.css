@@ -146,7 +146,7 @@ button:hover {
 .showoffImage {
 	border-radius: 2vw 2vw 0.1vw 0.1vw;
 }
-.projectLink {
+.projectlink {
 	color: var(--fr);
 }
 .mapImg {
@@ -303,4 +303,15 @@ button:hover {
 
 .langModal > h2:hover {
 	color: var(--fr);
+}
+.blogLink {
+	font-size: 1.5rem;
+}
+.blogs {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+}
+.blogImg {
+	cursor: pointer;
+	margin: 0;
 }
