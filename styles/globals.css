@@ -69,6 +69,9 @@ button:hover {
 .headerText {
 	font-size: 2.3rem;
 }
+.no {
+	display: none !important;
+}
 .nav {
 	white-space: nowrap;
 	width: 100%;
@@ -283,4 +286,21 @@ button:hover {
 
 .scrollRight {
 	margin: 13% 0 0 -2%;
+}
+.langModal {
+	border-radius: 1vw;
+	position: fixed;
+	top: 7vh;
+	right: 1%;
+	background-color: var(--darkS);
+	padding: 1vw;
+}
+.langModal > h2 {
+	cursor: pointer;
+	/* margin: 10vh 0; */
+	color: var(--frTrans);
+}
+
+.langModal > h2:hover {
+	color: var(--fr);
 }

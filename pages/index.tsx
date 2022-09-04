@@ -18,9 +18,9 @@ const Home: NextPage = () => {
 				/>
 				<div className="introText">
 					<h1> Hi, I'm divear</h1>
-					<a href="">My projects</a>
-					<a href="">Blogs</a>
-					<a href="">My github</a>
+					<a href="/projects">My projects</a>
+					<a href="/blogs">Blogs</a>
+					<a href="/aboutme">About me</a>
 				</div>
 			</div>
 			<br />

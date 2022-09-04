@@ -6,9 +6,24 @@ function Nav() {
 	// false - english
 	// true - czech
 	const [language, setLanguage] = useState(true);
+	const [modal, setModal] = useState(false);
+
 	useEffect(() => {
-		localStorage.setItem("language", language ? "CZ" : "EN");
-	}, [language]);
+		localStorage.getItem("language") &&
+			setLanguage(
+				localStorage.getItem("language") == "EN" ? false : true
+			);
+	}, []);
+
+	useEffect(() => {}, [language]);
+	function show() {
+		setModal(!modal);
+	}
+	function change(isCz: boolean) {
+		localStorage.setItem("language", isCz ? "CZ" : "EN");
+		setLanguage(isCz);
+		setModal(false);
+	}
 
 	return (
 		<div className="nav">
@@ -20,9 +35,15 @@ function Nav() {
 				divear
 			</h1>
 
-			<h1 onClick={() => setLanguage(!language)} className="language">
+			<h1 onClick={show} className="language">
 				{!language ? "🇬🇧" : "🇨🇿"}
 			</h1>
+
+			<div className={modal ? "langModal" : "no"}>
+				<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
+				<br />
+				<h2 onClick={() => change(false)}>🇬🇧 English</h2>
+			</div>
 
 			<div className="redirs">
 				<a href="/projects">Projects</a>
