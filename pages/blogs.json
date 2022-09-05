@@ -13,5 +13,18 @@
 			"img": "https://morava.lol/_ipx/w_256,q_75/%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png?url=%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png&w=256&q=75"
 		}
 	],
-	[]
+	[
+		{
+			"name": "Jak jsem získal svojí profilovku",
+			"desc": "Příběh sewer runu",
+			"link": "cz/sewer-run",
+			"img": "https://img.itch.zone/aW1hZ2UvOTExOTUyLzUxNTU5MzgucG5n/original/EFe%2Fjt.png"
+		},
+		{
+			"name": "Nová stránka: morava.lol",
+			"desc": "Zjisti, jak moc jsi moravák",
+			"link": "cz/morava",
+			"img": "https://morava.lol/_ipx/w_256,q_75/%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png?url=%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png&w=256&q=75"
+		}
+	]
 ]

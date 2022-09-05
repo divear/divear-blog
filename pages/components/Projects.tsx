@@ -13,7 +13,6 @@ const mal = [malo, malo1, malo2];
 
 function Projects() {
 	const [imgIndex, setImgIndex] = useState(0);
-	const [isOver, setIsOver] = useState(false);
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -30,11 +29,7 @@ function Projects() {
 	}, [imgIndex]);
 
 	return (
-		<div
-			onMouseEnter={() => setIsOver(true)}
-			onMouseLeave={() => setIsOver(false)}
-			className="projects"
-		>
+		<div className="projects">
 			<h1 className="center headerText">My projects</h1>
 			<div
 				className="project"

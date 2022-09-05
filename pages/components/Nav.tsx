@@ -23,6 +23,7 @@ function Nav() {
 		localStorage.setItem("language", isCz ? "CZ" : "EN");
 		setLanguage(isCz);
 		setModal(false);
+		location.reload();
 	}
 
 	return (
