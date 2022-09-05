@@ -7,15 +7,18 @@ function Morava() {
 	return (
 		<div className="content">
 			<Meta title="morava.lol" />
-			<h1 className="center">the story of morava.lol</h1>
+			<h1 className="center">Příběh morava.lol</h1>
 			<Image className="floatRight mapImg" src={map} alt="map image" />
 			<article>
-				<a href="https://morava.lol/">visit the site here</a>
-				<h1>How was it born?</h1>
+				<a href="https://morava.lol/">Navštiv tu stránku zde</a>
+				<h1>Jak to vzniklo?</h1>
 				<p>
-					I watched a Tom Scott video and his north-o-meter, that
-					inspired me to this idea... ok, i might have copied his
-					exact idea and "czeched" it but that's besides the point.
+					Viděl jsem video Toma Scotta o jeho North-o-meteru a rozhodl
+					jsem se udělat českou verzi. Pokuď by jste chtěli přidat
+					otázku do kvízu, tak můžete{" "}
+					<a target="_blank" href="https://morava.lol/nove-otazky">
+						tady
+					</a>
 				</p>
 			</article>
 		</div>
