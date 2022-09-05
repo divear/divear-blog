@@ -3,7 +3,7 @@ import React from "react";
 function Blogs() {
 	return (
 		<div>
-			<div className="blogs">
+			<div className="miniBlogs">
 				<h1 className="center headerText">Recent blogs</h1>
 				<div className="center">
 					<ul>
