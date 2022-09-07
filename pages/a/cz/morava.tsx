@@ -8,7 +8,13 @@ function Morava() {
 		<div className="content">
 			<Meta title="morava.lol" />
 			<h1 className="center">Příběh morava.lol</h1>
-			<Image className="floatRight mapImg" src={map} alt="map image" />
+			<Image
+				width={800}
+				height={450}
+				className="floatRight mapImg"
+				src={map}
+				alt="map image"
+			/>
 			<article>
 				<a href="https://morava.lol/">Navštiv tu stránku zde</a>
 				<h1>Jak to vzniklo?</h1>
