@@ -47,9 +47,9 @@ function Nav() {
 			</div>
 
 			<div className="redirs">
-				<a href="/projects">Projects</a>
-				<a href="/blogs">Blogs</a>
-				<a href="/aboutme">About me</a>
+				<a href="/projects">{!+language ? "Projects" : "Projekty"} </a>
+				<a href="/blogs">{!+language ? "Blogs" : "Blogy"} </a>
+				<a href="/aboutme">{!+language ? "About me" : "O mně"} </a>
 			</div>
 		</div>
 	);

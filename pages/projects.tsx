@@ -40,7 +40,9 @@ function Projects() {
 	return (
 		<div className="bigProjects content">
 			<h1 className="center headerText">
-				Interesting things I've created over the years...
+				{+lang
+					? "Zajímavé věci, které jsem za ta léta vytvořil..."
+					: "Interesting things I've created over the years..."}
 			</h1>
 
 			{projects[+lang].map((e, i) => {
