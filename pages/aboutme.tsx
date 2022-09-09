@@ -6,6 +6,13 @@ import twitter from "./components/imgs/socmedia/twitter.png";
 import youtube from "./components/imgs/socmedia/youtube.png";
 import Image from "next/image";
 
+const socials = [
+	[github, "https://github.com/lukascobit"],
+	[insta, "https://www.instagram.com/lukas.ode/"],
+	[twitter, "https://twitter.com/divear0"],
+	[youtube, "https://www.youtube.com/channel/UCwWXZqqwhdVq50W3vZ4aDSg"],
+];
+
 function Aboutme() {
 	return (
 		<div className="content">
@@ -19,45 +26,17 @@ function Aboutme() {
 				</ul>
 			</article>
 			<div className="socials">
-				<button
-					onClick={() =>
-						open("https://github.com/lukascobit", "_blank")
-					}
-					className="social"
-				>
-					{" "}
-					<Image width={50} height={50} src={github}></Image>
-				</button>
-				<button
-					onClick={() =>
-						open("https://www.instagram.com/lukas.ode/", "_blank")
-					}
-					className="social"
-				>
-					{" "}
-					<Image width={50} height={50} src={insta}></Image>
-				</button>
-				<button
-					onClick={() =>
-						open("https://twitter.com/divear0", "_blank")
-					}
-					className="social"
-				>
-					{" "}
-					<Image width={50} height={50} src={twitter}></Image>
-				</button>
-				<button
-					onClick={() =>
-						open(
-							"https://www.youtube.com/channel/UCwWXZqqwhdVq50W3vZ4aDSg",
-							"_blank"
-						)
-					}
-					className="social"
-				>
-					{" "}
-					<Image width={50} height={50} src={youtube}></Image>
-				</button>
+				{socials.map((s, i) => {
+					return (
+						<button
+							onClick={() => open(s[1].toString(), "_blank")}
+							className="social"
+						>
+							{" "}
+							<Image width={50} height={50} src={s[0]}></Image>
+						</button>
+					);
+				})}
 			</div>
 		</div>
 	);
