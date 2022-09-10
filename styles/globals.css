@@ -108,7 +108,6 @@ button:hover {
 	padding: 0.2vw;
 }
 .redirs *:hover {
-	/* text-decoration: underline solid 1px; */
 	border-bottom: 0.6vh var(--secBg) solid;
 	animation: fade 0.5s;
 }
@@ -320,5 +319,10 @@ button:hover {
 }
 .social {
 	margin: 1vw;
+	background-color: transparent;
+}
+.social:hover {
+	border-radius: 0;
+	border-bottom: var(--frTrans) solid 0.2vw;
 	background-color: transparent;
 }

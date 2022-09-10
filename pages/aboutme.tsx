@@ -25,6 +25,7 @@ function Aboutme() {
 					<li>divear0</li>
 				</ul>
 			</article>
+			<h1 className="headerText">Find me here</h1>
 			<div className="socials">
 				{socials.map((s, i) => {
 					return (
@@ -32,8 +33,7 @@ function Aboutme() {
 							onClick={() => open(s[1].toString(), "_blank")}
 							className="social"
 						>
-							{" "}
-							<Image width={50} height={50} src={s[0]}></Image>
+							<Image width={100} height={100} src={s[0]}></Image>
 						</button>
 					);
 				})}
