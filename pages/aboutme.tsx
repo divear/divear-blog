@@ -7,10 +7,14 @@ import youtube from "./components/imgs/socmedia/youtube.png";
 import Image from "next/image";
 
 const socials = [
-	[github, "https://github.com/lukascobit"],
-	[insta, "https://www.instagram.com/lukas.ode/"],
-	[twitter, "https://twitter.com/divear0"],
-	[youtube, "https://www.youtube.com/channel/UCwWXZqqwhdVq50W3vZ4aDSg"],
+	[github, "https://github.com/lukascobit", "@lukascobit"],
+	[insta, "https://www.instagram.com/lukas.ode/", "lukasode"],
+	[twitter, "https://twitter.com/divear0", "divear0"],
+	[
+		youtube,
+		"https://www.youtube.com/channel/UCwWXZqqwhdVq50W3vZ4aDSg",
+		"divear",
+	],
 ];
 
 function Aboutme() {
@@ -34,6 +38,7 @@ function Aboutme() {
 							className="social"
 						>
 							<Image width={100} height={100} src={s[0]}></Image>
+							<h4 className="usernameSpeci">{s[2].toString()}</h4>
 						</button>
 					);
 				})}

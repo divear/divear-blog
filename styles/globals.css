@@ -326,3 +326,6 @@ button:hover {
 	border-bottom: var(--frTrans) solid 0.2vw;
 	background-color: transparent;
 }
+.usernameSpeci {
+	margin: 0;
+}
