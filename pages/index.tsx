@@ -4,10 +4,12 @@ import Projects from "./components/Projects";
 import Blogs from "./components/Blogs";
 import foot from "./components/imgs/footerImg.png";
 import pfp from "./components/imgs/introPfp.png";
+import Meta from "./components/Meta";
 
 const Home: NextPage = () => {
 	return (
 		<div>
+			<Meta title="divear" />
 			<div className="intro">
 				<Image
 					className="bigImgIntro"

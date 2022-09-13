@@ -1,8 +1,10 @@
 import React from "react";
+import Meta from "./Meta";
 
 function Blogs() {
 	return (
 		<div>
+			<Meta title="Blogs" />
 			<div className="miniBlogs">
 				<h1 className="center headerText">Recent blogs</h1>
 				<div className="center">

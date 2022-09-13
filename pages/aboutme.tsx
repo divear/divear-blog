@@ -5,9 +5,10 @@ import insta from "./components/imgs/socmedia/insta.png";
 import twitter from "./components/imgs/socmedia/twitter.png";
 import youtube from "./components/imgs/socmedia/youtube.png";
 import Image from "next/image";
+import Meta from "./components/Meta";
 
 const socials = [
-	[github, "https://github.com/lukascobit", "@lukascobit"],
+	[github, "https://github.com/lukascobit", "lukascobit"],
 	[insta, "https://www.instagram.com/lukas.ode/", "lukasode"],
 	[twitter, "https://twitter.com/divear0", "divear0"],
 	[
@@ -20,6 +21,7 @@ const socials = [
 function Aboutme() {
 	return (
 		<div className="content">
+			<Meta title="About me" />
 			<div className="headerText center">About me</div>
 			<article>
 				<p>I'm divear but you may also know me as:</p>
