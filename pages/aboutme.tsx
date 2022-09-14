@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import github from "./components/imgs/socmedia/github.png";
-import insta from "./components/imgs/socmedia/insta.png";
 import twitter from "./components/imgs/socmedia/twitter.png";
 import youtube from "./components/imgs/socmedia/youtube.png";
 import Image from "next/image";
@@ -9,7 +8,6 @@ import Meta from "./components/Meta";
 
 const socials = [
 	[github, "https://github.com/lukascobit", "lukascobit"],
-	[insta, "https://www.instagram.com/lukas.ode/", "lukasode"],
 	[twitter, "https://twitter.com/divear0", "divear0"],
 	[
 		youtube,
@@ -19,6 +17,11 @@ const socials = [
 ];
 
 function Aboutme() {
+	const [lang, setLang] = useState(false);
+
+	useEffect(() => {
+		setLang(localStorage.getItem("language") === "EN" ? false : true);
+	}, []);
 	return (
 		<div className="content">
 			<Meta title="About me" />

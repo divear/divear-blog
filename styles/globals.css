@@ -191,7 +191,7 @@ button:hover {
 .intro {
 	border-radius: 2vw;
 	padding: 0 0 3vh 0;
-	width: 42%;
+	width: 50%;
 	margin: 2vw auto;
 	background-color: rgba(0, 0, 0, 0.425);
 }
@@ -308,6 +308,12 @@ button:hover {
 .blogs {
 	display: grid;
 	grid-template-columns: repeat(3, auto);
+}
+.blog {
+	background-color: var(--dark);
+	border-radius: 1vw;
+	padding: 0vw;
+	margin: 1vw;
 }
 .blogImg {
 	cursor: pointer;
