@@ -40,7 +40,7 @@ function Nav() {
 				{!language ? "🇬🇧" : "🇨🇿"}
 			</h1>
 
-			<div className={modal ? "langModal" : "no"}>
+			<div className={modal ? "langModal" : "langModal no"}>
 				<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
 				<br />
 				<h2 onClick={() => change(false)}>🇬🇧 English</h2>

@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Projects from "./components/Projects";
 import Blogs from "./components/Blogs";
-import foot from "./components/imgs/footerImg.png";
 import pfp from "./components/imgs/introPfp.png";
 import Meta from "./components/Meta";
 import { useEffect, useState } from "react";
@@ -36,20 +35,6 @@ const Home: NextPage = () => {
 			<br />
 			<Projects />
 			<Blogs />
-			<Image draggable={false} className="footerImg" src={foot} />
-			<div className="footerPar">
-				<div
-					onClick={() =>
-						open("https://lukas-getout.itch.io/sewer-run")
-					}
-					className="player"
-				>
-					{" "}
-				</div>
-				<div className="blackboxNav">
-					<h3>divear 2022</h3>
-				</div>
-			</div>
 		</div>
 	);
 };

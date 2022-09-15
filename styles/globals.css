@@ -9,7 +9,7 @@
 	--darkM: rgba(0, 15, 19, 0.863);
 	--darkS: rgb(13, 46, 55);
 	--secBg: rgb(179, 230, 243);
-	--frTrans: rgba(179, 230, 243, 0.702);
+	--frTrans: rgba(179, 230, 243, 0.911);
 	--bgTrans: rgba(0, 15, 19, 0.711);
 }
 
@@ -70,7 +70,17 @@ button:hover {
 	font-size: 2.3rem;
 }
 .no {
-	display: none !important;
+	animation: no 0.4s;
+	opacity: 0;
+	user-select: none;
+}
+@keyframes no {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
 .nav {
 	white-space: nowrap;
