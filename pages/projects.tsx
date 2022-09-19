@@ -15,7 +15,6 @@ import chalky2 from "./components/imgs/projects/chalky/chalky2.png";
 import projects from "./projects.json";
 import Meta from "./components/Meta";
 
-// ^ this is hell
 const imgs = [
 	[morava, morava1, morava2],
 	[drby, drby1, drby2],

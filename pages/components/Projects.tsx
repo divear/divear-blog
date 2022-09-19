@@ -6,13 +6,22 @@ import morava2 from "./imgs/projects/morava/morava2.png";
 import malo from "./imgs/projects/malo/malo0.png";
 import malo1 from "./imgs/projects/malo/malo1.png";
 import malo2 from "./imgs/projects/malo/malo2.png";
+import projects from "../projects.json";
 // ^ this is hell
 
-const mor = [morava, morava1, morava2];
-const mal = [malo, malo1, malo2];
+const imgs = [
+	[morava, morava1, morava2],
+	[malo, malo1, malo2],
+];
 
 function Projects() {
 	const [imgIndex, setImgIndex] = useState(0);
+	const [lang, setLang] = useState(false);
+	const shortProjects = [projects[+lang][0], projects[+lang][1]];
+
+	useEffect(() => {
+		setLang(localStorage.getItem("language") === "EN" ? false : true);
+	}, []);
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -30,48 +39,30 @@ function Projects() {
 
 	return (
 		<div className="projects">
-			<h1 className="center headerText">My projects</h1>
-			<div
-				className="project"
-				onClick={() => open("https://morava.lol/")}
-			>
-				<Image
-					className="showoffImage"
-					width={480}
-					height={270}
-					src={mor[imgIndex]}
-				/>
-				<br />
-				<a
-					className="projectLink"
-					href="https://morava.lol/"
-					target="_blank"
-				>
-					Morava test
-				</a>
-				<h5>Zjisti, jak moc jsi moravák.</h5>
-			</div>
-			<br />
-			<div
-				className="project"
-				onClick={() => open("https://malovani.netlify.app/")}
-			>
-				<Image
-					className="showoffImage"
-					width={480}
-					height={270}
-					src={mal[imgIndex]}
-				/>
-				<br />
-				<a
-					className="projectLink"
-					href="https://malovani.netlify.app/"
-					target="_blank"
-				>
-					Malo🖍
-				</a>
-				<h5>Sociální síť na posílání namalovaných obrázků.</h5>
-			</div>
+			<h1 className="center headerText">
+				{+lang ? "Moje projekty" : "My projects"}
+			</h1>
+			{shortProjects.map((e, i) => {
+				return (
+					<div className="project" onClick={() => open(e.link)}>
+						<Image
+							className="showoffImage"
+							width={480}
+							height={270}
+							src={imgs[i][imgIndex] && imgs[i][imgIndex]}
+						/>
+						<br />
+						<a
+							className="projectLink"
+							href={e.link}
+							target="_blank"
+						>
+							{e.name}
+						</a>
+						<h5>{e.desc}</h5>
+					</div>
+				);
+			})}
 
 			<br />
 			<button onClick={() => (location.href = "/projects")}>
