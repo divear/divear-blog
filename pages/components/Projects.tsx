@@ -38,31 +38,33 @@ function Projects() {
 	}, [imgIndex]);
 
 	return (
-		<div className="projects">
+		<div className="content">
 			<h1 className="center headerText">
 				{+lang ? "Moje projekty" : "My projects"}
 			</h1>
-			{shortProjects.map((e, i) => {
-				return (
-					<div className="project" onClick={() => open(e.link)}>
-						<Image
-							className="showoffImage"
-							width={480}
-							height={270}
-							src={imgs[i][imgIndex] && imgs[i][imgIndex]}
-						/>
-						<br />
-						<a
-							className="projectLink"
-							href={e.link}
-							target="_blank"
-						>
-							{e.name}
-						</a>
-						<h5>{e.desc}</h5>
-					</div>
-				);
-			})}
+			<div className="projects">
+				{shortProjects.map((e, i) => {
+					return (
+						<div className="project" onClick={() => open(e.link)}>
+							<Image
+								className="showoffImage"
+								width={480}
+								height={270}
+								src={imgs[i][imgIndex] && imgs[i][imgIndex]}
+							/>
+							<br />
+							<a
+								className="projectLink"
+								href={e.link}
+								target="_blank"
+							>
+								{e.name}
+							</a>
+							<h5>{e.desc}</h5>
+						</div>
+					);
+				})}
+			</div>
 
 			<br />
 			<button onClick={() => (location.href = "/projects")}>

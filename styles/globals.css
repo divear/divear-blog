@@ -137,7 +137,8 @@ button:hover {
 	margin: 2vw;
 }
 .projects {
-	float: left;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
 	margin: 2vw;
 }
 .project:hover {
@@ -145,12 +146,11 @@ button:hover {
 }
 
 .project {
-	cursor: pointer;
 	background-color: var(--sec);
 	color: var(--secBg);
 	border-radius: 2vw;
-	padding: 0 0 0.005vh 0;
 	text-align: center;
+	margin: 2vw;
 }
 .showoffImage {
 	border-radius: 2vw 2vw 0.1vw 0.1vw;
@@ -161,6 +161,7 @@ button:hover {
 .mapImg {
 	border-radius: 2vw;
 }
+
 .footerPar {
 	min-height: 100%;
 	height: auto !important;
