@@ -27,7 +27,11 @@ function Aboutme() {
 			<Meta title="About me" />
 			<div className="headerText center">About me</div>
 			<article>
-				<p>I'm divear but you may also know me as:</p>
+				<p>
+					{lang
+						? "Já jsem diveár, ale taky mě mužeš znát jako:"
+						: "I'm divear but you may also know me as:"}
+				</p>
 				<ul>
 					<li>lukascobit</li>
 					<li>lukas_getout</li>

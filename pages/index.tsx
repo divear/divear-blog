@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 					<h1>{+lang ? "Čau, já jsem diveár" : " Hi, I'm divear"}</h1>
 					<button onClick={() => (location.href = "/projects")}>
 						{+lang
-							? "Podívej na moje projekty"
+							? "Podívej na moje projekty👨‍💻"
 							: "See my projects 👨‍💻"}
 					</button>
 				</div>
