@@ -39,10 +39,10 @@ function Projects() {
 
 	return (
 		<div className="content">
-			<h1 className="center headerText">
-				{+lang ? "Moje projekty" : "My projects"}
-			</h1>
 			<div className="projects">
+				<h1 className="recentBlogsHeader center headerText">
+					{+lang ? "Moje projekty" : "My projects"}
+				</h1>
 				{shortProjects.map((e, i) => {
 					return (
 						<div className="project" onClick={() => open(e.link)}>
@@ -54,7 +54,7 @@ function Projects() {
 							/>
 							<br />
 							<a
-								className="projectLink"
+								className="blogLink"
 								href={e.link}
 								target="_blank"
 							>

@@ -138,20 +138,19 @@ button:hover {
 }
 .projects {
 	display: grid;
-	grid-template-columns: repeat(2, auto);
-	margin: 2vw;
+	grid-template-columns: repeat(3, auto);
+	margin: 0 5vw;
+}
+.project {
+	background-color: var(--dark);
+	border-radius: 1vw;
+	padding: 0vw;
+	margin: 1vw;
 }
 .project:hover {
 	background-color: var(--secD);
 }
 
-.project {
-	background-color: var(--sec);
-	color: var(--secBg);
-	border-radius: 2vw;
-	text-align: center;
-	margin: 2vw;
-}
 .showoffImage {
 	border-radius: 2vw 2vw 0.1vw 0.1vw;
 }
@@ -202,7 +201,7 @@ button:hover {
 .intro {
 	border-radius: 2vw;
 	width: 50%;
-	margin: 2vw auto;
+	margin: 3vw auto;
 	background-color: rgba(0, 0, 0, 0.425);
 }
 .bigImgIntro {

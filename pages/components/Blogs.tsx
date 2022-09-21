@@ -23,7 +23,7 @@ function Blogs() {
 									onClick={() =>
 										(location.href = `/a/${e.link}`)
 									}
-									className="showoffImage blogImg"
+									className="showoffImage"
 									width={480}
 									height={270}
 									src={e.img}
