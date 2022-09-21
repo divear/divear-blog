@@ -67,7 +67,10 @@ function Projects() {
 			</div>
 
 			<br />
-			<button onClick={() => (location.href = "/projects")}>
+			<button
+				className="seeMoreButton"
+				onClick={() => (location.href = "/projects")}
+			>
 				{lang ? "Prohlédni si více projektů..." : "See more projects"}
 			</button>
 		</div>

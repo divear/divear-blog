@@ -13,7 +13,7 @@ function Blogs() {
 			<Meta title="Blogs" />
 			<div className="miniBlogs blogs">
 				<h1 className="recentBlogsHeader center headerText">
-					Recent blogs
+					{+lang ? "Nedávné zprávy" : "Recent blogs"}
 				</h1>
 				{blogs[+lang].map((e, i) => {
 					return (
