@@ -351,12 +351,10 @@ button:hover {
 	margin: 0%;
 }
 .recentBlogsHeader {
+	cursor: pointer;
 	padding: 2vw;
 	font-size: 5rem;
 }
-.seeMoreButton {
-	text-align: center;
-	margin: 0 auto;
-	width: 50%;
-	padding: 1vw;
+.recentBlogsHeader:hover {
+	text-decoration: underline solid var(--fr);
 }

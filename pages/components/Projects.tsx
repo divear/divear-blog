@@ -40,8 +40,12 @@ function Projects() {
 	return (
 		<div className="content">
 			<div className="projects">
-				<h1 className="recentBlogsHeader center headerText">
+				<h1
+					onClick={() => (location.href = "projects")}
+					className="recentBlogsHeader center headerText"
+				>
 					{+lang ? "Moje projekty" : "My projects"}
+					<br />
 				</h1>
 				{shortProjects.map((e, i) => {
 					return (
@@ -67,12 +71,6 @@ function Projects() {
 			</div>
 
 			<br />
-			<button
-				className="seeMoreButton"
-				onClick={() => (location.href = "/projects")}
-			>
-				{lang ? "Prohlédni si více projektů..." : "See more projects"}
-			</button>
 		</div>
 	);
 }
