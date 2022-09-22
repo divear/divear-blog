@@ -142,13 +142,15 @@ button:hover {
 	margin: 0 5vw;
 }
 .project {
+	cursor: pointer;
 	background-color: var(--dark);
 	border-radius: 1vw;
 	padding: 0vw;
 	margin: 1vw;
 }
-.project:hover {
-	background-color: var(--secD);
+.project:hover,
+.smallBlog:hover {
+	background-color: var(--darkM);
 }
 
 .showoffImage {
@@ -200,7 +202,7 @@ button:hover {
 }
 .intro {
 	border-radius: 2vw;
-	width: 50%;
+	width: 100%;
 	margin: 3vw auto;
 	background-color: rgba(0, 0, 0, 0.425);
 }
@@ -329,6 +331,7 @@ button:hover {
 	margin: 0;
 }
 .smallBlog {
+	cursor: pointer;
 	background-color: var(--dark);
 	border-radius: 2vw;
 	padding: 0vw;
@@ -336,7 +339,7 @@ button:hover {
 }
 .smallBlogDesc {
 	font-size: 3rem;
-	margin: 2vw !important;
+	margin: 0.5vw !important;
 }
 .social {
 	margin: 1vw;
@@ -357,4 +360,7 @@ button:hover {
 }
 .recentBlogsHeader:hover {
 	text-decoration: underline solid var(--fr);
+}
+.smallProjectDesc {
+	margin: 0 2vw;
 }

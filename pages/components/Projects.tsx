@@ -57,14 +57,16 @@ function Projects() {
 								src={imgs[i][imgIndex] && imgs[i][imgIndex]}
 							/>
 							<br />
-							<a
-								className="blogLink"
-								href={e.link}
-								target="_blank"
-							>
-								{e.name}
-							</a>
-							<h5>{e.desc}</h5>
+							<div className="smallProjectDesc">
+								<a
+									className="blogLink"
+									href={e.link}
+									target="_blank"
+								>
+									{e.name}
+								</a>
+								<h5>{e.desc}</h5>
+							</div>
 						</div>
 					);
 				})}
