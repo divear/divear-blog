@@ -16,13 +16,6 @@ const Home: NextPage = () => {
 		<div>
 			<Meta title="divear" />
 			<div className="intro">
-				<Image
-					className="bigImgIntro"
-					width={400}
-					height={400}
-					src={pfp}
-					alt="introPfp"
-				/>
 				<div className="introText">
 					<h1>{+lang ? "Čau, já jsem diveár" : " Hi, I'm divear"}</h1>
 					<button onClick={() => (location.href = "/projects")}>

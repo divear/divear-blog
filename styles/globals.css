@@ -170,7 +170,6 @@ button:hover {
 	margin: 0 auto -142px;
 }
 .footerImg {
-	background-color: red;
 	margin: 0;
 	padding: 0 0 5vh 0;
 	position: relative;
@@ -197,28 +196,18 @@ button:hover {
 	padding: 1vh 1vw 0 0;
 }
 .smallImg {
+	margin: 2%;
 	width: 50%;
 	border-radius: 0.1vw;
 }
 .intro {
 	border-radius: 2vw;
-	width: 100%;
-	margin: 3vw auto;
-	background-color: rgba(0, 0, 0, 0.425);
-}
-.bigImgIntro {
-	background-color: var(--bg);
-	padding: 0vw;
-	margin: 0vh;
-	border-radius: 0 5vw 5vw 0;
-	border-bottom: 1px solid red;
-	width: 50%;
-	transform: rotate(5deg);
-	transform-origin: top left;
+	width: 40%;
+	margin: 5vw auto;
 }
 .introText {
 	box-sizing: border-box;
-	float: right;
+	text-align: center;
 	margin: 2vw;
 	display: block;
 }
@@ -264,6 +253,29 @@ button:hover {
 	border-radius: 2vw 0vw 0vw 2vw;
 	padding: 0vw;
 	margin: 0;
+	animation: zoomout 0.5s;
+}
+@keyframes zoomout {
+	from {
+		transform: scale(1.1);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+.showoffBigImage:hover {
+	animation: zoomin 1s;
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
+}
+@keyframes zoomin {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
 }
 .scrolls {
 	border-radius: 1vw;
