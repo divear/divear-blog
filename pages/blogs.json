@@ -11,6 +11,12 @@
 			"desc": "Find out how much of a moravian you are",
 			"link": "morava",
 			"img": "https://morava.lol/_ipx/w_256,q_75/%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png?url=%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png&w=256&q=75"
+		},
+		{
+			"name": "Test your WPM offline",
+			"desc": "How to install & run my wpm tester",
+			"link": "wpm",
+			"img": "https://cdn.discordapp.com/attachments/823576285619159053/1023335857270300682/unknown.png"
 		}
 	],
 	[
@@ -25,6 +31,12 @@
 			"desc": "Zjisti, jak moc jsi moravák",
 			"link": "cz/morava",
 			"img": "https://morava.lol/_ipx/w_256,q_75/%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png?url=%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png&w=256&q=75"
+		},
+		{
+			"name": "Kolik napíšeš slov za minutu",
+			"desc": "Jak nainstalovat můj wpm test",
+			"link": "wpm",
+			"img": "https://cdn.discordapp.com/attachments/823576285619159053/1023335857270300682/unknown.png"
 		}
 	]
 ]

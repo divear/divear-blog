@@ -132,10 +132,6 @@ button:hover {
 .floatRight {
 	float: right;
 }
-.blogs {
-	float: right;
-	margin: 2vw;
-}
 .projects {
 	display: grid;
 	grid-template-columns: repeat(3, auto);
@@ -329,13 +325,15 @@ button:hover {
 	font-size: 1.5rem;
 }
 .blogs {
+	max-width: 50%;
+	margin: 2vw 0vw;
 	display: grid;
-	grid-template-columns: repeat(3, auto);
+	grid-template-columns: repeat(2, auto);
 }
 .blog {
 	background-color: var(--dark);
 	border-radius: 1vw;
-	padding: 0vw;
+	padding: 0vw !important;
 	margin: 1vw;
 }
 .blogImg {
