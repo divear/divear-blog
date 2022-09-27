@@ -4,6 +4,7 @@ import blogs from "../blogs.json";
 
 function Blogs() {
 	const [lang, setLang] = useState(false);
+	const shortBlogs = [blogs[+lang][0], blogs[+lang][1]];
 
 	useEffect(() => {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);

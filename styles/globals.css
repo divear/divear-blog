@@ -57,6 +57,17 @@ button {
 button:hover {
 	background-color: var(--sec);
 	border-radius: 0.8vw;
+	animation: buttonHover 0.5s;
+}
+@keyframes buttonHover {
+	from {
+		background-color: var(--secD);
+		border-radius: 0.5vw;
+	}
+	to {
+		background-color: var(--sec);
+		border-radius: 0.8vw;
+	}
 }
 .content {
 	margin: 5vw 3vw;
