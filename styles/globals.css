@@ -341,6 +341,10 @@ button:hover {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 }
+.smallBlogs {
+	max-width: 90% !important;
+	grid-template-columns: repeat(3, auto);
+}
 .blog {
 	background-color: var(--dark);
 	border-radius: 1vw;

@@ -12,14 +12,14 @@ function Blogs() {
 	return (
 		<div>
 			<Meta title="Blogs" />
-			<div className="miniBlogs blogs">
+			<div className="smallBlogs blogs">
 				<h1
 					onClick={() => (location.href = "projects")}
 					className="recentBlogsHeader center headerText"
 				>
 					{+lang ? "Nedávné zprávy" : "Recent blogs"}
 				</h1>
-				{blogs[+lang].map((e, i) => {
+				{shortBlogs.map((e, i) => {
 					return (
 						<div className="smallBlog">
 							<div className="smallBlogDesc">
