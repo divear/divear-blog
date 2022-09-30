@@ -9,19 +9,17 @@ function Blogs() {
 
 	useEffect(() => {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
-		let sbHeight =
-			window.innerHeight *
-			(window.innerHeight / document.body.offsetHeight);
-		setX(sbHeight);
-		console.log(x);
-	}, [document.body.offsetHeight]);
+		onscroll = () => {
+			setX(scrollY);
+		};
+	}, []);
 	return (
 		<div>
 			<Meta title="Blogs" />
 			<div className="smallBlogs blogs">
 				<h1
 					style={{
-						marginLeft: `${x / 50}px`,
+						marginLeft: `${x / 3}px`,
 					}}
 					onClick={() => (location.href = "projects")}
 					className="recentBlogsHeader center "
