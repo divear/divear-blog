@@ -5,17 +5,26 @@ import blogs from "../blogs.json";
 function Blogs() {
 	const [lang, setLang] = useState(false);
 	const shortBlogs = [blogs[+lang][0], blogs[+lang][1]];
+	const [x, setX] = useState(0);
 
 	useEffect(() => {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
-	}, []);
+		let sbHeight =
+			window.innerHeight *
+			(window.innerHeight / document.body.offsetHeight);
+		setX(sbHeight);
+		console.log(x);
+	}, [document.body.offsetHeight]);
 	return (
 		<div>
 			<Meta title="Blogs" />
 			<div className="smallBlogs blogs">
 				<h1
+					style={{
+						marginLeft: `${x / 50}px`,
+					}}
 					onClick={() => (location.href = "projects")}
-					className="recentBlogsHeader center headerText"
+					className="recentBlogsHeader center "
 				>
 					{+lang ? "Nedávné zprávy" : "Recent blogs"}
 				</h1>

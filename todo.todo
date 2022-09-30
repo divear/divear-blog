@@ -3,7 +3,7 @@
 [x] add social media icons in gimp and add them as button on the about me page.
 [] translate rest of the site
 [] add link to discord
-[] resize the mini projects accurately
-[] add the image zoom-in effect on hover
-[] fix styling on blogs page
+[x] resize the mini projects accurately
+[x] add the image zoom-in effect on hover
+[x] fix styling on blogs page
 [] finish the wpm blog

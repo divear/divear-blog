@@ -165,6 +165,7 @@ button:hover {
 }
 .projectlink {
 	color: var(--fr);
+	cursor: pointer;
 }
 .mapImg {
 	border-radius: 2vw;
@@ -388,4 +389,7 @@ button:hover {
 }
 .smallProjectDesc {
 	margin: 0 2vw;
+}
+.downloadButton {
+	margin: 2vw;
 }

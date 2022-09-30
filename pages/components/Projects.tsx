@@ -25,11 +25,7 @@ function Projects() {
 
 	useEffect(() => {
 		setTimeout(() => {
-			console.log(imgIndex);
-
 			if (imgIndex === 2) {
-				console.log("last");
-
 				setImgIndex(0);
 				return;
 			}

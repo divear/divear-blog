@@ -77,7 +77,12 @@ function Projects() {
 							&gt;
 						</button>
 						<div className="desc">
-							<h3 className="projectLink">{e.name}</h3>
+							<h3
+								onClick={() => open(e.link)}
+								className="projectLink"
+							>
+								{e.name}
+							</h3>
 							<h5>{e.desc}</h5>
 						</div>
 					</div>

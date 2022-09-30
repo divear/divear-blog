@@ -9,7 +9,9 @@ function Blogs() {
 	}, []);
 	return (
 		<div className="content">
-			<h1 className="headerText center">My blogs</h1>
+			<h1 className="headerText center">
+				{+lang ? "Moje články" : "My blogs"}
+			</h1>
 			<div className="blogs">
 				{blogs[+lang].map((e, i) => {
 					return (
