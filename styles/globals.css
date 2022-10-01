@@ -393,3 +393,9 @@ button:hover {
 .downloadButton {
 	margin: 2vw;
 }
+.notFound {
+	margin: 26vh 5vw;
+}
+.centerButton {
+	margin: auto;
+}
