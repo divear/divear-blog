@@ -9,10 +9,13 @@ function Nav() {
 	const [modal, setModal] = useState(false);
 
 	useEffect(() => {
-		console.log(Intl.DateTimeFormat());
+		console.log(navigator.language);
 
 		!localStorage.getItem("language") &&
-			localStorage.setItem("language", "EN");
+			localStorage.setItem(
+				"language",
+				navigator.language == "cs" ? "CZ" : "EN"
+			);
 		localStorage.getItem("language") &&
 			setLanguage(
 				localStorage.getItem("language") == "CZ" ? true : false
