@@ -25,7 +25,9 @@ function Aboutme() {
 	return (
 		<div className="content">
 			<Meta title="About me" />
-			<div className="headerText center">About me</div>
+			<div className="headerText center">
+				{lang ? "O mně" : "About me"}
+			</div>
 			<article>
 				<p>
 					{lang
@@ -38,7 +40,9 @@ function Aboutme() {
 					<li>divear0</li>
 				</ul>
 			</article>
-			<h1 className="headerText">Find me here</h1>
+			<h1 className="headerText">
+				{lang ? "Najdeš mě taky tady:" : "Find me here"}
+			</h1>
 			<div className="socials">
 				{socials.map((s, i) => {
 					return (
