@@ -5,17 +5,20 @@ import Image from "next/image";
 function Nav() {
 	// false - english
 	// true - czech
-	const [language, setLanguage] = useState(true);
+	const [language, setLanguage] = useState(false);
 	const [modal, setModal] = useState(false);
 
 	useEffect(() => {
+		console.log(Intl.DateTimeFormat());
+
+		!localStorage.getItem("language") &&
+			localStorage.setItem("language", "EN");
 		localStorage.getItem("language") &&
 			setLanguage(
-				localStorage.getItem("language") == "EN" ? false : true
+				localStorage.getItem("language") == "CZ" ? true : false
 			);
 	}, []);
 
-	useEffect(() => {}, [language]);
 	function show() {
 		setModal(!modal);
 	}

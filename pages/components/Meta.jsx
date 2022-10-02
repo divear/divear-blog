@@ -20,7 +20,7 @@ function Meta({ title, keywords, description }) {
 Meta.defaultProps = {
 	title: "divear",
 	keywords:
-		"personal,site,odehnal,lukas,lukáš,divear,person,lukas odehnal,ode,",
+		"personal,site,divear,person,diver,diveaar,diveár,czech,morava,czechia,eu,europe,evropa",
 	description: "Hi, I'm divear and I make websites.",
 };
 
