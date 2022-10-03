@@ -56,6 +56,20 @@ function Aboutme() {
 					);
 				})}
 			</div>
+			<h1 className="headerText">
+				{lang
+					? "Máš otázku? Zeptej se tady:"
+					: "Have a question? Ask here:"}
+			</h1>
+			<li>
+				<a
+					className="headerText"
+					target="_blank"
+					href="https://discord.gg/yv8thy2PKz"
+				>
+					discord
+				</a>
+			</li>
 		</div>
 	);
 }

@@ -21,7 +21,7 @@ function Blogs() {
 					style={{
 						marginLeft: `${x / 3}px`,
 					}}
-					onClick={() => (location.href = "projects")}
+					onClick={() => (location.href = "blogs")}
 					className="recentBlogsHeader center "
 				>
 					{+lang ? "Nedávné zprávy" : "Recent blogs"}

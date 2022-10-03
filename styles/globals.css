@@ -129,6 +129,7 @@ button:hover {
 	padding: 0.2vw;
 }
 .redirs *:hover {
+	color: var(--frTrans);
 	border-bottom: 0.6vh var(--secBg) solid;
 	animation: fade 0.5s;
 }
@@ -375,6 +376,7 @@ button:hover {
 	border-radius: 0;
 	border-bottom: var(--frTrans) solid 0.2vw;
 	background-color: transparent;
+	animation: none !important;
 }
 .usernameSpeci {
 	margin: 0%;
