@@ -56,7 +56,7 @@ function Aboutme() {
 					);
 				})}
 			</div>
-			<h1 className="headerText">
+			<h1 className="">
 				{lang
 					? "Máš otázku? Zeptej se tady:"
 					: "Have a question? Ask here:"}

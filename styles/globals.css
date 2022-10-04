@@ -401,3 +401,10 @@ button:hover {
 .centerButton {
 	margin: auto;
 }
+/* mobile view */
+@media only screen and (max-width: 830px) {
+	.intro {
+		width: 90%;
+		margin: 10vh auto auto auto;
+	}
+}
