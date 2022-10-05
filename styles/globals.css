@@ -407,4 +407,17 @@ button:hover {
 		width: 90%;
 		margin: 10vh auto auto auto;
 	}
+
+	.content {
+		margin: 10vh 0;
+	}
+	.recentBlogsHeader {
+		font-size: 2rem;
+		margin: 2vw;
+	}
+	.projects,
+	.smallBlogs {
+		display: block;
+		margin: 0 5vw;
+	}
 }
