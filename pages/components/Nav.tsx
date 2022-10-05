@@ -7,10 +7,10 @@ function Nav() {
 	// true - czech
 	const [language, setLanguage] = useState(false);
 	const [modal, setModal] = useState(false);
+	const [isPhone, setIsPhone] = useState(false);
 
 	useEffect(() => {
-		console.log(navigator.language);
-
+		setIsPhone(window.innerWidth < 830);
 		!localStorage.getItem("language") &&
 			localStorage.setItem(
 				"language",
@@ -52,10 +52,13 @@ function Nav() {
 				<h2 onClick={() => change(false)}>🇬🇧 English</h2>
 			</div>
 
-			<div className="redirs">
+			<div className={isPhone ? "no" : "redirs"}>
 				<a href="/projects">{!+language ? "Projects" : "Projekty"} </a>
 				<a href="/blogs">{!+language ? "Blogs" : "Blogy"} </a>
 				<a href="/aboutme">{!+language ? "About me" : "O mně"} </a>
+			</div>
+			<div className={isPhone ? "burgerMenu" : "no"}>
+				<h1>🍔</h1>
 			</div>
 		</div>
 	);

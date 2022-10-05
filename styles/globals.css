@@ -420,4 +420,7 @@ button:hover {
 		display: block;
 		margin: 0 5vw;
 	}
+	.burgerMenu {
+		cursor: pointer;
+	}
 }
