@@ -45,7 +45,7 @@ function Footer() {
 					})}
 				</div>
 				<div className="blackboxNav">
-					<h3>©divear 2022</h3>
+					<h3 className="copyEndName">©divear 2022</h3>
 				</div>
 			</div>
 		</div>
