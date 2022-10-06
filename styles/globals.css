@@ -173,10 +173,11 @@ button:hover {
 }
 
 .footerPar {
+	background-color: black;
 	min-height: 100%;
 	height: auto !important;
-	height: 100%;
-	margin: 0 auto -142px;
+	margin: -1vh 0 0 0;
+	padding: 0;
 }
 .footerImg {
 	margin: 0;
@@ -197,7 +198,7 @@ button:hover {
 	left: 0;
 	right: 0;
 	height: 10vh;
-	margin: -12vh 0 0 0;
+	margin: -10.1vh 0 0 0;
 }
 
 .blackboxNav > h3 {
@@ -380,6 +381,22 @@ button:hover {
 }
 .usernameSpeci {
 	margin: 0%;
+}
+.smallSocial {
+	filter: saturate(1) grayscale(1);
+	margin: -15vh 0 0 0;
+	background-color: transparent;
+}
+.smallSocials {
+	display: flex;
+	justify-self: left;
+}
+.smallSocial:hover {
+	filter: saturate(1) grayscale(0.7);
+	border-radius: 0;
+	border-bottom: var(--frTrans) solid 0.2vw;
+	background-color: transparent;
+	animation: none !important;
 }
 .recentBlogsHeader {
 	cursor: pointer;
