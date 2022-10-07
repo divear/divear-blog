@@ -2,7 +2,7 @@
 
 :root {
 	--bg: #022129;
-	--fr: rgb(234, 251, 248);
+	--fr: #eafbf8;
 	--sec: rgb(12, 118, 148);
 	--secD: rgb(10, 100, 124);
 	--dark: rgb(1, 22, 28);
@@ -439,5 +439,6 @@ button:hover {
 	}
 	.burgerMenu {
 		cursor: pointer;
+		margin: 0vh 10vw 0 0;
 	}
 }

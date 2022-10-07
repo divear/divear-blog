@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import pfp from "./imgs/pfp.png";
+import burger from "./imgs/burgermenu.png";
 import Image from "next/image";
 
 function Nav() {
@@ -58,7 +59,7 @@ function Nav() {
 				<a href="/aboutme">{!+language ? "About me" : "O mně"} </a>
 			</div>
 			<div className={isPhone ? "burgerMenu" : "no"}>
-				<h1>🍔</h1>
+				<Image src={burger} width={50} height={50}></Image>
 			</div>
 		</div>
 	);
