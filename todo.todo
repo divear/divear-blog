@@ -9,6 +9,10 @@
 [] add link to discord
 [] responsivness phones & tablets
     -[] fix the burger menu:
-        --[] draw an actual image
-        --[] make the modal pop up
+        --[x] draw an actual image
+        --[x] make the modal pop up
+        --[] make it look good
+        --[] make the language picker look good
+    -[] fix the site width
     -[] fix the rest of the homepage
+    -[] fix the rest 

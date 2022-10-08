@@ -74,9 +74,13 @@ function Nav() {
 				<h1 onClick={show} className="language">
 					{!language ? "🇬🇧" : "🇨🇿"}
 				</h1>
+				<br />
 				<a href="/projects">{!+language ? "Projects" : "Projekty"} </a>
+				<br />
 				<a href="/blogs">{!+language ? "Blogs" : "Blogy"} </a>
+				<br />
 				<a href="/aboutme">{!+language ? "About me" : "O mně"} </a>
+				<br />
 			</div>
 		</div>
 	);
