@@ -8,6 +8,7 @@ function Nav() {
 	// true - czech
 	const [language, setLanguage] = useState(false);
 	const [modal, setModal] = useState(false);
+	const [tree, setTree] = useState(false);
 	const [isPhone, setIsPhone] = useState(false);
 
 	useEffect(() => {
@@ -48,11 +49,11 @@ function Nav() {
 				divear
 			</h1>
 
-			<h1 onClick={show} className="language">
+			<h1 onClick={show} className={isPhone ? "no" : "language"}>
 				{!language ? "🇬🇧" : "🇨🇿"}
 			</h1>
 
-			<div className={modal ? "langModal" : "langModal no"}>
+			<div className={modal ? "langModal" : "no"}>
 				<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
 				<br />
 				<h2 onClick={() => change(false)}>🇬🇧 English</h2>
@@ -63,8 +64,19 @@ function Nav() {
 				<a href="/blogs">{!+language ? "Blogs" : "Blogy"} </a>
 				<a href="/aboutme">{!+language ? "About me" : "O mně"} </a>
 			</div>
-			<div className={isPhone ? "burgerMenu" : "no"}>
+			<div
+				onClick={() => setTree(!tree)}
+				className={isPhone ? "burgerMenu" : "no"}
+			>
 				<Image src={burger} width={50} height={50}></Image>
+			</div>
+			<div className={tree ? "tree" : "no"}>
+				<h1 onClick={show} className="language">
+					{!language ? "🇬🇧" : "🇨🇿"}
+				</h1>
+				<a href="/projects">{!+language ? "Projects" : "Projekty"} </a>
+				<a href="/blogs">{!+language ? "Blogs" : "Blogy"} </a>
+				<a href="/aboutme">{!+language ? "About me" : "O mně"} </a>
 			</div>
 		</div>
 	);

@@ -81,6 +81,9 @@ button:hover {
 	font-size: 2.3rem;
 }
 .no {
+	display: none;
+	width: 0;
+	height: 0;
 	animation: no 0.4s;
 	opacity: 0;
 	user-select: none;
@@ -425,6 +428,10 @@ button:hover {
 		width: 90%;
 		margin: 10vh auto auto auto;
 	}
+	.nav {
+		width: 75%;
+		height: 5%;
+	}
 
 	.content {
 		margin: 10vh 0;
@@ -440,6 +447,7 @@ button:hover {
 	}
 	.burgerMenu {
 		cursor: pointer;
-		margin: 0vh 10vw 0 0;
+		position: fixed;
+		top: 0;
 	}
 }
