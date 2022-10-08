@@ -12,10 +12,15 @@ function Nav() {
 
 	useEffect(() => {
 		setIsPhone(window.innerWidth < 830);
+		console.log(navigator.language);
+
+		//check if user is czech or slovak & change the site language appropriatly
 		!localStorage.getItem("language") &&
 			localStorage.setItem(
 				"language",
-				navigator.language == "cs" ? "CZ" : "EN"
+				navigator.language == "cs" || navigator.language == "sk"
+					? "CZ"
+					: "EN"
 			);
 		localStorage.getItem("language") &&
 			setLanguage(
