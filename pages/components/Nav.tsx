@@ -70,7 +70,10 @@ function Nav() {
 				<Image src={burger} width={50} height={50}></Image>
 			</div>
 
-			<div className={tree ? "blackOverlay" : "no"} />
+			<div
+				onClick={() => setTree(false)}
+				className={tree ? "blackOverlay" : "no"}
+			/>
 			<div className={tree ? "tree" : "no"}>
 				<div className="treeLangModal">
 					<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>

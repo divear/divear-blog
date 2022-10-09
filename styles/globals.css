@@ -454,6 +454,7 @@ button:hover {
 		top: 0;
 	}
 	.tree {
+		z-index: 9 !important;
 		background-color: var(--bg);
 		position: fixed;
 		margin: 1vw;
