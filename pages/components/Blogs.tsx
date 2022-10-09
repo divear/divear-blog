@@ -10,7 +10,7 @@ function Blogs() {
 	useEffect(() => {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
 		onscroll = () => {
-			setX(scrollY);
+			window.innerWidth < 830 ? setX(scrollY / 2 - 500) : setX(scrollY);
 		};
 	}, []);
 	return (

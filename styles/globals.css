@@ -482,4 +482,7 @@ button:hover {
 		padding: 0;
 		margin: 0 5vw;
 	}
+	.recentBlogsHeader {
+		font-size: 5rem;
+	}
 }
