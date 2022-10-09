@@ -53,16 +53,15 @@ function Nav() {
 				{!language ? "🇬🇧" : "🇨🇿"}
 			</h1>
 
-			<div className={modal ? "langModal" : "no"}>
-				<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
-				<br />
-				<h2 onClick={() => change(false)}>🇬🇧 English</h2>
-			</div>
-
 			<div className={isPhone ? "no" : "redirs"}>
 				<a href="/projects">{!+language ? "Projects" : "Projekty"} </a>
 				<a href="/blogs">{!+language ? "Blogs" : "Blogy"} </a>
 				<a href="/aboutme">{!+language ? "About me" : "O mně"} </a>
+			</div>
+			<div className={modal ? "langModal" : "no"}>
+				<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
+				<br />
+				<h2 onClick={() => change(false)}>🇬🇧 English</h2>
 			</div>
 			<div
 				onClick={() => setTree(!tree)}
