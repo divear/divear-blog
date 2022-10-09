@@ -58,7 +58,7 @@ function Nav() {
 				<a href="/blogs">{!+language ? "Blogs" : "Blogy"} </a>
 				<a href="/aboutme">{!+language ? "About me" : "O mně"} </a>
 			</div>
-			<div className={modal ? "langModal" : "no"}>
+			<div className={modal && !isPhone ? "langModal" : "no"}>
 				<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
 				<br />
 				<h2 onClick={() => change(false)}>🇬🇧 English</h2>
@@ -72,9 +72,10 @@ function Nav() {
 
 			<div className={tree ? "blackOverlay" : "no"} />
 			<div className={tree ? "tree" : "no"}>
-				<h1 onClick={show} className="language">
-					{!language ? "🇬🇧" : "🇨🇿"}
-				</h1>
+				<div className="treeLangModal">
+					<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
+					<h2 onClick={() => change(false)}>🇬🇧 English</h2>
+				</div>
 				<br />
 				<a href="/projects">{!+language ? "Projects" : "Projekty"} </a>
 				<br />
