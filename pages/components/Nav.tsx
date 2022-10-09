@@ -69,6 +69,8 @@ function Nav() {
 			>
 				<Image src={burger} width={50} height={50}></Image>
 			</div>
+
+			<div className={tree ? "blackOverlay" : "no"} />
 			<div className={tree ? "tree" : "no"}>
 				<h1 onClick={show} className="language">
 					{!language ? "🇬🇧" : "🇨🇿"}

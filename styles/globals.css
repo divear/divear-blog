@@ -466,4 +466,12 @@ button:hover {
 		border: 1vw solid var(--fr);
 		padding: 5vw;
 	}
+	.blackOverlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: var(--bgTrans);
+	}
 }
