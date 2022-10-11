@@ -485,4 +485,18 @@ button:hover {
 	.recentBlogsHeader {
 		font-size: 5rem;
 	}
+	.blogs {
+		max-width: 100%;
+		margin: 2vw 0vw;
+		display: block;
+	}
+	.blog {
+		border-radius: 1vw;
+		padding: 0vw !important;
+		margin: 1vw;
+	}
+	.desc {
+		background-color: var(--dark);
+		padding: 1vw;
+	}
 }
