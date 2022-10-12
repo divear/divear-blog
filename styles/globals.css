@@ -3,7 +3,7 @@
 :root {
 	--bg: #022129;
 	--fr: #eafbf8;
-	--sec: rgb(12, 118, 148);
+	--sec: #0c7694;
 	--secD: rgb(10, 100, 124);
 	--dark: rgb(1, 22, 28);
 	--darkM: rgba(0, 15, 19, 0.863);
@@ -428,6 +428,10 @@ button:hover {
 	* {
 		max-width: 100%;
 	}
+	article {
+		width: 100%;
+		margin: 2vw;
+	}
 	.intro {
 		width: 90%;
 		margin: 10vh auto auto auto;
@@ -444,6 +448,7 @@ button:hover {
 	}
 	.projects,
 	.smallBlogs {
+		max-width: 99% !important;
 		display: block;
 		margin: 0 5vw;
 	}
@@ -498,5 +503,10 @@ button:hover {
 	.desc {
 		background-color: var(--dark);
 		padding: 1vw;
+	}
+	.smallSocials {
+		display: flex;
+		justify-self: left;
+		margin: 2vh 0 0 0;
 	}
 }
