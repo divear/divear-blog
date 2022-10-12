@@ -509,4 +509,46 @@ button:hover {
 		justify-self: left;
 		margin: 2vh 0 0 0;
 	}
+	/* projects */
+	.bigProject {
+		max-width: 95%;
+		color: var(--secBg);
+		border-radius: 2vw;
+		padding: 1vw;
+		text-align: center;
+		margin: 1vh 0 0 0;
+		background: none;
+		border-bottom: 3px solid var(--fr);
+	}
+	.bigProject:nth-child(odd) {
+		max-width: 95%;
+		color: var(--secBg);
+		border-radius: 2vw;
+		padding: 1vw;
+		text-align: center;
+		margin: 1vh 0 0 0;
+		background: none;
+	}
+	.bigProject:nth-child(odd) .desc {
+		float: none;
+		font-size: 1rem;
+		margin: inherit;
+	}
+	.bigProject .scrolls {
+		display: none;
+	}
+	.showoffBigImage {
+		z-index: -1;
+		border-radius: 2vw 0vw 0vw 2vw;
+		padding: 0vw;
+		margin: 0;
+	}
+	.projectDesc {
+		z-index: 99 !important;
+		background-color: transparent;
+		font-size: 1rem;
+		margin: -10vh 0 0 0;
+		background-color: var(--bgTrans);
+		border-radius: 1vw;
+	}
 }

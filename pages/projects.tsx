@@ -25,6 +25,7 @@ const imgs = [
 function Projects() {
 	const [imgIndex, setImgIndex] = useState(0);
 	const [lang, setLang] = useState(false);
+	const [isPhone, setIsPhone] = useState(false);
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -35,6 +36,7 @@ function Projects() {
 			setImgIndex(imgIndex + 1);
 		}, 9000);
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
+		setIsPhone(window.innerWidth < 830);
 	}, []);
 
 	return (
@@ -62,8 +64,8 @@ function Projects() {
 						<Image
 							onClick={() => open(e.link)}
 							className="showoffBigImage"
-							width={960}
-							height={540}
+							width={isPhone ? 1440 : 960}
+							height={isPhone ? 810 : 540}
 							src={imgs[i][imgIndex]}
 						/>
 						<button
@@ -76,7 +78,7 @@ function Projects() {
 						>
 							&gt;
 						</button>
-						<div className="desc">
+						<div className="desc projectDesc">
 							<h3
 								onClick={() => open(e.link)}
 								className="projectLink"
