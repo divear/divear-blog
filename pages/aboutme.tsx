@@ -57,11 +57,7 @@ function Aboutme() {
 				})}
 			</div>
 			<h1 className="">
-				{lang
-					? "Máš otázku? Zeptej se tady:"
-					: "Have a question? Ask here:"}
-			</h1>
-			<li>
+				{lang ? "Máš otázku? Tady je náš " : "Have a question? Ask on "}
 				<a
 					className="headerText"
 					target="_blank"
@@ -69,7 +65,7 @@ function Aboutme() {
 				>
 					discord
 				</a>
-			</li>
+			</h1>
 		</div>
 	);
 }
