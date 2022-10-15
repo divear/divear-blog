@@ -22,7 +22,11 @@ function Morava() {
 					Viděl jsem video Toma Scotta o jeho North-o-meteru a rozhodl
 					jsem se udělat českou verzi. Pokuď by jste chtěli přidat
 					otázku do kvízu, tak můžete{" "}
-					<a target="_blank" href="https://morava.lol/nove-otazky">
+					<a
+						rel="noreferrer"
+						target="_blank"
+						href="https://morava.lol/nove-otazky"
+					>
 						tady
 					</a>
 				</p>

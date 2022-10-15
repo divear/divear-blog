@@ -6,13 +6,14 @@
 [x] 404 page working 
 [x] translate rest of the site
 
-[] add link to discord
-[] responsivness phones & tablets
-    -[] fix the burger menu:
+[x] add link to discord
+[x] responsivness phones & tablets
+    -[x] fix the burger menu:
         --[x] draw an actual image
         --[x] make the modal pop up
-        --[] make it look good
-        --[] make the language picker look good
-    -[] fix the site width
-    -[] fix the rest of the homepage
-    -[] fix the rest 
+        --[x] make it look good
+        --[x] make the language picker look good
+    -[x] fix the site width
+    -[x] fix the rest of the homepage
+
+[] responsive specific blog pages

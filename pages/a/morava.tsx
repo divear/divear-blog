@@ -16,7 +16,9 @@ function Morava() {
 				alt="map image"
 			/>
 			<article>
-				<a href="https://morava.lol/">visit the site here</a>
+				<a rel="noreferrer" href="https://morava.lol/">
+					visit the site here
+				</a>
 				<h1>How was it born?</h1>
 				<p>
 					I watched a Tom Scott video and his north-o-meter, that

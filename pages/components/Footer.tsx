@@ -31,6 +31,7 @@ function Footer() {
 					{socials.map((s, i) => {
 						return (
 							<button
+								key={i}
 								onClick={() => open(s[1].toString(), "_blank")}
 								className="smallSocial"
 								title={s[2].toString()}

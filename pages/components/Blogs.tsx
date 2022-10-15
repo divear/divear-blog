@@ -28,7 +28,7 @@ function Blogs() {
 				</h1>
 				{shortBlogs.map((e, i) => {
 					return (
-						<div className="smallBlog">
+						<div className="smallBlog" key={i}>
 							<div className="smallBlogDesc">
 								<img
 									onClick={() =>

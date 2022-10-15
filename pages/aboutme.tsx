@@ -47,6 +47,7 @@ function Aboutme() {
 				{socials.map((s, i) => {
 					return (
 						<button
+							key={i}
 							onClick={() => open(s[1].toString(), "_blank")}
 							className="social"
 						>
@@ -62,6 +63,7 @@ function Aboutme() {
 					className="headerText"
 					target="_blank"
 					href="https://discord.gg/yv8thy2PKz"
+					rel="noreferrer"
 				>
 					discord
 				</a>

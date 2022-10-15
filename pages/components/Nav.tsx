@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import pfp from "./imgs/pfp.png";
 import burger from "./imgs/burgermenu.png";
 import Image from "next/image";
+import Link from "next/link";
 
 function Nav() {
 	// false - english
@@ -54,9 +55,13 @@ function Nav() {
 			</h1>
 
 			<div className={isPhone ? "no" : "redirs"}>
-				<a href="/projects">{!+language ? "Projects" : "Projekty"} </a>
-				<a href="/blogs">{!+language ? "Blogs" : "Blogy"} </a>
-				<a href="/aboutme">{!+language ? "About me" : "O mně"} </a>
+				<Link href="/projects">
+					{!+language ? "Projects" : "Projekty"}{" "}
+				</Link>
+				<Link href="/blogs">{!+language ? "Blogs" : "Blogy"} </Link>
+				<Link href="/aboutme">
+					{!+language ? "About me" : "O mně"}{" "}
+				</Link>
 			</div>
 			<div className={modal && !isPhone ? "langModal" : "no"}>
 				<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
@@ -80,11 +85,15 @@ function Nav() {
 					<h2 onClick={() => change(false)}>🇬🇧 English</h2>
 				</div>
 				<br />
-				<a href="/projects">{!+language ? "Projects" : "Projekty"} </a>
+				<Link href="/projects">
+					{!+language ? "Projects" : "Projekty"}{" "}
+				</Link>
 				<br />
-				<a href="/blogs">{!+language ? "Blogs" : "Blogy"} </a>
+				<Link href="/blogs">{!+language ? "Blogs" : "Blogy"} </Link>
 				<br />
-				<a href="/aboutme">{!+language ? "About me" : "O mně"} </a>
+				<Link href="/aboutme">
+					{!+language ? "About me" : "O mně"}{" "}
+				</Link>
 				<br />
 			</div>
 		</div>

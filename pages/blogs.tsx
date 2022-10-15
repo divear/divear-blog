@@ -15,7 +15,7 @@ function Blogs() {
 			<div className="blogs">
 				{blogs[+lang].map((e, i) => {
 					return (
-						<div className="blog">
+						<div className="blog" key={i}>
 							<div className="desc">
 								<img
 									onClick={() =>
@@ -28,7 +28,11 @@ function Blogs() {
 									alt="blog image"
 								/>
 								<br />
-								<a href={`/a/${e.link}`} className="blogLink">
+								<a
+									rel="noreferrer"
+									href={`/a/${e.link}`}
+									className="blogLink"
+								>
 									{e.name}
 								</a>
 								<h5>{e.desc}</h5>

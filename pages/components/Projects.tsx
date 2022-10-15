@@ -45,7 +45,11 @@ function Projects() {
 				</h1>
 				{shortProjects.map((e, i) => {
 					return (
-						<div className="project" onClick={() => open(e.link)}>
+						<div
+							key={i}
+							className="project"
+							onClick={() => open(e.link)}
+						>
 							<Image
 								className="showoffImage"
 								width={480}
@@ -55,6 +59,7 @@ function Projects() {
 							<br />
 							<div className="smallProjectDesc">
 								<a
+									rel="noreferrer"
 									className="blogLink"
 									href={e.link}
 									target="_blank"

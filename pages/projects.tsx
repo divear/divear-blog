@@ -49,7 +49,7 @@ function Projects() {
 
 			{projects[+lang].map((e, i) => {
 				return (
-					<div className="bigProject">
+					<div key={i} className="bigProject">
 						<Meta title="My projects" />
 						<button
 							onClick={() =>
