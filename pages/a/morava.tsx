@@ -23,7 +23,8 @@ function Morava() {
 				<p>
 					I watched a Tom Scott video and his north-o-meter, that
 					inspired me to this idea... ok, i might have copied his
-					exact idea and "czeched" it but that's besides the point.
+					exact idea and &quot;czeched&quot; it but that&apos;s
+					besides the point.
 				</p>
 			</article>
 		</div>

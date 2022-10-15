@@ -56,12 +56,10 @@ function Nav() {
 
 			<div className={isPhone ? "no" : "redirs"}>
 				<Link href="/projects">
-					{!+language ? "Projects" : "Projekty"}{" "}
+					{!+language ? "Projects" : "Projekty"}
 				</Link>
 				<Link href="/blogs">{!+language ? "Blogs" : "Blogy"} </Link>
-				<Link href="/aboutme">
-					{!+language ? "About me" : "O mně"}{" "}
-				</Link>
+				<Link href="/aboutme">{!+language ? "About me" : "O mně"}</Link>
 			</div>
 			<div className={modal && !isPhone ? "langModal" : "no"}>
 				<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
@@ -86,14 +84,12 @@ function Nav() {
 				</div>
 				<br />
 				<Link href="/projects">
-					{!+language ? "Projects" : "Projekty"}{" "}
+					{!+language ? "Projects" : "Projekty"}
 				</Link>
 				<br />
-				<Link href="/blogs">{!+language ? "Blogs" : "Blogy"} </Link>
+				<Link href="/blogs">{!+language ? "Blogs" : "Blogy"}</Link>
 				<br />
-				<Link href="/aboutme">
-					{!+language ? "About me" : "O mně"}{" "}
-				</Link>
+				<Link href="/aboutme">{!+language ? "About me" : "O mně"}</Link>
 				<br />
 			</div>
 		</div>
