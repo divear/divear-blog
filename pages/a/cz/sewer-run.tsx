@@ -6,13 +6,13 @@ function Sewer() {
 	return (
 		<div className="content">
 			<Meta title="Sewer run" />
-			<Image
+			<img
 				className="floatRight smallImg"
 				src="https://img.itch.zone/aW1hZ2UvOTExOTUyLzUxNTU5MjMucG5n/original/xCH97m.png"
 				alt="sewer run screenshot"
 			/>
 
-			<h1>Jak jsem získal svou profilovku</h1>
+			<h1 className="pfpTitle">Jak jsem získal svou profilovku</h1>
 			<article>
 				<p>
 					Kdysy jsem dělal videohry. Jedna z nich se jmenovala

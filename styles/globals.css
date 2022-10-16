@@ -211,6 +211,7 @@ button:hover {
 	padding: 1vh 1vw 0 0;
 }
 .smallImg {
+	float: right;
 	margin: 2%;
 	width: 50%;
 	border-radius: 0.1vw;
@@ -563,5 +564,13 @@ button:hover {
 	}
 	.social {
 		margin: 2vw;
+	}
+	.smallImg {
+		width: 100%;
+		border-radius: 1vw;
+	}
+	.pfpTitle {
+		padding: 1vw;
+		margin: 0 2vw;
 	}
 }
