@@ -77,7 +77,10 @@ function Nav() {
 				onClick={() => setTree(false)}
 				className={tree ? "blackOverlay" : "no"}
 			/>
-			<div className={tree ? "tree" : "no"}>
+			<div
+				onClick={() => setTree(false)}
+				className={tree ? "tree" : "no"}
+			>
 				<div className="treeLangModal">
 					<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
 					<h2 onClick={() => change(false)}>🇬🇧 English</h2>
