@@ -37,7 +37,14 @@ function Nav() {
 		localStorage.setItem("language", isCz ? "CZ" : "EN");
 		setLanguage(isCz);
 		setModal(false);
-		location.reload();
+		console.log("d");
+
+		if (language) {
+			location.href = location.href.replace("/cz", "");
+		} else {
+			location.href = location.href.replace("/a", "/a/cz");
+		}
+		// location.reload();
 	}
 
 	return (
