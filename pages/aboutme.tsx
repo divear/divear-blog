@@ -68,6 +68,20 @@ function Aboutme() {
 					discord
 				</a>
 			</h1>
+			<div className="contactme">
+				<h1 className="center headerText">Contact me</h1>
+				<label htmlFor="name">Name</label>
+				<input type="text" id="name" />
+				<label htmlFor="email">Email address</label>
+				<input type="email" id="email" />
+				<label htmlFor="message">Your message</label>
+				<textarea
+					name="message"
+					id="message"
+					cols={30}
+					rows={10}
+				></textarea>
+			</div>
 		</div>
 	);
 }
