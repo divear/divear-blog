@@ -15,7 +15,6 @@ function Blogs() {
 	}, []);
 	return (
 		<div>
-			<Meta title="Blogs" />
 			<div className="smallBlogs blogs">
 				<h1
 					style={{
