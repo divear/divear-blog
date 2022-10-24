@@ -425,15 +425,22 @@ button:hover {
 	margin: auto;
 }
 .contactme {
+	width: 30%;
 	background-color: var(--dark);
 	font-size: 2rem;
-	padding: 1vw;
+	padding: 2vh 2vw;
 }
 .contactme textarea,
 input {
 	margin: 1vh 100% 0 0;
 	font-size: 2rem;
 }
+.sendButton {
+	margin: 1vh 0;
+	position: relative;
+	left: 75%;
+}
+
 /* mobile view */
 @media only screen and (max-width: 830px) {
 	* {
@@ -582,5 +589,22 @@ input {
 	.pfpTitle {
 		padding: 1vw;
 		margin: 0 2vw;
+	}
+	.contactme {
+		width: 95%;
+		background-color: var(--dark);
+		font-size: 2rem;
+		padding: 2vh 2vw;
+	}
+	.contactme textarea,
+	input {
+		width: 90%;
+		margin: 1vh 100% 0 0;
+		font-size: 2rem;
+	}
+	.sendButton {
+		margin: 1vh 0;
+		position: relative;
+		left: 75%;
 	}
 }

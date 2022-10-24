@@ -78,10 +78,10 @@ function Aboutme() {
 				<textarea
 					name="message"
 					id="message"
-					cols={30}
-					rows={10}
+					cols={20}
+					rows={5}
 				></textarea>
-				<button>send</button>
+				<button className="sendButton">send</button>
 			</div>
 		</div>
 	);
