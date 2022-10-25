@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import github from "./components/imgs/socmedia/github.png";
 import twitter from "./components/imgs/socmedia/twitter.png";
 import youtube from "./components/imgs/socmedia/youtube.png";
 import Image from "next/image";
 import Meta from "./components/Meta";
+import emailjs from "@emailjs/browser";
 
 const socials = [
 	[github, "https://github.com/lukascobit", "lukascobit"],
@@ -18,6 +19,30 @@ const socials = [
 
 function Aboutme() {
 	const [lang, setLang] = useState(false);
+	const [username, setUsername] = useState("");
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
+	const form = useRef();
+
+	const sendEmail = (e: any) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				process.env.NEXT_PUBLIC_EMAIL_ID.toString(),
+				process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
+				form.current,
+				"YOUR_PUBLIC_KEY"
+			)
+			.then(
+				(result: any) => {
+					console.log(result.text);
+				},
+				(error: any) => {
+					console.log(error.text);
+				}
+			);
+	};
 
 	useEffect(() => {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
@@ -68,21 +93,35 @@ function Aboutme() {
 					discord
 				</a>
 			</h1>
-			<div className="contactme">
+			<form onSubmit={(e) => sendEmail(e)} className="contactme">
 				<h1 className="center headerText">Contact me</h1>
 				<label htmlFor="name">Name</label>
-				<input type="text" id="name" />
+				<input
+					onChange={(e) => setUsername(e.target.value)}
+					value={username}
+					type="text"
+					id="name"
+				/>
 				<label htmlFor="email">Email address</label>
-				<input type="email" id="email" />
+				<input
+					onChange={(e) => setEmail(e.target.value)}
+					value={email}
+					type="email"
+					id="email"
+				/>
 				<label htmlFor="message">Your message</label>
 				<textarea
 					name="message"
 					id="message"
+					onChange={(e) => setMessage(e.target.value)}
+					value={message}
 					cols={20}
 					rows={5}
 				></textarea>
-				<button className="sendButton">send</button>
-			</div>
+				<button type="submit" className="sendButton">
+					send
+				</button>
+			</form>
 		</div>
 	);
 }
