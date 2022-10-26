@@ -22,21 +22,27 @@ function Aboutme() {
 	const [username, setUsername] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
-	const form = useRef();
+	const form: any = useRef();
+	const emailenv: any = {
+		id: process.env.NEXT_PUBLIC_EMAIL_ID,
+		tempid: process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
+		userid: process.env.NEXT_PUBLIC_EMAIL_USER_ID,
+	};
 
 	const sendEmail = (e: any) => {
 		e.preventDefault();
 
 		emailjs
 			.sendForm(
-				process.env.NEXT_PUBLIC_EMAIL_ID.toString(),
-				process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
+				emailenv.id,
+				emailenv.tempid,
 				form.current,
-				"YOUR_PUBLIC_KEY"
+				emailenv.userid
 			)
 			.then(
 				(result: any) => {
 					console.log(result.text);
+					console.log("success");
 				},
 				(error: any) => {
 					console.log(error.text);
@@ -93,7 +99,11 @@ function Aboutme() {
 					discord
 				</a>
 			</h1>
-			<form onSubmit={(e) => sendEmail(e)} className="contactme">
+			<form
+				ref={form}
+				onSubmit={(e) => sendEmail(e)}
+				className="contactme"
+			>
 				<h1 className="center headerText">Contact me</h1>
 				<label htmlFor="name">Name</label>
 				<input
