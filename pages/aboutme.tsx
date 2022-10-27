@@ -41,6 +41,9 @@ function Aboutme() {
 			)
 			.then(
 				(result: any) => {
+					console.table(result);
+					console.log(form.current);
+
 					console.log(result.text);
 					console.log("success");
 				},
@@ -108,6 +111,7 @@ function Aboutme() {
 				<label htmlFor="name">Name</label>
 				<input
 					onChange={(e) => setUsername(e.target.value)}
+					name="user_name"
 					value={username}
 					type="text"
 					id="name"
@@ -115,6 +119,7 @@ function Aboutme() {
 				<label htmlFor="email">Email address</label>
 				<input
 					onChange={(e) => setEmail(e.target.value)}
+					name="user_email"
 					value={email}
 					type="email"
 					id="email"
