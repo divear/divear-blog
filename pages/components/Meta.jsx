@@ -14,6 +14,42 @@ function Meta({ title, keywords, description }) {
 			<meta charSet="utf-8" />
 			<link rel="icon" href="/favicon.ico" />
 			<title>{title}</title>
+
+			<meta name="author" content="divear" />
+			<meta
+				content="Divear - personal site"
+				property="og:title"
+			/>
+			<meta content="https://divear.me" property="og:url" />
+			<meta
+				content="https://divear.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FfooterImg.d6b99548.png&w=3840&q=75"
+				property="og:image"
+			/>
+			<meta property="og:type" content="website" />
+			<meta
+				content="Divear's personal site"
+				property="og:description"
+			/>{" "}
+			<meta
+				content="#022129"
+				data-react-helmet="true"
+				name="theme-color"
+			/>
+			{/* twitter */}
+			<meta name="twitter:card" content="summary_large_image"></meta>
+			<meta name="twitter:title" content="Divear's personal site" />
+			<meta
+				name="twitter:description"
+				content="Divear's personal site"
+			/>
+			<meta name="twitter:creator" content="@divear0" />
+			<meta
+				name="twitter:image"
+				content="https://morava.lol/_next/static/media/mapa3.ca826749.jpg"
+			/>
+			<meta name="twitter:domain" content="https://divear.me/" />
+
+
 		</Head>
 	);
 }
