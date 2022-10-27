@@ -5,7 +5,8 @@ import twitter from "./components/imgs/socmedia/twitter.png";
 import youtube from "./components/imgs/socmedia/youtube.png";
 import Image from "next/image";
 import Meta from "./components/Meta";
-import emailjs from "@emailjs/browser";
+import { app, getFirestore, addDoc, collection } from "./components/firebase";
+const db = getFirestore(app);
 
 const socials = [
 	[github, "https://github.com/lukascobit", "lukascobit"],
@@ -22,31 +23,25 @@ function Aboutme() {
 	const [username, setUsername] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
-	const form = useRef();
-
-	const sendEmail = (e: any) => {
-		e.preventDefault();
-
-		emailjs
-			.sendForm(
-				process.env.NEXT_PUBLIC_EMAIL_ID.toString(),
-				process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
-				form.current,
-				"YOUR_PUBLIC_KEY"
-			)
-			.then(
-				(result: any) => {
-					console.log(result.text);
-				},
-				(error: any) => {
-					console.log(error.text);
-				}
-			);
-	};
 
 	useEffect(() => {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
 	}, []);
+	async function sendCont(e: any) {
+		e.preventDefault();
+		try {
+			const docRef = await addDoc(
+				collection(db, email.replaceAll("/", "")),
+				{
+					email,
+					username,
+					message,
+				}
+			);
+		} catch (e) {
+			console.error("Error adding document: ", e);
+		}
+	}
 	return (
 		<div className="content">
 			<Meta title="About me" />
@@ -93,23 +88,27 @@ function Aboutme() {
 					discord
 				</a>
 			</h1>
-			<form onSubmit={(e) => sendEmail(e)} className="contactme">
-				<h1 className="center headerText">Contact me</h1>
-				<label htmlFor="name">Name</label>
+			<form onSubmit={(e) => sendCont(e)} className="contactme">
+				<h1 className="center headerText">
+					{lang ? "Kontaktuj mě" : "Contact me"}
+				</h1>
+				<label htmlFor="name">{lang ? "Jméno" : "Name"}</label>
 				<input
 					onChange={(e) => setUsername(e.target.value)}
 					value={username}
 					type="text"
 					id="name"
 				/>
-				<label htmlFor="email">Email address</label>
+				<label htmlFor="email">Email</label>
 				<input
 					onChange={(e) => setEmail(e.target.value)}
 					value={email}
 					type="email"
 					id="email"
 				/>
-				<label htmlFor="message">Your message</label>
+				<label htmlFor="message">
+					{lang ? "Vaše zpráva" : "Your message"}
+				</label>
 				<textarea
 					name="message"
 					id="message"
@@ -119,7 +118,7 @@ function Aboutme() {
 					rows={5}
 				></textarea>
 				<button type="submit" className="sendButton">
-					send
+					{lang ? "Odeslat" : "Send"}
 				</button>
 			</form>
 		</div>
