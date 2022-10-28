@@ -3,7 +3,7 @@ import wave
 import pyttsx3
 from pydub import AudioSegment
 
-username = "Martin"
+username = "Petr Novák"
 
 
 
@@ -14,7 +14,7 @@ voices = engine.getProperty('voices')
 
 engine.setProperty('voice', "czech")
 engine.setProperty('rate', 150)
-engine.setProperty('volume', 1.5)
+engine.setProperty('volume', 5.5)
 engine.save_to_file(username, "./name.wav")
 
 engine.runAndWait()
