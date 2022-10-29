@@ -1,32 +1,69 @@
+from email.mime import base
+from http import server
 import pyttsx3
-import wave
 import pyttsx3
 from pydub import AudioSegment
+from http.server import HTTPServer, BaseHTTPRequestHandler
+import urllib.parse as urlparse
+import base64
 
-username = "Petr Novák"
+# from urllib.parse import urlencode, parse_qs, uses_relative
 
 
+HOST = "localhost"
+PORT = 9000
 
+
+# todo: make the server take in the name, gen the song & then send to back
+
+
+# sound
 engine = pyttsx3.init()
 
 voices = engine.getProperty('voices')
 
-
 engine.setProperty('voice', "czech")
 engine.setProperty('rate', 150)
 engine.setProperty('volume', 5.5)
-engine.save_to_file(username, "./name.wav")
-
-engine.runAndWait()
 
 
+def soundgen(u):
+    print("starting soundgen")
+    engine.save_to_file(u, "./output/name.wav")
+    print("save")
+    engine.runAndWait()
+    print("name generated")
 
-sound0 = AudioSegment.from_file("./name.wav", format="wav")
-sound1 = AudioSegment.from_file("./volati1.wav", format="wav")
-sound2 = AudioSegment.from_file("./volati2.wav", format="wav")
+    sound0 = AudioSegment.from_file(
+        "./output/name.wav", format="wav")
+    sound1 = AudioSegment.from_file("./input/volati1.wav", format="wav")
+    sound2 = AudioSegment.from_file("./input/volati2.wav", format="wav")
 
-comb = sound0 + sound1 + sound0 + sound2
+    comb = sound0 + sound1 + sound0 + sound2
+    comb.export("./output/output.mp3", format="mp3")
+    print("ringtone generated")
 
-file_handle = comb.export("./output.mp3", format="mp3")
+
+class NeuralHTTP(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("Content-type", "text/html")
+        self.end_headers()
+        n = urlparse.parse_qs(urlparse.urlparse(
+            self.path).query).get('n', None)
+        username = n[0]
+        print(username)
+        soundgen(username)
+        output = base64.encode(open('./output/output.mp3', 'rb'),
+                               open('./output/baseout.dat', 'wb'))
+        o = open("./output/baseout.dat").readlines()
+
+        self.wfile.write(
+            bytes("<html><body>% s</body></html>" % o, "utf-8"))
 
 
+server = HTTPServer((HOST, PORT), NeuralHTTP)
+print("server running")
+server.serve_forever()
+server.server_close()
+print("server stopped")
