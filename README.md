@@ -1,3 +1,10 @@
-# my personal blog
+# My personal blog/portfolio/personal site
 
-my repo called personal_blog is not really a personal blog and it sucks so here it is done propertly i hope
+On this site I'll be posting blogs about some topics I find interesting or just to put all my stuff in one place
+
+[You can find it here](https://divear.me)
+
+It's available in:
+
+-   czech 🇨🇿
+-   english🇬🇧
