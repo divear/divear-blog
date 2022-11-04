@@ -17,9 +17,9 @@ import Meta from "./components/Meta";
 
 const imgs = [
 	[morava, morava1, morava2],
-	[drby, drby1, drby2],
-	[malo, malo1, malo2],
 	[chalky, chalky1, chalky2],
+	[malo, malo1, malo2],
+	[drby, drby1, drby2],
 ];
 
 function Projects() {
