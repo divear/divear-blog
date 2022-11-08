@@ -1,0 +1,14 @@
+{
+	"name": "ringtonegen",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "GPL3",
+	"scripts": {
+		"start": "vercel dev",
+		"deploy": "vercel deploy --prod",
+		"build": "vercel build"
+	},
+	"devDependencies": {
+		"vercel": "^19.2.0"
+	}
+}
