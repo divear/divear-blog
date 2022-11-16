@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Meta from "../../components/Meta";
-const { spawn } = require("child_process");
 
 function Vola() {
 	const [username, setUsername] = useState("");
