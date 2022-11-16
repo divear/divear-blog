@@ -6,10 +6,14 @@ import urllib.parse as urlparse
 import base64
 
 # from urllib.parse import urlencode, parse_qs, uses_relative
-
+print("start")
 
 HOST = "localhost"
 PORT = 9000
+
+
+# check if the logs on pythonanywhere change, they probably don't so figure it out somehow
+
 
 # sound
 engine = pyttsx3.init()

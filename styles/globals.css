@@ -105,7 +105,7 @@ button:hover {
 	top: 0%;
 	z-index: 1;
 	background-color: var(--dark);
-	padding: 0.2vw;
+	padding: 0 0.2vw;
 }
 .logoText {
 	cursor: pointer;
