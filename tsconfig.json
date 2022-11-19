@@ -19,7 +19,8 @@
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"pages/components/Meta.jsx"
+		"pages/components/Meta.jsx",
+		"server/index.js"
 	],
 	"exclude": ["node_modules"]
 }

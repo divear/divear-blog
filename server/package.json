@@ -12,6 +12,9 @@
 		"vercel": "^19.2.0"
 	},
 	"dependencies": {
-		"firebase": "^9.14.0"
+		"firebase": "^9.14.0",
+		"fluent-ffmpeg": "^2.1.2",
+		"fs": "^0.0.1-security",
+		"nodemon": "^2.0.20"
 	}
 }

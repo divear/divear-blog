@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import blogs from "./blogs.json";
+import Meta from "./components/Meta";
 
 function Blogs() {
 	const [lang, setLang] = useState(false);
@@ -9,6 +10,7 @@ function Blogs() {
 	}, []);
 	return (
 		<div className="content">
+			<Meta title={+lang ? "Blogy" : "Blogs"} />
 			<h1 className="headerText center">
 				{+lang ? "Moje články" : "My blogs"}
 			</h1>

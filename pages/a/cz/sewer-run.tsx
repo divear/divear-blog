@@ -1,6 +1,5 @@
 import React from "react";
 import Meta from "../../components/Meta";
-import Image from "next/image";
 
 function Sewer() {
 	return (
@@ -15,10 +14,9 @@ function Sewer() {
 			<h1 className="pfpTitle">Jak jsem získal svou profilovku</h1>
 			<article>
 				<p>
-					Kdysy jsem dělal videohry. Jedna z nich se jmenovala
-					&quot;sewer run&quot;, byla to hra o týpkovi, co spadl do
-					stoky a snažil se probojovat ven. Ikonickou hlavní postavu
-					jsem si po pár měsicích dal jako profilovku.
+					Hra vytvořena v lednu 2021 &quot;sewer run&quot;, moje první
+					reálná hra. Ikonickou hlavní postavu jsem si po pár měsicích
+					dal jako profilovku. Popravdě ta hra není zas tak špatná.
 					<br />
 					<a
 						rel="noreferrer"
