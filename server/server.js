@@ -8,6 +8,7 @@ const path = require("path");
 
 app.get("/", function (req, res) {
 	const input = req.query.input;
+	console.log(`input: ${input}`);
 
 	const firstPath = path.join(__dirname, "first.wav");
 	gtts.save(firstPath, input, function () {

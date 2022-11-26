@@ -5,9 +5,9 @@ function Vola() {
 	const [username, setUsername] = useState("");
 	function generate() {}
 
-	fetch("http://localhost:4000/?input=helel")
-		.then((response) => response.json())
-		.then((data) => console.log(data));
+	fetch("http://localhost:4000/?input=helel").then((data) =>
+		console.log(data)
+	);
 
 	return (
 		<div className="content">
