@@ -3,15 +3,29 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
+	"engines": {
+		"node": "16.x"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node server.js",
-		"dev": "nodemon server.js",
-		"build": "node server.js"
+		"start": "./node_modules/.bin/netlify-lambda serve src",
+		"build": "./node_modules/.bin/netlify-lambda build src",
+		"dev": "nodemon server.ts",
+		"postinstall": "npm run build"
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"firebase": "^9.14.0"
+		"express": "^4.18.2",
+		"ffmpeg": "^0.0.4",
+		"firebase": "^9.14.0",
+		"fluent-ffmpeg": "^2.1.2",
+		"fs": "^0.0.1-security",
+		"gtts": "^0.2.1",
+		"netlify-lambda": "^2.0.15",
+		"node-gtts": "^2.0.2",
+		"path": "^0.12.7",
+		"serverless-http": "^3.1.0",
+		"typescript": "^4.9.3"
 	}
 }

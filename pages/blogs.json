@@ -15,12 +15,6 @@
 	],
 	[
 		{
-			"name": "Někdo ti volá generátor",
-			"desc": "Vygeneruj si svůj vyzváněcí tón",
-			"link": "cz/nekdovola",
-			"img": "https://images.unsplash.com/photo-1586996157600-590ad5dc61b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-		},
-		{
 			"name": "Top nejlepší šaliny v Brně",
 			"desc": "Moje nové postironické video",
 			"link": "cz/saliny",

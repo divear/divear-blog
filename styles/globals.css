@@ -23,6 +23,10 @@ body {
 * {
 	font-family: "Inter", sans-serif;
 }
+audio {
+	width: 100%;
+	height: 10vw;
+}
 a {
 	color: var(--secBg);
 	text-decoration: none;
