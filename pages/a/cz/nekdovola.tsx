@@ -3,22 +3,24 @@ import Meta from "../../components/Meta";
 import { useSpeechSynthesis } from "react-speech-kit";
 
 function Vola() {
-	const [ready, setReady] = useState(false);
 	const [username, setUsername] = useState("");
 	const v0: any = useRef();
+	const v1: any = useRef();
 	// const audio = new Audio("./volati0.wav");
 
 	const { speak, voices } = useSpeechSynthesis();
+	const czech = voices[54];
 	function generate() {
-		// audio.load();
-		// audio.play();
-		v0.current.play();
-		const d = document.getElementById("v0");
-
-		console.log(v0.current);
-
-		// await speak({ text: username });
-		console.log(voices);
+		speak({ text: username, voice: czech });
+		setTimeout(() => {
+			v0.current.play();
+		}, 700);
+	}
+	function end() {
+		speak({ text: username, voice: czech });
+		setTimeout(() => {
+			v1.current.play();
+		}, 700);
 	}
 
 	return (
@@ -40,13 +42,22 @@ function Vola() {
 				{username || "někdo"} volá, zvedni to!
 			</p>{" "}
 			<audio
+				className="no"
+				onEnded={end}
 				ref={v0}
 				id="v0"
 				src={`https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/audio%2Fvolati1.wav?alt=media`}
 				controls
 			/>
+			<audio
+				className="no"
+				ref={v1}
+				id="v1"
+				src={`https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/audio%2Fvolati2.wav?alt=media`}
+				controls
+			/>
 			<button className="generovatButton" onClick={generate}>
-				Generovat
+				Spustit
 			</button>
 		</div>
 	);
