@@ -24,7 +24,7 @@ function Vola() {
 	}
 
 	return (
-		<div className="content">
+		<div className="content nekdovola">
 			<Meta title="Někdo ti volá" />
 			<h1>Někdo ti volá generátor</h1>
 			<p>
@@ -34,6 +34,7 @@ function Vola() {
 					value={username}
 					onChange={(e) => setUsername(e.target.value)}
 				/>
+				<br />
 				je právě na drátě,
 				<br />
 				chce s tebou pokecat, <br />

@@ -1,0 +1,14 @@
+/home/lukas/Documents/coding/divear-blog/rust/target/debug/deps/bevy_hecs-ae8e29348d2b57af.rmeta: /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/lib.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/archetype.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/borrow.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/bundle.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/entities.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/entity_builder.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/query.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/query_one.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/serde.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/world.rs
+
+/home/lukas/Documents/coding/divear-blog/rust/target/debug/deps/bevy_hecs-ae8e29348d2b57af.d: /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/lib.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/archetype.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/borrow.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/bundle.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/entities.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/entity_builder.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/query.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/query_one.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/serde.rs /home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/world.rs
+
+/home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/lib.rs:
+/home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/archetype.rs:
+/home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/borrow.rs:
+/home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/bundle.rs:
+/home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/entities.rs:
+/home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/entity_builder.rs:
+/home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/query.rs:
+/home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/query_one.rs:
+/home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/serde.rs:
+/home/lukas/.cargo/registry/src/github.com-1ecc6299db9ec823/bevy_hecs-0.1.3/src/world.rs:

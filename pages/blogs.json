@@ -15,6 +15,12 @@
 	],
 	[
 		{
+			"name": "Generátor vyzváněcího tónu",
+			"desc": "Nemějte nudné tóny, pojdte si nějaké vygenerovat!",
+			"link": "cz/nekdovola",
+			"img": "https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/1729/2017/04/15032337/m8_inference_one_proportion_topic_8_2_m8_intro_hypothesis_testing_5_cellphone_braincancer.jpg"
+		},
+		{
 			"name": "Top nejlepší šaliny v Brně",
 			"desc": "Moje nové postironické video",
 			"link": "cz/saliny",
