@@ -5,7 +5,7 @@ import twitter from "./components/imgs/socmedia/twitter.png";
 import youtube from "./components/imgs/socmedia/youtube.png";
 import Image from "next/image";
 import Meta from "./components/Meta";
-import { app, getFirestore, addDoc, collection } from "./firebase";
+import { app, getFirestore, addDoc, collection } from "./components/firebase";
 const db = getFirestore(app);
 
 const socials = [
