@@ -19,7 +19,7 @@ function Morava() {
 				<a rel="noreferrer" href="https://morava.lol/">
 					visit the site here
 				</a>
-				<h1>How was it born?</h1>
+				<h1>How was it created?</h1>
 				<p>
 					I watched a Tom Scott video and his north-o-meter, that
 					inspired me to this idea... ok, i might have copied his
