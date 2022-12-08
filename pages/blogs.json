@@ -15,10 +15,10 @@
 	],
 	[
 		{
-			"name": "Někdo ti volá generátor",
-			"desc": "Vygeneruj si svůj vyzváněcí tón",
+			"name": "Generátor vyzváněcího tónu",
+			"desc": "Nemějte nudné tóny, pojdte si nějaké vygenerovat!",
 			"link": "cz/nekdovola",
-			"img": "https://images.unsplash.com/photo-1586996157600-590ad5dc61b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+			"img": "https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/1729/2017/04/15032337/m8_inference_one_proportion_topic_8_2_m8_intro_hypothesis_testing_5_cellphone_braincancer.jpg"
 		},
 		{
 			"name": "Top nejlepší šaliny v Brně",
