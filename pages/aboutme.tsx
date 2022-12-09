@@ -5,8 +5,13 @@ import twitter from "./components/imgs/socmedia/twitter.png";
 import youtube from "./components/imgs/socmedia/youtube.png";
 import Image from "next/image";
 import Meta from "./components/Meta";
-import { app, getFirestore, addDoc, collection } from "./firebase";
-const db = getFirestore(app);
+// import {
+// 	app,
+// 	getFirestore,
+// 	addDoc,
+// 	collection,
+// } from "./components/firebase/firebase";
+// const db = getFirestore(app);
 
 const socials = [
 	[github, "https://github.com/lukascobit", "lukascobit"],
@@ -30,14 +35,14 @@ function Aboutme() {
 	async function sendCont(e: any) {
 		e.preventDefault();
 		try {
-			const docRef = await addDoc(
-				collection(db, email.replaceAll("/", "")),
-				{
-					email,
-					username,
-					message,
-				}
-			);
+			// const docRef = await addDoc(
+			// 	collection(db, email.replaceAll("/", "")),
+			// 	{
+			// 		email,
+			// 		username,
+			// 		message,
+			// 	}
+			// );
 		} catch (e) {
 			console.error("Error adding document: ", e);
 		}
