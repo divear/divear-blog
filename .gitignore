@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/rust
 .pnp.js
 
 # testing
