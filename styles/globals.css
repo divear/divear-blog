@@ -430,8 +430,23 @@ button:hover {
 	font-size: 2rem;
 	padding: 2vh 2vw;
 }
-.contactme textarea,
+textarea,
 input {
+	width: 25%;
+	border-radius: 0.1vw;
+	border: none;
+	margin: 1vh 0 0 0;
+	font-size: 2rem;
+}
+textarea,
+input :hover {
+	border-radius: 0vw;
+	border: var(--secD) 2px solid;
+	margin: 1vh 0 0 0;
+	font-size: 2rem;
+}
+.contactInputs {
+	width: 100%;
 	margin: 1vh 100% 0 0;
 	font-size: 2rem;
 }

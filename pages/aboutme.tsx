@@ -99,6 +99,7 @@ function Aboutme() {
 				</h1>
 				<label htmlFor="name">{lang ? "Jméno" : "Name"}</label>
 				<input
+					className="contactInputs"
 					onChange={(e) => setUsername(e.target.value)}
 					value={username}
 					type="text"
@@ -106,6 +107,7 @@ function Aboutme() {
 				/>
 				<label htmlFor="email">Email</label>
 				<input
+					className="contactInputs"
 					onChange={(e) => setEmail(e.target.value)}
 					value={email}
 					type="email"
@@ -115,6 +117,7 @@ function Aboutme() {
 					{lang ? "Vaše zpráva" : "Your message"}
 				</label>
 				<textarea
+					className="contactInputs"
 					name="message"
 					id="message"
 					onChange={(e) => setMessage(e.target.value)}
