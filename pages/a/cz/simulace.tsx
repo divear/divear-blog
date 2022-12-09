@@ -7,6 +7,7 @@ function Simulace() {
 			<Meta title="Simulace" />
 			<h1>Simulace magnetu ig</h1>
 			{/* do this in wasm */}
+			test
 		</div>
 	);
 }
