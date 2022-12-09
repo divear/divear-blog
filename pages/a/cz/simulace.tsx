@@ -9,6 +9,7 @@ function Simulace() {
 
 			<p>test</p>
 			{/* do this in wasm */}
+			<h3>this is a test</h3>
 		</div>
 	);
 }
