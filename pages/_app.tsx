@@ -10,11 +10,11 @@ import { useEffect } from "react";
 function MyApp({ Component, pageProps }: AppProps) {
 	const router = useRouter();
 
-	// useEffect(() => {
-	// 	const analytics = getAnalytics();
-	// 	logEvent(analytics, "notification_received");
-	// 	console.log("analytics");
-	// }, []);
+	useEffect(() => {
+		const analytics = getAnalytics(app);
+		logEvent(analytics, "opened");
+		console.log("analytics");
+	}, [router.events]);
 
 	// useEffect(() => { console.log("got analytics");
 
