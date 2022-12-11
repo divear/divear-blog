@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import map from "../components/imgs/projects/morava/morava1.png";
+import map from "../../components/imgs/projects/morava/morava1.png";
 import Meta from "../../components/Meta";
 
 function Morava() {
