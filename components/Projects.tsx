@@ -6,7 +6,7 @@ import morava2 from "./imgs/projects/morava/morava2.png";
 import malo from "./imgs/projects/malo/malo0.png";
 import malo1 from "./imgs/projects/malo/malo1.png";
 import malo2 from "./imgs/projects/malo/malo2.png";
-import projects from "../projects.json";
+import projects from "../pages/projects.json";
 // ^ this is hell
 
 const imgs = [

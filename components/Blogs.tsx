@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Meta from "./Meta";
-import blogs from "../blogs.json";
+import blogs from "../pages/blogs.json";
 
 function Blogs() {
 	const [lang, setLang] = useState(false);

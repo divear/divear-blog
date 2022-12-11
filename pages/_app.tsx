@@ -1,9 +1,9 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import * as gtag from "../lib/gtag";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-import { getAnalytics, app, logEvent } from "./components/firebase/firebase";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import { getAnalytics, app, logEvent } from "../components/firebase/firebase";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 

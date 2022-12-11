@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import Projects from "./components/Projects";
-import Blogs from "./components/Blogs";
+import Projects from "../components/Projects";
+import Blogs from "../components/Blogs";
 import pfp from "./components/imgs/introPfp.png";
-import Meta from "./components/Meta";
+import Meta from "../components/Meta";
 import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {

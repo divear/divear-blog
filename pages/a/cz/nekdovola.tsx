@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Meta from "../../components/Meta";
+import Meta from "../../../components/Meta";
 import { useSpeechSynthesis } from "react-speech-kit";
 
 function Vola() {

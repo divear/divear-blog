@@ -13,7 +13,7 @@ import chalky from "./components/imgs/projects/chalky/chalky0.png";
 import chalky1 from "./components/imgs/projects/chalky/chalky1.png";
 import chalky2 from "./components/imgs/projects/chalky/chalky2.png";
 import projects from "./projects.json";
-import Meta from "./components/Meta";
+import Meta from "../components/Meta";
 
 const imgs = [
 	[morava, morava1, morava2],
