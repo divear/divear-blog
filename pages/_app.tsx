@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import * as gtag from "../lib/gtag";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { getAnalytics, app, logEvent } from "../components/firebase.js";
@@ -10,11 +9,11 @@ import { useEffect } from "react";
 function MyApp({ Component, pageProps }: AppProps) {
 	const router = useRouter();
 
-	useEffect(() => {
-		const analytics = getAnalytics(app);
-		logEvent(analytics, "opened");
-		console.log("analytics");
-	}, [router.events]);
+	// useEffect(() => {
+	// 	const analytics = getAnalytics(app);
+	// 	logEvent(analytics, "opened");
+	// 	console.log("analytics");
+	// }, [router.events]);
 
 	// useEffect(() => { console.log("got analytics");
 
