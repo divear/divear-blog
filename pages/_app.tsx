@@ -10,8 +10,8 @@ import { useEffect } from "react";
 function MyApp({ Component, pageProps }: AppProps) {
 	const router = useRouter();
 	useEffect(() => {
-		const analytics = getAnalytics(app);
-		logEvent(analytics, "opened");
+		// const analytics = getAnalytics(app);
+		// logEvent(analytics, "opened");
 		// const handleRouteChange = (url: string) => {
 		// 	gtag.pageview(url);
 		// };

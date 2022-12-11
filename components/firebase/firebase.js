@@ -4,6 +4,8 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { getAnalytics, logEvent } from "firebase/analytics";
 
+console.log(process.env);
+
 const firebaseConfig = {
 	apiKey: process.env.NEXT_PUBLIC_API_KEY,
 
