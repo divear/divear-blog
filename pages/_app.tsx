@@ -7,13 +7,11 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
-	const router = useRouter();
-
-	// useEffect(() => {
-	// 	const analytics = getAnalytics(app);
-	// 	logEvent(analytics, "opened");
-	// 	console.log("analytics");
-	// }, [router.events]);
+	useEffect(() => {
+		const analytics = getAnalytics(app);
+		logEvent(analytics, "opened");
+		console.log("analytics");
+	}, []);
 
 	// useEffect(() => { console.log("got analytics");
 
