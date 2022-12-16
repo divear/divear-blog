@@ -21,9 +21,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 
-if (firebase.apps.length === 0) {
-	initializeApp(firebaseConfig);
-}
 const app = initializeApp(firebaseConfig);
 
 export { app, getFirestore, collection, addDoc, getAnalytics, logEvent };
