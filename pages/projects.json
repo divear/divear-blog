@@ -19,6 +19,11 @@
 			"link": "https://drby.netlify.app/",
 			"name": "Drby",
 			"desc": "Post gossip about people"
+		},
+		{
+			"link": "https://postine.netlify.app/",
+			"name": "Postine",
+			"desc": "Platform for sharing videos"
 		}
 	],
 	[
@@ -41,6 +46,11 @@
 			"link": "https://drby.netlify.app/",
 			"name": "Drby",
 			"desc": "Posílejte drby a různé zprávy z Bohunic"
+		},
+		{
+			"link": "https://postine.netlify.app/",
+			"name": "Postine",
+			"desc": "Stránka na sdílení videí"
 		}
 	]
 ]

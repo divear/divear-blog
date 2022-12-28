@@ -12,6 +12,9 @@ import malo2 from "../components/imgs/projects/malo/malo2.png";
 import chalky from "../components/imgs/projects/chalky/chalky0.png";
 import chalky1 from "../components/imgs/projects/chalky/chalky1.png";
 import chalky2 from "../components/imgs/projects/chalky/chalky2.png";
+import postine from "../components/imgs/projects/postine/postine0.png";
+import postine1 from "../components/imgs/projects/postine/postine1.png";
+import postine2 from "../components/imgs/projects/postine/postine2.png";
 import projects from "./projects.json";
 import Meta from "../components/Meta";
 
@@ -20,6 +23,7 @@ const imgs = [
 	[malo, malo1, malo2],
 	[chalky, chalky1, chalky2],
 	[drby, drby1, drby2],
+	[postine, postine1, postine2],
 ];
 
 function Projects() {
