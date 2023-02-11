@@ -458,6 +458,24 @@ input :hover {
 .generovatButton {
 	margin-bottom: 11%;
 }
+.successDiv {
+	z-index: 999;
+	border-radius: 1vw;
+	padding: 0 0.5vw;
+	position: fixed;
+	bottom: 1%;
+	background-color: var(--sec);
+	animation: successSent 1s;
+}
+
+@keyframes successSent {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
 
 /* mobile view */
 @media only screen and (max-width: 830px) {

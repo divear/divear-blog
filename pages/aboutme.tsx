@@ -23,6 +23,7 @@ function Aboutme() {
 	const [username, setUsername] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+	const [sent, setSent] = useState(false);
 
 	useEffect(() => {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
@@ -38,6 +39,7 @@ function Aboutme() {
 					message,
 				}
 			);
+			setSent(true);
 		} catch (e) {
 			console.error("Error adding document: ", e);
 		}
@@ -124,6 +126,9 @@ function Aboutme() {
 					{lang ? "Odeslat" : "Send"}
 				</button>
 			</form>
+			<div className={sent ? "successDiv" : "no"}>
+				<h1>{lang ? "Úspěšně odesláno" : "Succesfully sent!"}</h1>
+			</div>
 		</div>
 	);
 }
