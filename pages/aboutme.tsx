@@ -24,6 +24,7 @@ function Aboutme() {
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 	const [sent, setSent] = useState(false);
+	const [err, setErr] = useState("");
 
 	useEffect(() => {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
@@ -41,6 +42,10 @@ function Aboutme() {
 			);
 			setSent(true);
 		} catch (e) {
+			setErr(
+				lang ? "Všechna pole jsou povinná" : "All fields are mandatory"
+			);
+
 			console.error("Error adding document: ", e);
 		}
 	}
@@ -94,6 +99,7 @@ function Aboutme() {
 				<h1 className="center headerText">
 					{lang ? "Kontaktuj mě" : "Contact me"}
 				</h1>
+				<p className={err ? "error" : "no"}>{err}</p>
 				<label htmlFor="name">{lang ? "Jméno" : "Name"}</label>
 				<input
 					className="contactInputs"
@@ -126,7 +132,10 @@ function Aboutme() {
 					{lang ? "Odeslat" : "Send"}
 				</button>
 			</form>
-			<div className={sent ? "successDiv" : "no"}>
+			<div
+				onClick={() => setSent(false)}
+				className={sent ? "successDiv" : "no"}
+			>
 				<h1>{lang ? "Úspěšně odesláno" : "Succesfully sent!"}</h1>
 			</div>
 		</div>
