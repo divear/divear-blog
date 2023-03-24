@@ -62,7 +62,10 @@ function Aboutme() {
 						: "I'm divear but you may also know me as:"}
 				</p>
 				<ul>
-					<li>{lang ? "Vítěz Purkiády 2023" : ""}</li>
+					<li className={lang ? "Vítěz Purkiády 2023" : "no"}>
+						Vítěz Purkiády 2023
+					</li>
+					<li>Lukáš Odehnal</li>
 					<li>lukascobit</li>
 					<li>lukas_getout</li>
 				</ul>
