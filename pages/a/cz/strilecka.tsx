@@ -21,7 +21,7 @@ function Game() {
 				Google drive
 			</button>
 			(pokud nevíš jakou máš architekturu tak vyber tu, co se jmenuje
-			"nevim")
+			&quot;nevim&quot;)
 			<br />
 			<div className="">
 				<p>Web verze:</p>
