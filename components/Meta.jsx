@@ -57,7 +57,7 @@ function Meta({ title, keywords, description }) {
 Meta.defaultProps = {
 	title: "divear",
 	keywords:
-		"personal,site,divear,person,diver,diveaar,diveár,czech,morava,czechia,eu,europe,evropa, lukas, odehnal, Lukáš Odehnal, Odehnal, armenda, armenska, lukas divear, divearus, lukasus, lukasode, lukas.ode, divear.me, divearme, lukasdivear, odehnaldivear, odehnalik, odelukas, odehnall, odeluk, lukasod, odehlu",
+		"personal,site,divear,person,diver,diveaar,diveár,czech,morava,czechia,eu,europe,evropa, lukas, odehnal, Lukáš Odehnal, Odehnal, armenda, armenska, lukas divear, divearus, lukasus, lukasode, lukas.ode, divear.me, divearme, lukasdivear, odehnaldivear, odehnalik, odelukas, odehnall, odeluk, lukasod, odehlu, person, armenska, purkynka, lukaspurkynka, purkynak, purkynacka, czechboy, brno, mesto, komín, lukasek, lukyn, odehnalll, vodehnal, Lukáš Odehnal,Odehnal, Lukáš",
 	description: "Hi, I'm divear and I make websites.",
 };
 
