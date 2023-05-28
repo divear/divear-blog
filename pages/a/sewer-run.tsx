@@ -6,9 +6,9 @@ function Sewer() {
 	return (
 		<div className="content">
 			<Meta title="Sewer run" />
-			<img
+			<Image
 				className="floatRight smallImg"
-				src="https://img.itch.zone/aW1hZ2UvOTExOTUyLzUxNTU5MjMucG5n/original/xCH97m.png"
+				src="https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FxCH97m.png?alt=media&token=b47eb018-52f5-41ff-8a02-52783404ccfc"
 				alt="sewer run screenshot"
 			/>
 

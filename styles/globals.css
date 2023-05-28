@@ -262,7 +262,7 @@ button:hover {
 	flex: 1 1 auto;
 	font-size: 3rem;
 	float: right;
-	margin: 5vw;
+	margin: 0.5vw;
 }
 .showoffBigImage {
 	cursor: pointer;
@@ -342,13 +342,15 @@ button:hover {
 	color: var(--fr);
 }
 .blogLink {
-	font-size: 1.5rem;
+	font-size: 2rem;
+	font-weight: 600;
+	display: block;
 }
 .blogs {
-	max-width: 50%;
+	max-width: 75%;
 	margin: 2vw 0vw;
 	display: grid;
-	grid-template-columns: repeat(2, auto);
+	grid-template-columns: repeat(4, auto);
 }
 .smallBlogs {
 	max-width: 90% !important;
@@ -356,7 +358,7 @@ button:hover {
 }
 .blog {
 	background-color: var(--dark);
-	border-radius: 1vw;
+	border-radius: 2.2vw;
 	padding: 0vw !important;
 	margin: 1vw;
 }

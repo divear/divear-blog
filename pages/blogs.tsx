@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import blogs from "./blogs.json";
 import Meta from "../components/Meta";
+import Image from "next/image";
 
 function Blogs() {
 	const [lang, setLang] = useState(false);
@@ -19,13 +20,13 @@ function Blogs() {
 					return (
 						<div className="blog" key={i}>
 							<div className="desc">
-								<img
+								<Image
 									onClick={() =>
 										(location.href = `/a/${e.link}`)
 									}
 									className="showoffImage blogImg"
-									width={480}
-									height={270}
+									width={1920}
+									height={1080}
 									src={e.img}
 									alt="blog image"
 								/>

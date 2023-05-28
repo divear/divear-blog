@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import blogs from "../pages/blogs.json";
+import Image from "next/image";
 
 function Blogs() {
 	const [lang, setLang] = useState(false);
@@ -28,7 +29,7 @@ function Blogs() {
 					return (
 						<div className="smallBlog" key={i}>
 							<div className="smallBlogDesc">
-								<img
+								<Image
 									onClick={() =>
 										(location.href = `/a/${e.link}`)
 									}
