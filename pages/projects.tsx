@@ -71,7 +71,7 @@ function Projects() {
 							width={isPhone ? 1440 : 960}
 							height={isPhone ? 810 : 540}
 							src={imgs[i][imgIndex]}
-							alt="showoffBigImage"
+							alt={`showoff image ${i}`}
 						/>
 						<button
 							onClick={() =>
