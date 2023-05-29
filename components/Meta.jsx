@@ -31,7 +31,7 @@ function Meta({ title, keywords, description }) {
 				property="og:description"
 			/>{" "}
 			<meta
-				content="#022129"
+				content="#0a647c"
 				data-react-helmet="true"
 				name="theme-color"
 			/>

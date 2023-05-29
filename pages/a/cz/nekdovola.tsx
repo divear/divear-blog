@@ -60,6 +60,11 @@ function Vola() {
 			<button className="generovatButton" onClick={generate}>
 				Spustit
 			</button>
+			<p>
+				Ze záhadných důvodů tento generátor někdy pustí jen znělku bez
+				jména, v takovém případě tuto stránku otevřete v prohlížeči
+				Firefox
+			</p>
 		</div>
 	);
 }
