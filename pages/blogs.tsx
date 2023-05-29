@@ -28,7 +28,7 @@ function Blogs() {
 									width={1920}
 									height={1080}
 									src={e.img}
-									alt="blog image"
+									alt="blogimage"
 								/>
 								<br />
 								<a

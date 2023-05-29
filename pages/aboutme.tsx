@@ -81,7 +81,12 @@ function Aboutme() {
 							onClick={() => open(s[1].toString(), "_blank")}
 							className="social"
 						>
-							<Image width={100} height={100} src={s[0]}></Image>
+							<Image
+								width={100}
+								height={100}
+								src={s[0]}
+								alt="social media icon"
+							></Image>
 							<h4 className="usernameSpeci">{s[2].toString()}</h4>
 						</button>
 					);

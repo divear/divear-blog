@@ -77,7 +77,12 @@ function Nav() {
 				onClick={() => setTree(!tree)}
 				className={isPhone ? "burgerMenu" : "no"}
 			>
-				<Image src={burger} width={50} height={50}></Image>
+				<Image
+					alt="burgerMenu"
+					src={burger}
+					width={50}
+					height={50}
+				></Image>
 			</div>
 
 			<div

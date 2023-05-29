@@ -17,7 +17,12 @@ function Footer() {
 	];
 	return (
 		<div>
-			<Image draggable={false} className="footerImg" src={foot} />
+			<Image
+				alt="footerImg"
+				draggable={false}
+				className="footerImg"
+				src={foot}
+			/>
 			<div className="footerPar">
 				<div
 					onClick={() =>
@@ -37,6 +42,7 @@ function Footer() {
 								title={s[2].toString()}
 							>
 								<Image
+									alt={`image number ${i}`}
 									width={50}
 									height={50}
 									src={s[0]}
