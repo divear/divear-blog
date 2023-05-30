@@ -405,6 +405,9 @@ button:hover {
 	background-color: transparent;
 	animation: none !important;
 }
+.aboutmeHeader {
+	position: relative;
+}
 .recentBlogsHeader {
 	word-spacing: 100vw;
 	cursor: pointer;
@@ -448,8 +451,8 @@ input :hover {
 	font-size: 2rem;
 }
 .contactInputs {
-	width: 100%;
-	margin: 1vh 100% 0 0;
+	/* width: 100%; */
+	margin: 1vh 1% 0 0;
 	font-size: 2rem;
 }
 .sendButton {
@@ -498,7 +501,8 @@ input :hover {
 		margin: 10vh auto auto auto;
 	}
 	.nav {
-		height: 7%;
+		height: 9vh;
+		width: 100%;
 	}
 	.content {
 		margin: 10vh 1vw;

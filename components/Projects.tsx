@@ -55,6 +55,7 @@ function Projects() {
 								width={480}
 								height={270}
 								src={imgs[i][imgIndex] && imgs[i][imgIndex]}
+								alt="showoffImage"
 							/>
 							<br />
 							<div className="smallProjectDesc">

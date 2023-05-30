@@ -35,6 +35,16 @@ function Meta({ title, keywords, description }) {
 				data-react-helmet="true"
 				name="theme-color"
 			/>
+			<meta
+				content="#0a647c"
+				data-react-helmet="true"
+				name="theme_color"
+			/>
+			<meta
+				content="#022129"
+				data-react-helmet="true"
+				name="background_color"
+			/>
 			{/* twitter */}
 			<meta name="twitter:card" content="summary_large_image"></meta>
 			<meta name="twitter:title" content="Divear's personal site" />
