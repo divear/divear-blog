@@ -9,4 +9,4 @@ On this site I'll be posting blogs about some topics I find interesting or just 
 It's available in:
 
 -   czech 🇨🇿
--   english🇬🇧
+-   english 🇬🇧
