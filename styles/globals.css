@@ -451,8 +451,8 @@ input :hover {
 	font-size: 2rem;
 }
 .contactInputs {
-	/* width: 100%; */
-	margin: 1vh 1% 0 0;
+	width: 100%;
+	margin: 1vh 80% 0 0;
 	font-size: 2rem;
 }
 .sendButton {
@@ -485,6 +485,14 @@ input :hover {
 	color: rgb(255, 35, 35);
 	margin: 0;
 	text-align: center;
+}
+.tempDiscord {
+	position: fixed;
+	font-size: 5rem;
+	background-color: black;
+	padding: 2vw;
+	color: red;
+	z-index: 999999;
 }
 
 /* mobile view */

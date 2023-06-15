@@ -15,6 +15,9 @@ const Home: NextPage = () => {
 	return (
 		<div>
 			<Meta title="divear" />
+			<a className="tempDiscord" href="https://discord.gg/xtnDXMxX9">
+				Klikni sem pro třídní discord
+			</a>
 			<div className="intro">
 				<div className="introText">
 					<h1>{+lang ? "Čau, já jsem diveár" : " Hi, I'm divear"}</h1>
