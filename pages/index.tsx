@@ -19,11 +19,12 @@ const Home: NextPage = () => {
 				Klikni sem pro třídní discord
 			</a>
 			<button
-				onClick={() =>
+				onClick={() => {
 					navigator.clipboard.writeText(
 						"https://discord.gg/xtnDXMxX9"
-					)
-				}
+					);
+					alert("Link zkopírován");
+				}}
 				className="tempDiscord2"
 			>
 				Klikni sem pro zkopírování linku
