@@ -494,6 +494,15 @@ input :hover {
 	color: red;
 	z-index: 999999;
 }
+.tempDiscord2 {
+	position: fixed;
+	bottom: 1%;
+	font-size: 2rem;
+	background-color: black;
+	padding: 2vw;
+	color: red;
+	z-index: 999999;
+}
 
 /* mobile view */
 @media only screen and (max-width: 830px) {

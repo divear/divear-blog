@@ -18,6 +18,16 @@ const Home: NextPage = () => {
 			<a className="tempDiscord" href="https://discord.gg/xtnDXMxX9">
 				Klikni sem pro třídní discord
 			</a>
+			<button
+				onClick={() =>
+					navigator.clipboard.writeText(
+						"https://discord.gg/xtnDXMxX9"
+					)
+				}
+				className="tempDiscord2"
+			>
+				Klikni sem pro zkopírování linku
+			</button>
 			<div className="intro">
 				<div className="introText">
 					<h1>{+lang ? "Čau, já jsem diveár" : " Hi, I'm divear"}</h1>
