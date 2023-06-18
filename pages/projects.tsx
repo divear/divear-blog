@@ -53,7 +53,11 @@ function Projects() {
 
 			{projects[+lang].map((e, i) => {
 				return (
-					<div key={i} className="bigProject">
+					<div
+						onClick={() => (window.location.href = e.link)}
+						key={i}
+						className="bigProject"
+					>
 						<Meta title="My projects" />
 						<button
 							onClick={() =>
@@ -66,7 +70,6 @@ function Projects() {
 							&lt;
 						</button>
 						<Image
-							onClick={() => open(e.link)}
 							className="showoffBigImage"
 							width={isPhone ? 1440 : 960}
 							height={isPhone ? 810 : 540}
