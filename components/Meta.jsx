@@ -55,7 +55,7 @@ function Meta({ title, keywords, description }) {
 			<meta name="twitter:creator" content="@divear0" />
 			<meta
 				name="twitter:image"
-				content="https://morava.lol/_next/static/media/mapa3.ca826749.jpg"
+				content="https://divear.me/_ipx/w_3840,q_75/%2F_next%2Fstatic%2Fmedia%2FfooterImg.d6b99548.png?url=%2F_next%2Fstatic%2Fmedia%2FfooterImg.d6b99548.png&w=3840&q=75"
 			/>
 			<meta name="twitter:domain" content="https://divear.me/" />
 
