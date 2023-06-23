@@ -235,6 +235,10 @@ button:hover {
 	text-align: center;
 	font-size: 1.8rem;
 }
+.introPfp {
+	left: 50% !important;
+	transform: translate(-50%, 0);
+}
 .bigProject {
 	max-width: 85%;
 	color: var(--secBg);
