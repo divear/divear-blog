@@ -24,7 +24,10 @@ const Home: NextPage = () => {
 						src={pfp}
 						alt="pfp"
 					/>
-					<h1>{+lang ? "Čau, já jsem diveár" : " Hi, I'm divear"}</h1>
+					<h1>Lukáš Odehnal</h1>
+					<p className="akaDivear">
+						aka <i>divear</i>
+					</p>
 					<button onClick={() => (location.href = "/projects")}>
 						{+lang
 							? "Podívej na moje projekty👨‍💻"
