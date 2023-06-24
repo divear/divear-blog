@@ -54,7 +54,7 @@ function Projects() {
 			{projects[+lang].map((e, i) => {
 				return (
 					<div
-						onClick={() => (window.location.href = e.link)}
+						onClick={() => open(e.link)}
 						key={i}
 						className="bigProject"
 					>
