@@ -40,9 +40,9 @@ function Nav() {
 		console.log("d");
 
 		if (language) {
-			location.href = location.href.replace("/cz", "");
+			location.href = location.href.replace("/cz/", "/");
 		} else {
-			location.href = location.href.replace("/a", "/a/cz");
+			location.href = location.href.replace("/a/", "/a/cz/");
 		}
 		// location.reload();
 	}

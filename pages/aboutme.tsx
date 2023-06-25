@@ -92,17 +92,6 @@ function Aboutme() {
 					);
 				})}
 			</div>
-			<h1 className="">
-				{lang ? "Máš otázku? Tady je náš " : "Have a question? Ask on "}
-				<a
-					className="headerText"
-					target="_blank"
-					href="https://discord.gg/yv8thy2PKz"
-					rel="noreferrer"
-				>
-					discord
-				</a>
-			</h1>
 			<form onSubmit={(e) => sendCont(e)} className="contactme">
 				<h1 className="center headerText">
 					{lang ? "Kontaktuj mě" : "Contact me"}
