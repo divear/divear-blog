@@ -7,7 +7,7 @@ import youtube from "./imgs/socmedia/youtube.png";
 
 function Footer() {
 	const socials = [
-		[github, "https://github.com/lukascobit", "lukascobit"],
+		[github, "https://github.com/divear", "divear"],
 		[twitter, "https://twitter.com/divear0", "divear0"],
 		[
 			youtube,

@@ -9,7 +9,7 @@ import { app, getFirestore, addDoc, collection } from "../components/firebase";
 const db = getFirestore(app);
 
 const socials = [
-	[github, "https://github.com/lukascobit", "lukascobit"],
+	[github, "https://github.com/divear", "divear"],
 	[twitter, "https://twitter.com/divear0", "divear0"],
 	[
 		youtube,

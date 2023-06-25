@@ -157,7 +157,7 @@ button:hover {
 	cursor: pointer;
 	background-color: var(--dark);
 	border-radius: 1vw;
-	padding: 0vw;
+	padding: 1vw;
 	margin: 1vw;
 }
 .project:hover,
@@ -219,7 +219,7 @@ button:hover {
 .intro {
 	border-radius: 2vw;
 	width: 40%;
-	margin: 5vw auto;
+	margin: 3vw auto;
 }
 .introText {
 	box-sizing: border-box;
