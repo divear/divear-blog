@@ -10,7 +10,7 @@
 	--darkS: rgb(13, 46, 55);
 	--secBg: rgb(179, 230, 243);
 	--frTrans: rgba(179, 230, 243, 0.911);
-	--bgTrans: rgba(0, 15, 19, 0.711);
+	--bgTrans: rgba(0, 15, 19, 0.83);
 }
 
 body {
@@ -253,7 +253,7 @@ button:hover {
 	/* the color switch */
 	background: linear-gradient(to right, var(--darkS) 68%, var(--dark) 50%);
 }
-.bigProject:nth-child(odd) {
+/* .bigProject:nth-child(odd) {
 	color: var(--secBg);
 	border-radius: 2vw;
 	margin: 0 0 2vh 15vw;
@@ -264,7 +264,7 @@ button:hover {
 	float: left;
 	font-size: 3rem;
 	margin: 2vw;
-}
+} */
 
 .desc {
 	flex: 1 1 auto;
@@ -427,7 +427,7 @@ button:hover {
 	color: var(--frTrans);
 }
 .smallProjectDesc {
-	margin: 0 2vw;
+	margin: 0 2vw 5vh 0;
 }
 .downloadButton {
 	margin: 2vw;
@@ -495,26 +495,12 @@ input :hover {
 	margin: 0;
 	text-align: center;
 }
-.tempDiscord {
-	position: fixed;
-	font-size: 5rem;
-	background-color: black;
-	padding: 2vw;
-	color: red;
-	z-index: 999999;
-}
-.tempDiscord2 {
-	position: fixed;
-	bottom: 1%;
-	font-size: 2rem;
-	background-color: black;
-	padding: 2vw;
-	color: red;
-	z-index: 999999;
+.swipechoose {
+	width: 60%;
 }
 
 /* mobile view */
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 1000px) {
 	* {
 		max-width: 100%;
 	}
@@ -591,10 +577,6 @@ input :hover {
 		padding: 0vw !important;
 		margin: 1vw;
 	}
-	.desc {
-		background-color: var(--dark);
-		padding: 1vw;
-	}
 	.smallSocials {
 		display: flex;
 		justify-self: left;
@@ -604,20 +586,24 @@ input :hover {
 	.bigProject {
 		max-width: 95%;
 		color: var(--secBg);
-		border-radius: 2vw;
+		border-radius: 5vw 5vw 0 0;
 		padding: 1vw;
 		text-align: center;
-		margin: 1vh 0 0 0;
+		margin: 8vh 0 0 0;
 		background: none;
-		border-bottom: 3px solid var(--fr);
+		border-bottom: 1px solid var(--fr);
 	}
-	.bigProject:nth-child(odd) {
+	.desc {
+		background-color: var(--dark);
+		padding: 1vw;
+	}
+	/* .bigProject:nth-child(odd) {
 		max-width: 95%;
 		color: var(--secBg);
 		border-radius: 2vw;
 		padding: 1vw;
 		text-align: center;
-		margin: 1vh 0 0 0;
+		margin: -1vh 0 0 0;
 		background: none;
 	}
 	.bigProject:nth-child(odd) .desc {
@@ -625,7 +611,7 @@ input :hover {
 		font-size: 1rem;
 		margin: inherit;
 		padding: 0;
-	}
+	} */
 	.bigProject .scrolls {
 		display: none;
 	}
@@ -636,9 +622,9 @@ input :hover {
 		margin: 0;
 	}
 	.projectDesc {
+		text-align: left;
 		z-index: 99 !important;
-		background-color: transparent;
-		font-size: 1rem;
+		font-size: 1.5rem;
 		margin: -10vh 0 0 0;
 		background-color: var(--bgTrans);
 		border-radius: 1vw;

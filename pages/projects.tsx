@@ -15,6 +15,9 @@ import chalky2 from "../components/imgs/projects/chalky/chalky2.png";
 import postine from "../components/imgs/projects/postine/postine0.png";
 import postine1 from "../components/imgs/projects/postine/postine1.png";
 import postine2 from "../components/imgs/projects/postine/postine2.png";
+import swipechoose0 from "../components/imgs/projects/swipechoose/swipechoose0.png";
+import swipechoose1 from "../components/imgs/projects/swipechoose/swipechoose1.png";
+import swipechoose2 from "../components/imgs/projects/swipechoose/swipechoose2.png";
 import projects from "./projects.json";
 import Meta from "../components/Meta";
 
@@ -24,6 +27,7 @@ const imgs = [
 	[chalky, chalky1, chalky2],
 	[drby, drby1, drby2],
 	[postine, postine1, postine2],
+	[swipechoose0, swipechoose1, swipechoose2],
 ];
 
 function Projects() {
@@ -93,7 +97,7 @@ function Projects() {
 							>
 								{e.name}
 							</h3>
-							<h5>{e.desc}</h5>
+							<p>{e.desc}</p>
 						</div>
 					</div>
 				);

@@ -33,7 +33,6 @@ const Home: NextPage = () => {
 							? "Podívej na moje projekty👨‍💻"
 							: "See my projects 👨‍💻"}
 					</button>
-					I
 				</div>
 			</div>
 			<br />

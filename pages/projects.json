@@ -24,6 +24,11 @@
 			"link": "https://postine.netlify.app/",
 			"name": "Postine",
 			"desc": "Platform for sharing videos"
+		},
+		{
+			"link": "https://swipechoose.netlify.app/",
+			"name": "Swipechoose",
+			"desc": "Site where you choose the better post."
 		}
 	],
 	[
