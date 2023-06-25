@@ -1,6 +1,12 @@
 [
 	[
 		{
+			"name": "New type of social media",
+			"desc": "The idea behind Swipechoose",
+			"link": "swipechoose",
+			"img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FScreenshot 2023-06-25 at 15-52-04 Swipechoose.png?alt=media"
+		},
+		{
 			"name": "How I got my profile picture",
 			"desc": "The story of sewer run",
 			"link": "sewer-run",
