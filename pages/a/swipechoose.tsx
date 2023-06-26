@@ -8,8 +8,8 @@ function Swipechoose() {
 			<h1>Swipechoose: Do likes even matter?</h1>
 			<p>
 				In the world of social media, likes have become a ubiquitous
-				part of our online experience. But let's be real, do they truly
-				hold any meaningful value?
+				part of our online experience. But let&quot;s be real, do they
+				truly hold any meaningful value?
 			</p>
 			<br />
 			<p>
@@ -32,8 +32,8 @@ function Swipechoose() {
 				interactions. Let&quot;s remember that social media is about
 				genuine connections and personal expression, and a little
 				playfulness can go a long way. So, do likes really matter? Maybe
-				it's time to find a better way to engage and enjoy the digital
-				realm. <br />
+				it&quot;s time to find a better way to engage and enjoy the
+				digital realm. <br />
 				You can find the site here:
 				<a href="https://swipechoose.netlify.app/"> Swipechoose</a>
 				<p>Rewritten by chatgpt</p>
