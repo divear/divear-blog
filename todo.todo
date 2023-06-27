@@ -26,4 +26,5 @@
 [x] make the volati gen work
 
 [x] fix language changing bug on aboutme page
+[] fix burger menu not in aboutme
 [] firebase analytics

@@ -677,4 +677,12 @@ input :hover {
 	.generovatButton {
 		margin-bottom: 110%;
 	}
+	.swipechoose {
+		width: 95%;
+	}
+	.contactInputs {
+		width: 95%;
+		margin: 1vh 0% 0 0;
+		font-size: 2rem;
+	}
 }
