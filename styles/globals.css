@@ -166,7 +166,7 @@ button:hover {
 }
 
 .showoffImage {
-	border-radius: 2vw 2vw 0.1vw 0.1vw;
+	border-radius: 1vw 1vw 0.1vw 0.1vw;
 }
 .projectLink {
 	color: var(--fr);

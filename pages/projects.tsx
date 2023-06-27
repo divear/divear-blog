@@ -57,11 +57,7 @@ function Projects() {
 
 			{projects[+lang].map((e, i) => {
 				return (
-					<div
-						onClick={() => open(e.link)}
-						key={i}
-						className="bigProject"
-					>
+					<div key={i} className="bigProject">
 						<Meta title="My projects" />
 						<button
 							onClick={() =>
@@ -74,6 +70,7 @@ function Projects() {
 							&lt;
 						</button>
 						<Image
+							onClick={() => open(e.link)}
 							className="showoffBigImage"
 							width={isPhone ? 1440 : 960}
 							height={isPhone ? 810 : 540}
@@ -90,7 +87,10 @@ function Projects() {
 						>
 							&gt;
 						</button>
-						<div className="desc projectDesc">
+						<div
+							onClick={() => open(e.link)}
+							className="desc projectDesc"
+						>
 							<h3
 								onClick={() => open(e.link)}
 								className="projectLink"
