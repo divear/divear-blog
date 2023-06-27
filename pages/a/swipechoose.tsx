@@ -8,7 +8,7 @@ function Swipechoose() {
 			<h1>Swipechoose: Do likes even matter?</h1>
 			<p>
 				In the world of social media, likes have become a ubiquitous
-				part of our online experience. But let&quot;s be real, do they
+				part of our online experience. But let&#39;s be real, do they
 				truly hold any meaningful value?
 			</p>
 			<br />
@@ -16,30 +16,29 @@ function Swipechoose() {
 				Likes, those little numbers symbolizing approval, often leave us
 				wondering about their true impact. Honestly, when was the last
 				time you looked at a like count and felt any genuine emotional
-				connection or gained valuable insights? Let&quot;s break free
+				connection or gained valuable insights? Let&#39;s break free
 				from the like button monotony and introduce a more interactive
 				and entertaining system. Imagine a social media platform where
 				users are presented with two images side by side and asked to
-				choose which one they prefer. It&quot;s like a mini-game that
+				choose which one they prefer. It&#39;s like a mini-game that
 				adds an element of fun and engagement. Rather than mindlessly
 				scrolling and liking everything, this approach encourages active
-				participation and thoughtfulness. Let&quot;s move beyond the
+				participation and thoughtfulness. Let&#39;s move beyond the
 				like-centric mentality and embrace a more playful user
-				interaction. Conclusion: It&quot;s time to question the true
+				interaction. Conclusion: It&#39;s time to question the true
 				significance of likes in our social media experience. By
 				introducing a more interactive and entertaining approach, we can
 				break free from the mundane and inject some fun into our online
-				interactions. Let&quot;s remember that social media is about
+				interactions. Let&#39;s remember that social media is about
 				genuine connections and personal expression, and a little
 				playfulness can go a long way. So, do likes really matter? Maybe
-				it&quot;s time to find a better way to engage and enjoy the
+				it&#39;s time to find a better way to engage and enjoy the
 				digital realm. <br />
 			</p>
-			<h4>
-				{" "}
+			<h1>
 				You can find the site here:
 				<a href="https://swipechoose.netlify.app/"> Swipechoose</a>
-			</h4>
+			</h1>
 			<p>Rewritten by chatgpt</p>
 		</div>
 	);
