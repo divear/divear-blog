@@ -251,7 +251,7 @@ button:hover {
 	text-align: center;
 	margin: 0 0 2vh 0;
 	/* the color switch */
-	background: linear-gradient(to right, var(--darkS) 68%, var(--dark) 50%);
+	background: linear-gradient(to right, var(--darkS) 72%, var(--dark) 50%);
 }
 /* .bigProject:nth-child(odd) {
 	color: var(--secBg);
@@ -272,11 +272,15 @@ button:hover {
 	float: right;
 	margin: 0.5vw;
 }
+.desc p {
+	float: right;
+	max-width: 90%;
+}
 .showoffBigImage {
 	cursor: pointer;
 	border-radius: 2vh 0vw 0vh 2vw;
 	padding: 0vw;
-	margin: 0 20vw 0 0;
+	margin: 0 0vw 0 0;
 	animation: zoomout 0.5s;
 }
 
