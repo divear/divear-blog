@@ -34,10 +34,13 @@ function Swipechoose() {
 				playfulness can go a long way. So, do likes really matter? Maybe
 				it&quot;s time to find a better way to engage and enjoy the
 				digital realm. <br />
+			</p>
+			<h4>
+				{" "}
 				You can find the site here:
 				<a href="https://swipechoose.netlify.app/"> Swipechoose</a>
-				<p>Rewritten by chatgpt</p>
-			</p>
+			</h4>
+			<p>Rewritten by chatgpt</p>
 		</div>
 	);
 }
