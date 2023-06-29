@@ -14,7 +14,6 @@ function Nav() {
 
 	useEffect(() => {
 		setIsPhone(window.innerWidth < 830);
-		console.log(navigator.language);
 
 		//check if user is czech or slovak & change the site language appropriatly
 		!localStorage.getItem("language") &&
@@ -37,7 +36,6 @@ function Nav() {
 		localStorage.setItem("language", isCz ? "CZ" : "EN");
 		setLanguage(isCz);
 		setModal(false);
-		console.log("d");
 
 		if (language) {
 			location.href = location.href.replace("/cz/", "/");

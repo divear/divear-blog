@@ -2,10 +2,8 @@ import React from "react";
 import Meta from "../../components/Meta";
 import Image from "next/image";
 import swipechooseImg from "../../components/imgs/projects/swipechoose/swipechoose0.png";
-import { useImageClick } from "./useImageClick";
 
 function Swipechoose() {
-	useImageClick();
 	return (
 		<div className="content swipechoose">
 			<Meta title="Swipechoose" />

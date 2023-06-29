@@ -360,7 +360,7 @@ button:hover {
 	display: block;
 }
 .blogs {
-	max-width: 75%;
+	max-width: 95%;
 	margin: 2vw 0vw;
 	display: grid;
 	grid-template-columns: repeat(4, auto);
