@@ -1,7 +1,11 @@
 import React from "react";
 import Meta from "../../components/Meta";
+import Image from "next/image";
+import swipechooseImg from "../../components/imgs/projects/swipechoose/swipechoose0.png";
+import { useImageClick } from "./useImageClick";
 
 function Swipechoose() {
+	useImageClick();
 	return (
 		<div className="content swipechoose">
 			<Meta title="Swipechoose" />
@@ -11,6 +15,13 @@ function Swipechoose() {
 				part of our online experience. But let&#39;s be real, do they
 				truly hold any meaningful value?
 			</p>
+			<Image
+				width={450}
+				height={250}
+				className="floatRight"
+				src={swipechooseImg}
+				alt="Swipechoose img"
+			/>
 			<br />
 			<p>
 				Likes, those little numbers symbolizing approval, often leave us

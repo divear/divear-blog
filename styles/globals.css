@@ -502,6 +502,14 @@ input :hover {
 .swipechoose {
 	width: 60%;
 }
+.imgModal {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0.85) !important;
+	border-radius: 1vw;
+	border: 2px solid var(--fr);
+}
 
 /* mobile view */
 @media only screen and (max-width: 1000px) {
