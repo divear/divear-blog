@@ -1,9 +1,7 @@
 import React from "react";
 import Meta from "../../../components/Meta";
-import { useImageClick } from "../useImageClick";
 
 function Sewer() {
-	useImageClick();
 	return (
 		<div className="content">
 			<Meta title="Sewer run" />
