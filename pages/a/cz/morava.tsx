@@ -2,10 +2,8 @@ import Image from "next/image";
 import React from "react";
 import map from "../../../components/imgs/projects/morava/morava1.png";
 import Meta from "../../../components/Meta";
-import { useImageClick } from "../useImageClick";
 
 function Morava() {
-	useImageClick();
 	return (
 		<div className="content">
 			<Meta title="morava.lol" />

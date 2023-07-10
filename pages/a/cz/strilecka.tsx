@@ -23,16 +23,6 @@ function Game() {
 			(pokud nevíš jakou máš architekturu tak vyber tu, co se jmenuje
 			&quot;nevim&quot;)
 			<br />
-			<div className="">
-				<p>
-					Web verze (nedoporučuji - absolutně nefunguje multiplayer):
-				</p>
-				<button
-					onClick={() => open("https://9bhra.netlify.app/", "_blank")}
-				>
-					9bhra.netlify.app
-				</button>
-			</div>
 		</div>
 	);
 }
