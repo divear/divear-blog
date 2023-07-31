@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 const socials = [
 	[github, "https://github.com/divear", "divear"],
 	[twitter, "https://twitter.com/divear0", "divear0"],
-	[instagram, "https://www.instagram.com/lukas.ode/", "lukas.ode"],
+	[instagram, "http://instagram.com/_u/lukas.ode/", "lukas.ode"],
 	[
 		youtube,
 		"https://www.youtube.com/channel/UCwWXZqqwhdVq50W3vZ4aDSg",
