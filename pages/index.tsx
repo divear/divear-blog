@@ -48,7 +48,7 @@ const Home: NextPage = () => {
 							? "Podívej na moje projekty👨‍💻"
 							: "See my projects 👨‍💻"}
 					</button>
-					<div className="socials bigSocials">
+					<div className="bigSocials">
 						{socials.map((s, i) => {
 							return (
 								<button

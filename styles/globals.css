@@ -662,9 +662,21 @@ input :hover {
 	}
 	.bigSocials {
 		margin: 5vh 0;
+		width: 100%;
 	}
 	.social {
 		margin: 2vw;
+	}
+	.bigSocial {
+		margin: 1vw;
+		width: 15vw;
+		background-color: transparent;
+	}
+	.bigSocial:hover {
+		border-radius: 0;
+		border-bottom: var(--frTrans) solid 0.2vw;
+		background-color: transparent;
+		animation: none !important;
 	}
 	.smallImg {
 		width: 100%;
