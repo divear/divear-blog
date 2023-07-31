@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import github from "../components/imgs/socmedia/github.png";
 import twitter from "../components/imgs/socmedia/twitter.png";
 import youtube from "../components/imgs/socmedia/youtube.png";
+import instagram from "../components/imgs/socmedia/insta.png";
 import Image from "next/image";
 import Meta from "../components/Meta";
 import { app, getFirestore, addDoc, collection } from "../components/firebase";
@@ -11,6 +12,7 @@ const db = getFirestore(app);
 const socials = [
 	[github, "https://github.com/divear", "divear"],
 	[twitter, "https://twitter.com/divear0", "divear0"],
+	[instagram, "https://www.instagram.com/lukas.ode/", "lukas.ode"],
 	[
 		youtube,
 		"https://www.youtube.com/channel/UCwWXZqqwhdVq50W3vZ4aDSg",
