@@ -19,7 +19,9 @@ body {
 	padding: 0;
 	margin: 0;
 }
-
+canvas{
+	background-color: white;
+}
 * {
 	font-family: "Inter", sans-serif;
 }
@@ -400,13 +402,17 @@ button:hover {
 	background-color: transparent;
 	animation: none !important;
 }
+.bigSocials {
+	margin: 1vw;
+}
 .bigSocial {
+	width: 4vw;
 	margin: 1vw;
 	background-color: transparent;
 }
 .bigSocial:hover {
 	border-radius: 0;
-	border-bottom: var(--frTrans) solid 0.2vw;
+	filter: brightness(0.9);
 	background-color: transparent;
 	animation: none !important;
 }
@@ -717,5 +723,10 @@ input :hover {
 		width: 95%;
 		margin: 1vh 0% 0 0;
 		font-size: 2rem;
+	}
+	.introPfp {
+		width: 2vw !important;
+		left: 50% !important;
+		transform: translate(-50%, 0);
 	}
 }
