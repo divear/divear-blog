@@ -52,7 +52,7 @@ function Nav() {
 				onClick={() => (window.location.href = "/")}
 			>
 				<Image width={50} height={50} src={pfp} alt="i" />
-				divear
+				Lukáš Odehnal
 			</h1>
 
 			<h1 onClick={show} className={isPhone ? "no" : "language"}>
