@@ -68,7 +68,6 @@ function Aboutme() {
 						Vítěz Purkiády 2023
 					</li>
 					<li>Lukáš Odehnal</li>
-					<li>lukascobit</li>
 					<li>lukas_getout</li>
 				</ul>
 			</article>
