@@ -63,7 +63,7 @@ function Nav() {
 				<Link href="/projects">
 					{!+language ? "Projects" : "Projekty"}
 				</Link>
-				<Link href="/blogs">{!+language ? "Blogs" : "Blogy"}</Link>
+				<Link href="/blogs">{!+language ? "Blog" : "Články"}</Link>
 				<Link href="/aboutme">{!+language ? "About me" : "O mně"}</Link>
 			</div>
 			<div className={modal && !isPhone ? "langModal" : "no"}>

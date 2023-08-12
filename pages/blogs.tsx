@@ -11,9 +11,9 @@ function Blogs() {
 	}, []);
 	return (
 		<div className="content">
-			<Meta title={+lang ? "Blogy" : "Blogs"} />
+			<Meta title={+lang ? "Články" : "Blogs"} />
 			<h1 className="headerText center">
-				{+lang ? "Moje články" : "My blogs"}
+				{+lang ? "Moje články" : "My articles"}
 			</h1>
 			<div className="blogs">
 				{blogs[+lang].map((e, i) => {

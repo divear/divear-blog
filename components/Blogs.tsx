@@ -23,7 +23,7 @@ function Blogs() {
 					onClick={() => (location.href = "blogs")}
 					className="recentBlogsHeader center "
 				>
-					{+lang ? "Nedávné zprávy" : "Recent blogs"}
+					{+lang ? "Nedávné články" : "Recent articles"}
 				</h1>
 				{shortBlogs.map((e, i) => {
 					return (
