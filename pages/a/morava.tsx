@@ -16,7 +16,7 @@ function Morava() {
 				alt="map image"
 			/>
 			<article>
-				<a rel="noreferrer" href="https://morava.lol/">
+				<a rel="noreferrer" href="https://morava.netlify.app/">
 					visit the site here
 				</a>
 				<h1>How was it created?</h1>
@@ -25,6 +25,12 @@ function Morava() {
 					inspired me to this idea... ok, i might have copied his
 					exact idea and &quot;czeched&quot; it but that&apos;s
 					besides the point.
+
+				</p>
+				<p>
+
+					Update 21.8. 2023:
+					The domain has expired and I am not renewing it, use the netlify one.
 				</p>
 			</article>
 		</div>

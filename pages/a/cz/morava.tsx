@@ -6,7 +6,7 @@ import Meta from "../../../components/Meta";
 function Morava() {
 	return (
 		<div className="content">
-			<Meta title="morava.lol" />
+			<Meta title="morava test" />
 			<h1 className="center">Příběh morava.lol</h1>
 			<Image
 				width={800}
@@ -16,7 +16,7 @@ function Morava() {
 				alt="map image"
 			/>
 			<article>
-				<a href="https://morava.lol/">Navštiv tu stránku zde</a>
+				<a href="https://morava.netlify.app/">Navštiv tu stránku zde</a>
 				<h1>Jak to vzniklo?</h1>
 				<p>
 					Viděl jsem video Toma Scotta o jeho North-o-meteru a rozhodl
@@ -25,7 +25,7 @@ function Morava() {
 					<a
 						rel="noreferrer"
 						target="_blank"
-						href="https://morava.lol/nove-otazky"
+						href="https://morava.netlify.app/nove-otazky"
 					>
 						tady
 					</a>
