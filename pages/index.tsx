@@ -45,7 +45,7 @@ const Home: NextPage = () => {
 					</p>
 					<button onClick={() => (location.href = "/projects")}>
 						{+lang
-							? "Podívej na moje projekty👨‍💻"
+							? "Podívej se na moje projekty👨‍💻"
 							: "See my projects 👨‍💻"}
 					</button>
 					<div className="bigSocials">

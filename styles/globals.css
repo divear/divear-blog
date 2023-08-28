@@ -19,7 +19,7 @@ body {
 	padding: 0;
 	margin: 0;
 }
-canvas{
+canvas {
 	background-color: white;
 }
 * {
@@ -255,18 +255,6 @@ button:hover {
 	/* the color switch */
 	background: linear-gradient(to right, var(--darkS) 72%, var(--dark) 50%);
 }
-/* .bigProject:nth-child(odd) {
-	color: var(--secBg);
-	border-radius: 2vw;
-	margin: 0 0 2vh 15vw;
-	text-align: center;
-	background: linear-gradient(to right, var(--dark) 28%, var(--darkS) 0%);
-}
-.bigProject:nth-child(odd) .desc {
-	float: left;
-	font-size: 3rem;
-	margin: 2vw;
-} */
 
 .desc {
 	flex: 1 1 auto;
@@ -527,6 +515,74 @@ input :hover {
 	border: 2px solid var(--fr);
 }
 
+@media only screen and (max-width: 1800px) and (min-width: 1547px) {
+	.bigProject {
+		max-width: 120%;
+		text-align: center;
+	}
+	.showoffBigImage {
+		cursor: pointer;
+		border-radius: 2vh 0vw 0vh 2vw;
+		padding: 0vw;
+		margin: 0 0vw 0 0;
+		animation: zoomout 0.5s;
+	}
+	.projectDesc {
+		display: block;
+	}
+	.scrolls {
+		border-radius: 1vw;
+		font-size: 3rem;
+		position: absolute;
+		z-index: 2;
+		background-color: var(--bgTrans);
+		color: var(--frTrans);
+	}
+}
+@media only screen and (max-width: 1547px) {
+	/* projects */
+	.bigProject {
+		max-width: 100%;
+		color: var(--secBg);
+		border-radius: 5vw 5vw 0 0;
+		padding: 1vw;
+		text-align: center;
+		margin: 8vh 0 0 0;
+		background: none;
+		/* border-bottom: 1px solid var(--fr); */
+	}
+	.desc {
+		float: none;
+		background-color: var(--dark);
+		padding: 1vw;
+		width: 50%;
+	}
+	.desc p {
+		float: none;
+		max-width: 90%;
+	}
+	.bigProject .scrolls {
+		display: none;
+	}
+	.showoffBigImage {
+		z-index: -1;
+		border-radius: 2vw 0vw 0vw 2vw;
+		padding: 0vw;
+		margin: 0;
+	}
+	.projectDesc {
+		/* text-align: left; */
+		z-index: 99 !important;
+		font-size: 1.5rem;
+		margin: -10vh 0 0 0;
+		background-color: var(--bgTrans);
+		border-radius: 1vw;
+	}
+	.projectLink {
+		padding: 0;
+		margin: 0;
+	}
+}
 /* mobile view */
 @media only screen and (max-width: 1000px) {
 	* {
@@ -550,6 +606,9 @@ input :hover {
 	.recentBlogsHeader {
 		font-size: 2rem;
 		margin: 2vw;
+	}
+	.desc {
+		width: 100%;
 	}
 	.projects,
 	.smallBlogs {
@@ -609,57 +668,6 @@ input :hover {
 		display: flex;
 		justify-self: left;
 		margin: 2vh 0 0 0;
-	}
-	/* projects */
-	.bigProject {
-		max-width: 95%;
-		color: var(--secBg);
-		border-radius: 5vw 5vw 0 0;
-		padding: 1vw;
-		text-align: center;
-		margin: 8vh 0 0 0;
-		background: none;
-		border-bottom: 1px solid var(--fr);
-	}
-	.desc {
-		background-color: var(--dark);
-		padding: 1vw;
-	}
-	/* .bigProject:nth-child(odd) {
-		max-width: 95%;
-		color: var(--secBg);
-		border-radius: 2vw;
-		padding: 1vw;
-		text-align: center;
-		margin: -1vh 0 0 0;
-		background: none;
-	}
-	.bigProject:nth-child(odd) .desc {
-		float: none;
-		font-size: 1rem;
-		margin: inherit;
-		padding: 0;
-	} */
-	.bigProject .scrolls {
-		display: none;
-	}
-	.showoffBigImage {
-		z-index: -1;
-		border-radius: 2vw 0vw 0vw 2vw;
-		padding: 0vw;
-		margin: 0;
-	}
-	.projectDesc {
-		text-align: left;
-		z-index: 99 !important;
-		font-size: 1.5rem;
-		margin: -10vh 0 0 0;
-		background-color: var(--bgTrans);
-		border-radius: 1vw;
-	}
-	.projectLink {
-		padding: 0;
-		margin: 0;
 	}
 	.socials {
 		background-color: var(--dark);
