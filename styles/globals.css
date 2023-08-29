@@ -35,10 +35,6 @@ a:hover {
 li {
 	font-size: 1.5rem;
 }
-h5 {
-	font-size: 1rem;
-	margin: 0.5vw 0 2vw 0vw;
-}
 article {
 	width: 50%;
 }
@@ -166,7 +162,10 @@ button:hover {
 .smallBlog:hover {
 	background-color: var(--darkM);
 }
-
+.blogDesc {
+	font-size: 1rem;
+	margin: 0.5vw 0 2vw 0vw;
+}
 .showoffImage {
 	border-radius: 1vw 1vw 0.1vw 0.1vw;
 }
@@ -207,7 +206,7 @@ button:hover {
 	margin: -7vh 0 0 0;
 }
 
-.blackboxNav > h3 {
+.blackboxNav > p {
 	display: flex;
 	justify-content: right;
 	padding: 1vh 1vw 0 0;
@@ -263,7 +262,7 @@ button:hover {
 	margin: 0.5vw;
 }
 .desc p {
-	float: right;
+	/* float: right; */
 	max-width: 90%;
 }
 .showoffBigImage {

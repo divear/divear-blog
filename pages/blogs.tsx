@@ -38,7 +38,7 @@ function Blogs() {
 								>
 									{e.name}
 								</a>
-								<h5>{e.desc}</h5>
+								<p className="blogDesc">{e.desc}</p>
 							</div>
 						</div>
 					);
