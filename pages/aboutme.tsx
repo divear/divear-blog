@@ -53,7 +53,7 @@ function Aboutme() {
 	}
 	return (
 		<div className="content">
-			<Meta title="About me" />
+			<Meta title={lang ? "O mně" : "About me"} />
 			<div className="aboutmeHeader headerText center">
 				{lang ? "O mně" : "About me"}
 			</div>

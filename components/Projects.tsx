@@ -67,7 +67,7 @@ function Projects() {
 								>
 									{e.name}
 								</a>
-								<h5>{e.desc}</h5>
+								<p>{e.desc}</p>
 							</div>
 						</div>
 					);
