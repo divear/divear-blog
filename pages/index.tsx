@@ -8,6 +8,7 @@ import github from "../components/imgs/socmedia/github.png";
 import twitter from "../components/imgs/socmedia/twitter.png";
 import youtube from "../components/imgs/socmedia/youtube.png";
 import instagram from "../components/imgs/socmedia/insta.png";
+import fiverr from "../components/imgs/socmedia/fiverr.png";
 import { useEffect, useState } from "react";
 
 const socials = [
@@ -19,6 +20,7 @@ const socials = [
 		"https://www.youtube.com/channel/UCwWXZqqwhdVq50W3vZ4aDSg",
 		"divear",
 	],
+	[fiverr, "https://www.fiverr.com/lukasodehnal", "lukasodehnal"],
 ];
 
 const Home: NextPage = () => {
