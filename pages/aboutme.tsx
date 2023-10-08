@@ -4,6 +4,8 @@ import github from "../components/imgs/socmedia/github.png";
 import twitter from "../components/imgs/socmedia/twitter.png";
 import youtube from "../components/imgs/socmedia/youtube.png";
 import instagram from "../components/imgs/socmedia/insta.png";
+import fiverr from "../components/imgs/socmedia/fiverr.png";
+import upwork from "../components/imgs/socmedia/upwork.png";
 import Image from "next/image";
 import Meta from "../components/Meta";
 import { app, getFirestore, addDoc, collection } from "../components/firebase";
@@ -18,6 +20,8 @@ const socials = [
 		"https://www.youtube.com/channel/UCwWXZqqwhdVq50W3vZ4aDSg",
 		"divear",
 	],
+	[fiverr, "https://www.fiverr.com/lukasodehnal", "lukasodehnal"],
+	[upwork, "https://www.upwork.com/freelancers/~016ac72e9de97e681f", "Lukas O."],
 ];
 
 function Aboutme() {
@@ -60,15 +64,15 @@ function Aboutme() {
 			<article>
 				<p>
 					{lang
-						? "Já jsem diveár, ale taky mě mužeš znát jako:"
-						: "I'm divear but you may also know me as:"}
+						? "Jsem Lukáš Odehnal, ale taky mě mužeš znát jako:"
+						: "I'm Lukáš Odehnal but you may also know me as:"}
 				</p>
 				<ul>
-					<li className={lang ? "Vítěz Purkiády 2023" : "no"}>
+					<li>divear</li>
+					<li>divear0</li>
+					<li className={lang ? "" : "no"}>
 						Vítěz Purkiády 2023
 					</li>
-					<li>Lukáš Odehnal</li>
-					<li>lukas_getout</li>
 				</ul>
 			</article>
 			<h1 className="headerText">
@@ -88,7 +92,7 @@ function Aboutme() {
 								src={s[0]}
 								alt="social media icon"
 							></Image>
-							<h4 className="usernameSpeci">{s[2].toString()}</h4>
+							{/* <h4 className="usernameSpeci">{s[2].toString()}</h4> */}
 						</button>
 					);
 				})}

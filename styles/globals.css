@@ -225,7 +225,7 @@ button:hover {
 .introText {
 	box-sizing: border-box;
 	text-align: center;
-	margin: 2vw;
+	margin: 0 0 2vh 0 !important;
 	display: block;
 }
 .introText > h1 {
@@ -237,8 +237,10 @@ button:hover {
 	font-size: 1.8rem;
 }
 .introPfp {
+	top: 0% !important;
 	left: 50% !important;
 	transform: translate(-50%, 0);
+	margin: 0;
 }
 .akaDivear {
 	margin: -4vh 0 5vh 0;
@@ -390,7 +392,7 @@ button:hover {
 	animation: none !important;
 }
 .bigSocials {
-	margin: 1vw;
+	margin: 1vh 0;
 }
 .bigSocial {
 	width: 4vw;
@@ -596,7 +598,7 @@ input :hover {
 		margin: 10vh auto auto auto;
 	}
 	.nav {
-		height: 9vh;
+		height: 7.5vh;
 		width: 100%;
 	}
 	.content {
@@ -671,7 +673,14 @@ input :hover {
 	.socials {
 		background-color: var(--dark);
 		border-radius: 2vw;
-		padding: 2vw;
+		display: block;
+		grid-template-columns: repeat(2, 1fr);
+		opacity: 0.9;
+		text-align: center;
+	}
+	.usernameSpeci {
+		margin: 0%;
+		font-size: 0.6em;
 	}
 	.bigSocials {
 		margin: 5vh 0;
@@ -679,6 +688,7 @@ input :hover {
 	}
 	.social {
 		margin: 2vw;
+		width: 25%;
 	}
 	.bigSocial {
 		margin: 1vw;
@@ -735,5 +745,24 @@ input :hover {
 		width: 2vw !important;
 		left: 50% !important;
 		transform: translate(-50%, 0);
+	}
+	.blackboxNav {
+		background-color: black;
+		left: 0;
+		right: 0;
+		height: 7vh;
+		margin: -7vh 0 0 0;
+	}
+	.copyEndName {
+		font-size: 0.7rem;
+	}
+	.bigSocials {
+		margin: 1vh;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		width: 100%;
+	}
+	.bigSocials * {
+		width: 20vw;
 	}
 }
