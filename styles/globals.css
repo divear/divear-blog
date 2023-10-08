@@ -202,7 +202,7 @@ button:hover {
 	background-color: black;
 	left: 0;
 	right: 0;
-	height: 5vh;
+	height: 7vh;
 	margin: -7vh 0 0 0;
 }
 
@@ -413,13 +413,13 @@ button:hover {
 	justify-self: left;
 }
 .smallSocial {
-	padding: 0;
+	padding: 0 0.2vw;
 	filter: saturate(1) grayscale(1);
 	margin: -15vh 0 0 0;
 	background-color: transparent;
 }
 .smallSocial:hover {
-	filter: saturate(1) grayscale(0.7);
+	filter: saturate(1) grayscale(0.4);
 	background-color: transparent;
 	animation: none !important;
 }
@@ -620,7 +620,7 @@ input :hover {
 	.burgerMenu {
 		cursor: pointer;
 		position: fixed;
-		right: 1%;
+		right: 4%;
 		top: 0;
 	}
 	.tree {
@@ -754,6 +754,7 @@ input :hover {
 		margin: -7vh 0 0 0;
 	}
 	.copyEndName {
+		margin: 2vh 0 0 0;
 		font-size: 0.7rem;
 	}
 	.bigSocials {
