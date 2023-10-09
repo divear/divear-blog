@@ -22,12 +22,12 @@ import projects from "./projects.json";
 import Meta from "../components/Meta";
 
 const imgs = [
+	[swipechoose0, swipechoose1, swipechoose2],
 	[morava, morava1, morava2],
 	[malo, malo1, malo2],
 	[chalky, chalky1, chalky2],
 	[drby, drby1, drby2],
 	[postine, postine1, postine2],
-	[swipechoose0, swipechoose1, swipechoose2],
 ];
 
 function Projects() {

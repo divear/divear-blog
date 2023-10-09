@@ -1,56 +1,72 @@
 [
 	[
 		{
+			"link": "https://swipechoose.netlify.app/",
+			"name": "Swipechoose",
+			"desc": "Site where you choose the better post.",
+			"shortname": "swipechoose"
+		},
+		{
+			"link": "https://morava.netlify.app/",
+			"name": "Moravia test",
+			"desc": "Find out, how Moriavian you are.",
+			"shortname": "morava"
+		},
+		{
 			"link": "https://malovani.netlify.app/",
 			"name": "Malo🖍",
-			"desc": "Site for posting your drawings"
+			"desc": "Site for posting your drawings",
+			"shortname": "malo"
 		},
 		{
 			"link": "https://chalky.netlify.app/",
 			"name": "Chálky",
-			"desc": "Send images of food from school kitchen"
+			"desc": "Send images of food from school kitchen",
+			"shortname": "chalky"
 		},
 		{
 			"link": "https://drby.netlify.app/",
 			"name": "Drby",
-			"desc": "Post gossip about people"
+			"desc": "Post gossip about people",
+			"shortname": "drby"
 		},
 		{
 			"link": "https://postine.netlify.app/",
 			"name": "Postine",
-			"desc": "Platform for sharing videos"
-		},
-		{
-			"link": "https://swipechoose.netlify.app/",
-			"name": "Swipechoose",
-			"desc": "Site where you choose the better post."
+			"desc": "Platform for sharing videos",
+			"shortname": "postine"
 		}
 	],
 	[
 		{
+			"link": "https://postine.netlify.app/",
+			"name": "Postine",
+			"desc": "Stránka na sdílení videí",
+			"shortname": "postine"
+		},
+		{
 			"link": "https://morava.netlify.app/",
 			"name": "Morava test",
-			"desc": "Zjisti, jak moc jsi moravák."
+			"desc": "Zjisti, jak moc jsi moravák.",
+			"shortname": "morava"
 		},
 		{
 			"link": "https://malovani.netlify.app/",
 			"name": "Malo🖍",
-			"desc": "Stránka pro vaše namalované obrázky"
+			"desc": "Stránka pro vaše namalované obrázky",
+			"shortname": "malo"
 		},
 		{
 			"link": "https://chalky.netlify.app/",
 			"name": "Chálky",
-			"desc": "Posílejte ty nejhnusnější chálky z jídelen"
+			"desc": "Posílejte ty nejhnusnější chálky z jídelen",
+			"shortname": "chalky"
 		},
 		{
 			"link": "https://drby.netlify.app/",
 			"name": "Drby",
-			"desc": "Posílejte drby a různé zprávy z Bohunic"
-		},
-		{
-			"link": "https://postine.netlify.app/",
-			"name": "Postine",
-			"desc": "Stránka na sdílení videí"
+			"desc": "Posílejte drby a různé zprávy z Bohunic",
+			"shortname": "drby"
 		}
 	]
 ]
