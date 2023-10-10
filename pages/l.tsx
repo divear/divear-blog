@@ -23,7 +23,7 @@ function Secret() {
                 <Link href={"https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/"}>bitwarden</Link>
                 <Link href={"https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"}>ublock</Link>
                 <Link href={"https://sspbrno.edupage.org/user/"}>edupage</Link>
-                <Link href={"https://teams.microsoft.com/"}>edupage</Link>
+                <Link href={"https://teams.microsoft.com/"}>teams</Link>
             </div>
             <div className="content notFound">
                 <Meta title={+lang ? "Stránka nenalezena." : "Page not found."} />
