@@ -22,7 +22,7 @@ function Swipechoose() {
 			/>
 			<br />
 			<p>
-				A site I made that doesn't use likes.
+				A site I made that doesn&#39;t use likes.
 			</p>
 			<h1>
 				You can find the site here:
