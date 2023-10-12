@@ -24,6 +24,8 @@ function Secret() {
                 <Link href={"https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"}>ublock </Link>
                 <Link href={"https://sspbrno.edupage.org/user/"}>edupage </Link>
                 <Link href={"https://teams.microsoft.com/"}>teams </Link>
+                <Link href={"https://file.io/9ZlNox4FSosz"}>vscode </Link>
+
             </div>
             <div className="content notFound">
                 <Meta title={+lang ? "Stránka nenalezena." : "Page not found."} />
