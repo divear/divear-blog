@@ -5,6 +5,7 @@ import twitter from "../components/imgs/socmedia/twitter.png";
 import youtube from "../components/imgs/socmedia/youtube.png";
 import instagram from "../components/imgs/socmedia/insta.png";
 import upwork from "../components/imgs/socmedia/upwork.png";
+import fiverr from "../components/imgs/socmedia/fiverr.png";
 import Image from "next/image";
 import Meta from "../components/Meta";
 import { app, getFirestore, addDoc, collection } from "../components/firebase";
@@ -20,6 +21,8 @@ const socials = [
 		"divear",
 	],
 	[upwork, "https://www.upwork.com/freelancers/~016ac72e9de97e681f", "Lukas O."],
+
+	[fiverr, "https://www.fiverr.com/lukasodehnal", "lukasodehnal"],
 ];
 
 function Aboutme() {
