@@ -13,7 +13,7 @@ function NotFound() {
 			<br />
 			<h1 className="center">
 				{+lang
-					? "Jaj! Stránka nenalezena."
+					? "Stránka nenalezena."
 					: "Oops! That page can’t be found."}
 			</h1>
 			<br />
