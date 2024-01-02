@@ -39,10 +39,10 @@
 	],
 	[
 		{
-			"link": "https://postine.netlify.app/",
-			"name": "Postine",
-			"desc": "Stránka na sdílení videí",
-			"shortname": "postine"
+			"link": "https://swipechoose.netlify.app/",
+			"name": "Swipechoose",
+			"desc": "Vyber lepší fotku",
+			"shortname": "swipechoose"
 		},
 		{
 			"link": "https://morava.netlify.app/",
@@ -67,6 +67,12 @@
 			"name": "Drby",
 			"desc": "Posílejte drby a různé zprávy z Bohunic",
 			"shortname": "drby"
+		},
+		{
+			"link": "https://postine.netlify.app/",
+			"name": "Postine",
+			"desc": "Stránka na sdílení videí",
+			"shortname": "postine"
 		}
 	]
 ]
