@@ -56,7 +56,7 @@ function Footer() {
 					})}
 				</div>
 				<div className="blackboxNav">
-					<p className="blogDesc copyEndName">©Lukáš Odehnal 2022-2023</p>
+					<p className="blogDesc copyEndName">©Lukáš Odehnal 2022-2024</p>
 				</div>
 			</div>
 		</div>
