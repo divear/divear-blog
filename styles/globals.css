@@ -515,6 +515,14 @@ input :hover {
 	border-radius: 1vw;
 	border: 2px solid var(--fr);
 }
+.timer {
+	margin: 30vh 10vw;
+}
+.timer h1 {
+	font-size: 10rem;
+	padding: 0;
+	margin: 0;
+}
 
 @media only screen and (max-width: 1800px) and (min-width: 1547px) {
 	.bigProject {
