@@ -58,9 +58,9 @@ function Sewer() {
 
                     setTimer(`${hoursRemaining}:${minutesRemaining}:${secondsRemaining}`)
                     return true
-                } /*else {
+                } else if (!timeDifference <= 0 && !hasFound)  {
                     setTimer(`dneska uz laces`)
-                }*/
+                }
             });
         }, 1000)
     }, [])
