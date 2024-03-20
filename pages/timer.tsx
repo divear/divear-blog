@@ -54,9 +54,10 @@ function Sewer() {
                     // Convert the time difference to hours, minutes, and seconds
                     const hoursRemaining = Math.floor(timeDifference / (1000 * 60 * 60));
                     const minutesRemaining = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                    if(minutesRemaining.length){}
                     const secondsRemaining = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-                    setTimer(`${hoursRemaining}:${minutesRemaining}:${secondsRemaining}`)
+                    setTimer(`${minutesRemaining}:${secondsRemaining}`)
                     return true
                 } else if (!timeDifference <= 0 && !hasFound)  {
                     setTimer(`dneska uz laces`)
