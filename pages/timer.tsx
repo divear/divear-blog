@@ -30,6 +30,7 @@ function Sewer() {
         [15, 20],
         [16, 15],
         [17, 10],
+        [23, 14],
     ]
     useEffect(() => {
 
@@ -51,15 +52,25 @@ function Sewer() {
                 // Check if the target time has already passed today
                 if (timeDifference > 0 && !hasFound) {
                     hasFound = true
-                    // Convert the time difference to hours, minutes, and seconds
-                    const hoursRemaining = Math.floor(timeDifference / (1000 * 60 * 60));
-                    const minutesRemaining = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-                    if(minutesRemaining.length){}
-                    const secondsRemaining = Math.floor((timeDifference % (1000 * 60)) / 1000);
+                    // const hoursRemaining = Math.floor(timeDifference / (1000 * 60 * 60));
+                    let minutesRemaining = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                    let secondsRemaining = Math.floor((timeDifference % (1000 * 60)) / 1000);
+                    let first
+                    let second
+                    if (minutesRemaining < 10) {
+                        first = `0${minutesRemaining}`
+                    } else {
+                        first = minutesRemaining.toString()
+                    }
+                    if (secondsRemaining < 10) {
+                        second = `0${secondsRemaining}`
+                    } else {
+                        second = secondsRemaining.toString()
+                    }
 
-                    setTimer(`${minutesRemaining}:${secondsRemaining}`)
+                    setTimer(`${first}:${second}`)
                     return true
-                } else if (!timeDifference <= 0 && !hasFound)  {
+                } else if (timeDifference <= 0) {
                     setTimer(`dneska uz laces`)
                 }
             });
@@ -67,10 +78,10 @@ function Sewer() {
     }, [])
 
     return (
-        <div className="content timer">
+        <div className={`content timer `}>
             <Meta title="Timer" />
             <h2>čas do konce hodiny:</h2>
-            <h1>{timer}</h1>
+            <h1 className={`${timer === "dneska uz laces" ? "endedTimer" : ""}`}>{timer}</h1>
         </div>
     );
 }

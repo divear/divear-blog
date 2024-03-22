@@ -519,9 +519,12 @@ input :hover {
 	margin: 30vh 10vw;
 }
 .timer h1 {
-	font-size: 10rem;
+	font-size: 25rem;
 	padding: 0;
 	margin: 0;
+}
+.endedTimer {
+	font-size: 5rem !important;
 }
 
 @media only screen and (max-width: 1800px) and (min-width: 1547px) {
