@@ -20,11 +20,18 @@ function Secret() {
     return (
         <>
             <div className={isVis ? 'content' : 'no'}>
-                <Link href={"https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/"}>bitwarden </Link>
-                <Link href={"https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"}>ublock </Link>
-                <Link href={"https://sspbrno.edupage.org/user/"}>edupage </Link>
-                <Link href={"https://teams.microsoft.com/"}>teams </Link>
-                <Link href={"/aboutme#name"}>note</Link>
+                <ul>
+                    <li><Link href={"https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/"}>bitwarden - firefox</Link></li>
+                    <li><Link href={"https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"}>ublock - firefox</Link></li>
+                    <li><Link href={"https://chromewebstore.google.com/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb"}>bitwarden - chrome</Link></li>
+                    <li><Link href={"https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"}>ublock - chrome</Link></li>
+                    <li><Link href={"https://divear.me/timer"}>timer</Link></li>
+                    <li><Link href={"https://materialy.cekuj.net/"}>materialy.cekuj.net/</Link></li>
+
+                    <li><Link href={"https://sspbrno.edupage.org/user/"}>edupage </Link></li>
+                    <li><Link href={"https://teams.microsoft.com/"}>teams </Link></li>
+                    <li><Link href={"/aboutme#name"}>note</Link></li>
+                </ul>
 
             </div>
             <div className="content notFound">
