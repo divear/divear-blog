@@ -1,28 +1,33 @@
 .altCoolPage {
-	position: fixed;
-	background-color: red;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	z-index: 999999;
+  position: fixed;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999999;
 }
 .altCoolPage * {
-	z-index: 9 !important;
+  z-index: 9 !important;
 }
 .bgSchizoText {
-	z-index: -5 !important;
-	user-select: none;
-	position: fixed;
-	top: -3%;
-	color: rgb(170, 0, 0);
-	font-size: 1.2rem;
+  z-index: -5 !important;
+  user-select: none;
+  position: fixed;
+  top: -3%;
+  color: #ff0050;
+  font-size: 1.2rem;
 }
 .rudaImg {
-	cursor: grabbing;
-	user-select: none;
+  cursor: grabbing;
+  user-select: none;
 }
 .scrollText {
-	position: fixed;
-	bottom: 20%;
+  position: fixed;
+  bottom: 20%;
+}
+.pf {
+  position: fixed !important;
+  top: -5%;
+  right: 0;
 }
