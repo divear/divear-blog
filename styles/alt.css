@@ -11,10 +11,18 @@
 	z-index: 9 !important;
 }
 .bgSchizoText {
-	z-index: 5 !important;
+	z-index: -5 !important;
 	user-select: none;
 	position: fixed;
 	top: -3%;
 	color: rgb(170, 0, 0);
 	font-size: 1.2rem;
+}
+.rudaImg {
+	cursor: grabbing;
+	user-select: none;
+}
+.scrollText {
+	position: fixed;
+	bottom: 20%;
 }
