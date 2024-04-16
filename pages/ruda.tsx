@@ -43,8 +43,7 @@ function Alt() {
     }
     setCounter(counter + 1);
     setPdfLink(
-      `https://www.purkynka.cz/wp-content/uploads/2023/10/Skolni-rad.pdf#page=${
-        counter + 1
+      `https://www.purkynka.cz/wp-content/uploads/2023/10/Skolni-rad.pdf#page=${counter + 1
       }`,
     );
   }

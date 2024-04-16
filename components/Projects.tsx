@@ -3,15 +3,15 @@ import Image from "next/image";
 import morava from "./imgs/projects/morava/morava0.png";
 import morava1 from "./imgs/projects/morava/morava1.png";
 import morava2 from "./imgs/projects/morava/morava2.png";
-import malo from "./imgs/projects/malo/malo0.png";
-import malo1 from "./imgs/projects/malo/malo1.png";
-import malo2 from "./imgs/projects/malo/malo2.png";
+import swipechoose0 from "../components/imgs/projects/swipechoose/swipechoose0.png";
+import swipechoose1 from "../components/imgs/projects/swipechoose/swipechoose1.png";
+import swipechoose2 from "../components/imgs/projects/swipechoose/swipechoose2.png";
 import projects from "../pages/projects.json";
 // ^ this is hell
 
 const imgs = [
+	[swipechoose0, swipechoose1, swipechoose2],
 	[morava, morava1, morava2],
-	[malo, malo1, malo2],
 ];
 
 function Projects() {
