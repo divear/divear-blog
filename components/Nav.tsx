@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import pfp from "./imgs/pfp.png";
+// import pfp from "./imgs/pfp.png";
+import pfp from "./imgs/pfp.svg";
 import burger from "./imgs/burgermenu.png";
 import Image from "next/image";
 import Link from "next/link";
