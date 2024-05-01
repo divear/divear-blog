@@ -6,6 +6,13 @@ function Secret() {
     const [isVis, setIsVis] = useState(false)
 
     const [lang, setLang] = useState(false);
+    const links = [
+        "https://materialy.cekuj.net/",
+        "https://student.sspbrno.cz/~odehnal.lukas",
+        "https://student.sspbrno.cz/",
+        "https://student.sspbrno.cz/sftp/",
+        "https://sspbrno.sharepoint.com/:w:/r/sites/V1A-GRW-JIMI-2324/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Bca2b5f66-c2d9-4698-8aaf-5606acfd3017%7D&wdOrigin=TEAMS-WEB.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1714468084658&web=1s"
+    ]
     useEffect(() => {
         setLang(localStorage.getItem("language") === "EN" ? false : true);
 
@@ -26,13 +33,21 @@ function Secret() {
                     <li><Link href={"https://chromewebstore.google.com/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb"}>bitwarden - chrome</Link></li>
                     <li><Link href={"https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"}>ublock - chrome</Link></li>
                     <li><Link href={"https://divear.me/timer"}>timer</Link></li>
-                    <li><Link href={"https://materialy.cekuj.net/"}>materialy.cekuj.net/</Link></li>
-                    <li><Link href={"https://student.sspbrno.cz/~odehnal.lukas"}>https://student.sspbrno.cz/~odehnal.lukas </Link></li>
-                    <li><Link href={"https://student.sspbrno.cz/"}>https://student.sspbrno.cz/ </Link></li>
 
                     <li><Link href={"https://sspbrno.edupage.org/user/"}>edupage </Link></li>
                     <li><Link href={"https://teams.microsoft.com/"}>teams </Link></li>
                     <li><Link href={"/aboutme#name"}>note</Link></li>
+
+                    <br />
+                    <div className="exactLinks">
+                        {
+                            links.map(e => {
+                                return (
+                                    <li><Link href={e}>{e}</Link></li>
+                                )
+                            })
+                        }
+                    </div>
                 </ul>
 
             </div>

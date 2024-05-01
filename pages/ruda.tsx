@@ -180,13 +180,18 @@ function Alt() {
       </h1>
       <img className="rudaImg" alt="ruda" src={rudaImgs[rudaSrc ? 1 : 0]} />
 
-      <div className="pf">
+      {/* <div className="pf">
         <object
           data={pdfLink}
           type="application/pdf"
           width="1000"
           height="1000"
         ></object>
+      </div> */}
+      <div className="pf">
+
+        <embed src={pdfLink} width={800} height={1200}
+          type="application/pdf"></embed>
       </div>
     </div>
   );
