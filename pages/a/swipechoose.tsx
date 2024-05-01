@@ -9,7 +9,7 @@ function Swipechoose() {
 			<Meta title="Swipechoose" />
 			<h1>Swipechoose: Do likes even matter?</h1>
 			<p>
-				In the world of social media, likes have become a ubiquitous
+				In the world of social media, likes have become an important
 				part of our online experience. But let&#39;s be real, do they
 				truly hold any meaningful value?
 			</p>
