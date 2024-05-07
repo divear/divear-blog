@@ -33,7 +33,7 @@ function Secret() {
                     <li><Link href={"https://chromewebstore.google.com/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb"}>bitwarden - chrome</Link></li>
                     <li><Link href={"https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"}>ublock - chrome</Link></li>
                     <li><Link href={"https://divear.me/timer"}>timer</Link></li>
-
+                    <li><Link href={"https://stravovani.sspbrno.cz/faces/login.jsp"}>iCanteen</Link></li>
                     <li><Link href={"https://sspbrno.edupage.org/user/"}>edupage </Link></li>
                     <li><Link href={"https://teams.microsoft.com/"}>teams </Link></li>
                     <li><Link href={"/aboutme#name"}>note</Link></li>
