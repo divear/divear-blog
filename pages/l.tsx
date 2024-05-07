@@ -41,9 +41,9 @@ function Secret() {
                     <br />
                     <div className="exactLinks">
                         {
-                            links.map(e => {
+                            links.map((e, i) => {
                                 return (
-                                    <li><Link href={e}>{e}</Link></li>
+                                    <li key={i}><Link href={e}>{e}</Link></li>
                                 )
                             })
                         }
