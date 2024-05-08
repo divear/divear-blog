@@ -33,7 +33,7 @@ function Alt() {
     "edupage incident",
     "dotace na sóju",
     "indianske pohrebiste pod skolou",
-    "you will eat the bug",
+    "kantyna monopol",
     "tahle skola me jednou zabije"
   ]
   useEffect(() => {
