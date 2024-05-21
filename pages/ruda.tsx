@@ -40,7 +40,12 @@ function Alt() {
     "doc. RNDr. Aleš Ruda, Ph.D., MBA",
     "NEDA SI NEKDO KAVU? UDELAL JSEM CERSTVOU KAVU!",
     "VUT LAN😶",
-    "mrtvoly zahrabané v doskokovém pískovišti"
+    "mrtvoly zahrabané v doskokovém pískovišti",
+    "Purkynka je babylon",
+    "Ruda je bílej kůň",
+    "purkynka je pod cryptokratickou krutovládou",
+    "ruda je agent babylonu",
+    "trest smrti vykonavan na pozemku skoly"
   ]
   useEffect(() => {
     let x = false;
