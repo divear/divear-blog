@@ -60,7 +60,7 @@ function Alt() {
       console.log(rudaHlasky)
 
       // click()
-    }, 1000);
+    }, 300);
 
     const handleWindowMouseMove = (event) => {
       setCoords({
