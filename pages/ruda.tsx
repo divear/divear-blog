@@ -61,7 +61,6 @@ function Alt() {
     function adjustHexColor(hexColor, offset) {
       return '#' + ((parseInt(hexColor.substring(1), 16) + offset) & 0xffffff).toString(16).padStart(6, '0');
     }
-    // test2
     setInterval(() => {
       x = !x;
       setRudaSrc(x);
