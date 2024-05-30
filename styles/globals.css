@@ -101,7 +101,7 @@ button:hover {
 	position: fixed;
 	display: inline;
 	top: 0%;
-	z-index: 1;
+	z-index: 9;
 	background-color: var(--dark);
 	padding: 0 0.2vw;
 }
@@ -111,7 +111,6 @@ button:hover {
 	margin: 0;
 }
 .nav * {
-	z-index: 2;
 	display: inline;
 }
 .language {
@@ -611,6 +610,9 @@ input :hover {
 	.nav {
 		height: 7.5vh;
 		width: 100%;
+	}
+	.nav * {
+		z-index: 10 !important;
 	}
 	.content {
 		margin: 10vh 1vw;
