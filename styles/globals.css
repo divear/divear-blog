@@ -780,3 +780,12 @@ input :hover {
 		width: 20vw;
 	}
 }
+.imgNavod {
+	/* display: grid; */
+	display: flow-root;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+	width: 190% !important;
+}
+.imgNavod * {
+	width: 40%;
+}
