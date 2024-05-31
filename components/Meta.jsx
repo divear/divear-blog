@@ -17,12 +17,12 @@ function Meta({ title, keywords, description }) {
 
 			<meta name="author" content="divear" />
 			<meta
-				content="Divear - personal site"
+				content="divear.me - Lukáš Odehnal"
 				property="og:title"
 			/>
 			<meta content="https://divear.me" property="og:url" />
 			<meta
-				content="https://divear.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FfooterImg.d6b99548.png&w=3840&q=75"
+				content="https://divear.me/_ipx/w_1920,q_75/%2F_next%2Fstatic%2Fmedia%2FfooterImg.61029571.png?url=%2F_next%2Fstatic%2Fmedia%2FfooterImg.61029571.png&w=1920&q=75"
 				property="og:image"
 			/>
 			<meta property="og:type" content="website" />
@@ -45,6 +45,7 @@ function Meta({ title, keywords, description }) {
 				data-react-helmet="true"
 				name="background_color"
 			/>
+
 			{/* twitter */}
 			<meta name="twitter:card" content="summary_large_image"></meta>
 			<meta name="twitter:title" content="Divear's personal site" />
@@ -55,7 +56,7 @@ function Meta({ title, keywords, description }) {
 			<meta name="twitter:creator" content="@divear0" />
 			<meta
 				name="twitter:image"
-				content="https://divear.me/_ipx/w_3840,q_75/%2F_next%2Fstatic%2Fmedia%2FfooterImg.d6b99548.png?url=%2F_next%2Fstatic%2Fmedia%2FfooterImg.d6b99548.png&w=3840&q=75"
+				content="https://divear.me/_ipx/w_1920,q_75/%2F_next%2Fstatic%2Fmedia%2FfooterImg.61029571.png?url=%2F_next%2Fstatic%2Fmedia%2FfooterImg.61029571.png&w=1920&q=75"
 			/>
 			<meta name="twitter:domain" content="https://divear.me/" />
 

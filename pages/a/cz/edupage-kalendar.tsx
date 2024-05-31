@@ -4,7 +4,7 @@ import Meta from "../../../components/Meta";
 function Sewer() {
     return (
         <div className="content">
-            <Meta title="Edupage v Kalendáři" />
+            <Meta description="Jak si přidat Edupage rozvrh do Kalendáře" title="Edupage v Kalendáři" />
 
             <article>
                 <h1>Jak si přidat Edupage rozvrh do Kalendáře</h1>

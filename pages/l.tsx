@@ -11,7 +11,6 @@ function Secret() {
         "https://student.sspbrno.cz/~odehnal.lukas",
         "https://student.sspbrno.cz/",
         "https://student.sspbrno.cz/sftp/",
-        "https://sspbrno.sharepoint.com/:w:/r/sites/V1A-GRW-JIMI-2324/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Bca2b5f66-c2d9-4698-8aaf-5606acfd3017%7D&wdOrigin=TEAMS-WEB.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1714468084658&web=1s"
     ]
     useEffect(() => {
         setLang(localStorage.getItem("language") === "EN" ? false : true);
