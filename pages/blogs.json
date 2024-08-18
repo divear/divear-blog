@@ -1,60 +1,66 @@
 [
-	[
-		{
-			"name": "New type of social media",
-			"desc": "The idea behind Swipechoose",
-			"link": "swipechoose",
-			"img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FScreenshot 2024-05-01 at 14-43-55 Swipe to rate posts!.png?alt=media"
-		},
-		{
-			"name": "How I got my profile picture",
-			"desc": "The story of sewer run",
-			"link": "sewer-run",
-			"img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FEFe_jt.png?alt=media"
-		},
-		{
-			"name": "My new site: morava test",
-			"desc": "Find out how much of a moravian you are (czech only)",
-			"link": "morava",
-			"img": "https://morava.netlify.app/_ipx/w_256,q_75/%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png?url=%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png&w=256&q=75"
-		}
-	],
-	[
-		{
-			"name": "Jak si přidat rozvrh do kalendáře",
-			"desc": "Edupage rozvrh přímo v kalendáři",
-			"link": "cz/edupage-kalendar",
-			"img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Fedupage2gcal.png?alt=media&token=014aaa61-a3b8-429a-8574-d494cf9d21dd"
-		},
-		{
-			"name": "3D střílečka",
-			"desc": "Dostupná ke stažení na Android",
-			"link": "cz/strilecka",
-			"img": "https://firebasestorage.googleapis.com/v0/b/picture-database.appspot.com/o/imgs%2FScreenshot%20from%202023-05-01%2019-30-42.png?alt=media"
-		},
-		{
-			"name": "Generátor vyzváněcího tónu",
-			"desc": "Nemějte nudné tóny, pojdte si nějaké vygenerovat!",
-			"link": "cz/nekdovola",
-			"img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Foldguy.png?alt=media"
-		},
-		{
-			"name": "Top nejlepší šaliny v Brně",
-			"desc": "Moje nové postironické video",
-			"link": "cz/saliny",
-			"img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Fabc3a65711ef46f2efb0954d900ebef9.jpg?alt=media"
-		},
-		{
-			"name": "Jak jsem získal svoji profilovku",
-			"desc": "Příběh sewer runu",
-			"link": "cz/sewer-run",
-			"img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FEFe_jt.png?alt=media"
-		},
-		{
-			"name": "Nová stránka: Morava test",
-			"desc": "Zjisti, jak moc jsi moravák",
-			"link": "cz/morava",
-			"img": "https://morava.netlify.app/_ipx/w_256,q_75/%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png?url=%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png&w=256&q=75"
-		}
-	]
+  [
+    {
+      "name": "EduCalc",
+      "desc": "EduPage Calculator",
+      "link": "educalc",
+      "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Feducalc3.png?alt=media"
+    },
+    {
+      "name": "New type of social media",
+      "desc": "The idea behind Swipechoose",
+      "link": "swipechoose",
+      "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FScreenshot 2024-05-01 at 14-43-55 Swipe to rate posts!.png?alt=media"
+    },
+    {
+      "name": "How I got my profile picture",
+      "desc": "The story of sewer run",
+      "link": "sewer-run",
+      "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FEFe_jt.png?alt=media"
+    },
+    {
+      "name": "My new site: morava test",
+      "desc": "Find out how much of a moravian you are (czech only)",
+      "link": "morava",
+      "img": "https://morava.netlify.app/_ipx/w_256,q_75/%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png?url=%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png&w=256&q=75"
+    }
+  ],
+  [
+    {
+      "name": "Jak si přidat rozvrh do kalendáře",
+      "desc": "Edupage rozvrh přímo v kalendáři",
+      "link": "cz/edupage-kalendar",
+      "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Fedupage2gcal.png?alt=media&token=014aaa61-a3b8-429a-8574-d494cf9d21dd"
+    },
+    {
+      "name": "3D střílečka",
+      "desc": "Dostupná ke stažení na Android",
+      "link": "cz/strilecka",
+      "img": "https://firebasestorage.googleapis.com/v0/b/picture-database.appspot.com/o/imgs%2FScreenshot%20from%202023-05-01%2019-30-42.png?alt=media"
+    },
+    {
+      "name": "Generátor vyzváněcího tónu",
+      "desc": "Nemějte nudné tóny, pojdte si nějaké vygenerovat!",
+      "link": "cz/nekdovola",
+      "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Foldguy.png?alt=media"
+    },
+    {
+      "name": "Top nejlepší šaliny v Brně",
+      "desc": "Moje nové postironické video",
+      "link": "cz/saliny",
+      "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Fabc3a65711ef46f2efb0954d900ebef9.jpg?alt=media"
+    },
+    {
+      "name": "Jak jsem získal svoji profilovku",
+      "desc": "Příběh sewer runu",
+      "link": "cz/sewer-run",
+      "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FEFe_jt.png?alt=media"
+    },
+    {
+      "name": "Nová stránka: Morava test",
+      "desc": "Zjisti, jak moc jsi moravák",
+      "link": "cz/morava",
+      "img": "https://morava.netlify.app/_ipx/w_256,q_75/%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png?url=%2F_next%2Fstatic%2Fmedia%2FmoravaLogo.a4bd0e75.png&w=256&q=75"
+    }
+  ]
 ]
