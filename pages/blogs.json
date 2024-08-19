@@ -2,7 +2,7 @@
   [
     {
       "name": "EduCalc",
-      "desc": "EduPage Calculator",
+      "desc": "EduPage average grade calculator",
       "link": "educalc",
       "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Feducalc3.png?alt=media"
     },
@@ -27,6 +27,12 @@
   ],
   [
     {
+      "name": "EduCalc",
+      "desc": "EduPage kalkulačka průmeru známek",
+      "link": "cz/educalc",
+      "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Feducalc3.png?alt=media"
+    },
+    {
       "name": "Jak si přidat rozvrh do kalendáře",
       "desc": "Edupage rozvrh přímo v kalendáři",
       "link": "cz/edupage-kalendar",
@@ -46,7 +52,7 @@
     },
     {
       "name": "Top nejlepší šaliny v Brně",
-      "desc": "Moje nové postironické video",
+      "desc": "Moje nové post-ironické video",
       "link": "cz/saliny",
       "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Fabc3a65711ef46f2efb0954d900ebef9.jpg?alt=media"
     },
