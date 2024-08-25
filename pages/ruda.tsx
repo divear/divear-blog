@@ -1,18 +1,17 @@
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 function Alt() {
   const [rudaSrc, setRudaSrc] = useState(false);
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const [counter, setCounter] = useState(0);
-  const [currWord, setCurrWord] = useState("ruda")
-  const [colorBg, setColorBg] = useState("#000000")
-  const [color, setColor] = useState("#000000")
+  const [currWord, setCurrWord] = useState("ruda");
+  const [colorBg, setColorBg] = useState("#000000");
+  const [color, setColor] = useState("#000000");
   const rudaImgs = [
     "https://firebasestorage.googleapis.com/v0/b/picture-database.appspot.com/o/images%2Fruda.png?alt=media",
     "https://firebasestorage.googleapis.com/v0/b/picture-database.appspot.com/o/images%2Fruda1.png?alt=media",
     "https://cdn.discordapp.com/attachments/909721095328890930/1234417024348721233/gamer.png?ex=663c8570&is=663b33f0&hm=4003427e2b7551aaece1a226f94a64ba5a12cef5b03de3a23194f4e2af2cfd6b&",
-    "https://media.discordapp.net/attachments/718141591583195237/1200115128939577404/kamarat.gif?ex=663c510f&is=663aff8f&hm=4b8d5918a99356bbcdb60d46e8a330fcadcc1cae431e98d74de689014e95638e&"
+    "https://media.discordapp.net/attachments/718141591583195237/1200115128939577404/kamarat.gif?ex=663c510f&is=663aff8f&hm=4b8d5918a99356bbcdb60d46e8a330fcadcc1cae431e98d74de689014e95638e&",
   ];
   const rudaHlasky = [
     "BUDEŠ jíst sóju a BUDEŠ sťastný",
@@ -42,8 +41,13 @@ function Alt() {
     "Ruda je bílej kůň Rothschildů",
     "purkynka je pod cryptokratickou krutovládou",
     "ruda je agent babylonu",
-    "trest smrti vykonavan na pozemku skoly"
-  ]
+    "trest smrti vykonavan na pozemku skoly",
+    "klimatizace? never heard of her",
+    "otevřené utlačování programovacího jazyka Rust",
+    "java propaganda",
+    "tkinter je velice uzitecna vec a MELA by byt ve vyukovem planu",
+    "skolni servery? more like sistkovo raspi v kabinetu",
+  ];
   useEffect(() => {
     let x = false;
     setCounter(counter + 1);
@@ -54,18 +58,23 @@ function Alt() {
     //   });
 
     function getRandomColor() {
-      var hex = Math.floor(Math.random() * 0xFFFFFF);
+      var hex = Math.floor(Math.random() * 0xffffff);
       return "#" + ("000000" + hex.toString(16)).substr(-6);
     }
     function adjustHexColor(hexColor, offset) {
-      return '#' + ((parseInt(hexColor.substring(1), 16) + offset) & 0xffffff).toString(16).padStart(6, '0');
+      return (
+        "#" +
+        ((parseInt(hexColor.substring(1), 16) + offset) & 0xffffff)
+          .toString(16)
+          .padStart(6, "0")
+      );
     }
     setInterval(() => {
       x = !x;
       setRudaSrc(x);
-      setCurrWord(rudaHlasky[Math.floor(Math.random() * rudaHlasky.length)])
-      setColorBg(getRandomColor())
-      setColor(adjustHexColor(colorBg, -1))
+      setCurrWord(rudaHlasky[Math.floor(Math.random() * rudaHlasky.length)]);
+      setColorBg(getRandomColor());
+      setColor(adjustHexColor(colorBg, -1));
 
       // click()
     }, 300);
@@ -92,13 +101,73 @@ function Alt() {
   }
 
   return (
-    <div style={{ backgroundColor: colorBg, color: color }} onClick={click} className="altCoolPage">
+    <div
+      style={{ backgroundColor: colorBg, color: color }}
+      onClick={click}
+      className="altCoolPage"
+    >
       <title>{currWord}</title>
       <p className="bgSchizoText">
-        Na počátku Ruda stvořil nebe a zemi. ²Země pak byla pustá a prázdná, nad propastí byla tma a nad vodami se vznášel Boží Duch. ³Ruda řekl: „Ať je světlo!“ – a bylo světlo. ⁴Ruda viděl, že světlo je dobré, a Ruda oddělil světlo od tmy. ⁵Ruda nazval světlo „den“ a tmu nazval „noc“. Byl večer a bylo ráno, den první. ⁶Ruda řekl: „Ať je uprostřed vod obloha, aby oddělovala vody od vod!“ ⁷Ruda učinil oblohu a oddělil vody pod oblohou od vod nad oblohou – a stalo se. ⁸Ruda nazval oblohu „nebe“ a byl večer a bylo ráno, den druhý. ⁹Ruda řekl: „Ať se vody pod nebem shromáždí na jedno místo a ať se ukáže souš!“ – a stalo se. ¹⁰Ruda nazval souš „země“ a shromáždění vod nazval „moře“. A Ruda viděl, že je to dobré. ¹¹Tehdy Ruda řekl: „Ať země zplodí zeleň: byliny nesoucí semeno a různé druhy plodných stromů nesoucích ovoce, v němž je jejich semeno na zemi!“ – a stalo se. ¹²Země vydala zeleň: různé druhy bylin nesoucích semeno a různé druhy stromů nesoucích ovoce, v němž je jejich semeno. A Ruda viděl, že je to dobré. ¹³Byl večer a bylo ráno, den třetí. ¹⁴Ruda řekl: „Ať jsou na nebeské obloze svítilny, aby oddělovaly den od noci; budou znameními k určování období, dnů a let; ¹⁵budou na nebeské obloze svítilnami k osvětlování země!“ – a stalo se. ¹⁶Ruda učinil dvě veliké svítilny: větší, aby vládla dni, a menší, aby vládla noci; učinil rovněž hvězdy. ¹⁷Ruda je umístil na nebeské obloze, aby osvětlovaly zemi, ¹⁸aby panovaly nade dnem a nocí a aby oddělovaly světlo od tmy. A Ruda viděl, že je to dobré. ¹⁹Byl večer a bylo ráno, den čtvrtý. ²⁰Ruda řekl: „Ať se vody zahemží množstvím živočichů a nad zemí pod nebeskou oblohou ať létají ptáci!“ ²¹Ruda tedy stvořil velké mořské obludy a všemožné druhy čilých živočichů, jimiž se zahemžily vody, i všemožné druhy okřídlených ptáků. A Ruda viděl, že je to dobré. ²²Ruda jim požehnal a řekl: „Ploďte a množte se a naplňte vody v mořích; také ptáci ať se rozmnožují na zemi.“ ²³Byl večer a bylo ráno, den pátý. ²⁴Ruda řekl: „Ať země vydá různé druhy živočichů: různé druhy dobytka, drobné havěti i polní zvěře!“ – a stalo se. ²⁵Ruda učinil různé druhy polní zvěře a dobytka i všemožné druhy zemské havěti. A Ruda viděl, že je to dobré. ²⁶Tehdy Ruda řekl: „Učiňme člověka k našemu obrazu, podle naší podoby! Ať panují nad mořskými rybami, nad nebeským ptactvem, nad dobytkem, nade vší zemí i nad veškerou havětí lezoucí po zemi.“ ²⁷Ruda stvořil člověka ke svému obrazu, k obrazu Božímu stvořil jej: jako muže a ženu stvořil je. ²⁸A Ruda jim požehnal. Ruda jim řekl: „Ploďte a množte se, naplňte zem, podmaňte si ji a panujte nad mořskými rybami, nad nebeským ptactvem i nad každým živočichem lezoucím po zemi.“ ²⁹Ruda také řekl: „Hle, dal jsem vám všechny byliny vydávající semeno na celém povrchu země i každý strom, na němž je ovoce vydávající semeno. To vám bude za pokrm. ³⁰Také veškeré polní zvěři, všem nebeským ptákům i všemu, co leze po zemi, zkrátka všemu, co má v sobě život, jsem dal za pokrm všechny zelené byliny – a stalo se. ³¹Ruda viděl všechno, co učinil, a hle, bylo to velmi dobré! Byl večer a bylo ráno, den šestý.</p>
+        Na počátku Ruda stvořil nebe a zemi. ²Země pak byla pustá a prázdná, nad
+        propastí byla tma a nad vodami se vznášel Boží Duch. ³Ruda řekl: „Ať je
+        světlo!“ – a bylo světlo. ⁴Ruda viděl, že světlo je dobré, a Ruda
+        oddělil světlo od tmy. ⁵Ruda nazval světlo „den“ a tmu nazval „noc“. Byl
+        večer a bylo ráno, den první. ⁶Ruda řekl: „Ať je uprostřed vod obloha,
+        aby oddělovala vody od vod!“ ⁷Ruda učinil oblohu a oddělil vody pod
+        oblohou od vod nad oblohou – a stalo se. ⁸Ruda nazval oblohu „nebe“ a
+        byl večer a bylo ráno, den druhý. ⁹Ruda řekl: „Ať se vody pod nebem
+        shromáždí na jedno místo a ať se ukáže souš!“ – a stalo se. ¹⁰Ruda
+        nazval souš „země“ a shromáždění vod nazval „moře“. A Ruda viděl, že je
+        to dobré. ¹¹Tehdy Ruda řekl: „Ať země zplodí zeleň: byliny nesoucí
+        semeno a různé druhy plodných stromů nesoucích ovoce, v němž je jejich
+        semeno na zemi!“ – a stalo se. ¹²Země vydala zeleň: různé druhy bylin
+        nesoucích semeno a různé druhy stromů nesoucích ovoce, v němž je jejich
+        semeno. A Ruda viděl, že je to dobré. ¹³Byl večer a bylo ráno, den
+        třetí. ¹⁴Ruda řekl: „Ať jsou na nebeské obloze svítilny, aby oddělovaly
+        den od noci; budou znameními k určování období, dnů a let; ¹⁵budou na
+        nebeské obloze svítilnami k osvětlování země!“ – a stalo se. ¹⁶Ruda
+        učinil dvě veliké svítilny: větší, aby vládla dni, a menší, aby vládla
+        noci; učinil rovněž hvězdy. ¹⁷Ruda je umístil na nebeské obloze, aby
+        osvětlovaly zemi, ¹⁸aby panovaly nade dnem a nocí a aby oddělovaly
+        světlo od tmy. A Ruda viděl, že je to dobré. ¹⁹Byl večer a bylo ráno,
+        den čtvrtý. ²⁰Ruda řekl: „Ať se vody zahemží množstvím živočichů a nad
+        zemí pod nebeskou oblohou ať létají ptáci!“ ²¹Ruda tedy stvořil velké
+        mořské obludy a všemožné druhy čilých živočichů, jimiž se zahemžily
+        vody, i všemožné druhy okřídlených ptáků. A Ruda viděl, že je to dobré.
+        ²²Ruda jim požehnal a řekl: „Ploďte a množte se a naplňte vody v mořích;
+        také ptáci ať se rozmnožují na zemi.“ ²³Byl večer a bylo ráno, den pátý.
+        ²⁴Ruda řekl: „Ať země vydá různé druhy živočichů: různé druhy dobytka,
+        drobné havěti i polní zvěře!“ – a stalo se. ²⁵Ruda učinil různé druhy
+        polní zvěře a dobytka i všemožné druhy zemské havěti. A Ruda viděl, že
+        je to dobré. ²⁶Tehdy Ruda řekl: „Učiňme člověka k našemu obrazu, podle
+        naší podoby! Ať panují nad mořskými rybami, nad nebeským ptactvem, nad
+        dobytkem, nade vší zemí i nad veškerou havětí lezoucí po zemi.“ ²⁷Ruda
+        stvořil člověka ke svému obrazu, k obrazu Božímu stvořil jej: jako muže
+        a ženu stvořil je. ²⁸A Ruda jim požehnal. Ruda jim řekl: „Ploďte a
+        množte se, naplňte zem, podmaňte si ji a panujte nad mořskými rybami,
+        nad nebeským ptactvem i nad každým živočichem lezoucím po zemi.“ ²⁹Ruda
+        také řekl: „Hle, dal jsem vám všechny byliny vydávající semeno na celém
+        povrchu země i každý strom, na němž je ovoce vydávající semeno. To vám
+        bude za pokrm. ³⁰Také veškeré polní zvěři, všem nebeským ptákům i všemu,
+        co leze po zemi, zkrátka všemu, co má v sobě život, jsem dal za pokrm
+        všechny zelené byliny – a stalo se. ³¹Ruda viděl všechno, co učinil, a
+        hle, bylo to velmi dobré! Byl večer a bylo ráno, den šestý.
+      </p>
       <img className="rudaImg" alt="ruda" src={rudaImgs[rudaSrc ? 1 : 0]} />
-      <h1 style={{top: "80%", fontFamily: ""}} className="rudaImg">Velký Ruda tě sleduje</h1>
-      <h1 style={{ position: "fixed", top: coords.x, left: coords.y, backgroundColor: colorBg, opacity:0.1 }}>{currWord}</h1>
+      <h1 style={{ top: "80%", fontFamily: "" }} className="rudaImg">
+        Velký Ruda tě sleduje
+      </h1>
+      <h1
+        style={{
+          position: "fixed",
+          top: coords.x,
+          left: coords.y,
+          backgroundColor: colorBg,
+          opacity: 0.1,
+        }}
+      >
+        {currWord}
+      </h1>
     </div>
   );
 }
