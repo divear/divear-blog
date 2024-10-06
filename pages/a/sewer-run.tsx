@@ -17,10 +17,10 @@ function Sewer() {
 			<h1 className="pfpTitle">How I got my profile picture</h1>
 			<article>
 				<p>
-					Back in the time when I used to make videogames, I made a
-					game called &quot;sewer run&quot;. For the main character I
-					draw a neat little guy with a gun/walking stick. A while
-					later I just made it profile my picture
+					Back in the time when I used to really make videogames, I made a
+					game called &quot;Sewer run&quot;. For the main character I
+					drew a neat little guy with a gun/walking stick. A while
+					later I just made it my profile picture
 					<br />
 					<a
 						rel="noreferrer"

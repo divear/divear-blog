@@ -7,7 +7,7 @@ function Morava() {
 	return (
 		<div className="content">
 			<Meta title="morava.lol" />
-			<h1 className="center">the story of morava.lol</h1>
+			<h1 className="center">the story of Moravia test</h1>
 			<Image
 				width={800}
 				height={450}
@@ -21,10 +21,9 @@ function Morava() {
 				</a>
 				<h1>How was it created?</h1>
 				<p>
-					I watched a Tom Scott video and his north-o-meter, that
-					inspired me to this idea... ok, i might have copied his
-					exact idea and &quot;czeched&quot; it but that&apos;s
-					besides the point.
+					I watched a Tom Scott video about his North-o-meter, that
+					inspired me to make the Czech version with our own Czech stereotypes.
+
 
 				</p>
 				<p>
