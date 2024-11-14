@@ -18,14 +18,6 @@
 	color: #ff005110;
 	font-size: 1.9rem;
 }
-.rudaImg {
-	cursor: grabbing;
-	user-select: none;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -60%);
-}
 .scrollText {
 	position: fixed;
 	bottom: 10%;

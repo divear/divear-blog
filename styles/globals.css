@@ -110,7 +110,7 @@ button:hover {
   padding: 0;
   margin: 0;
   position: fixed;
-  top: -1.5vh;
+  top: -0.5vh;
 }
 .nav * {
   display: inline;
