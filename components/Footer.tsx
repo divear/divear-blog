@@ -19,6 +19,7 @@ function Footer() {
 		],
 		[fiverr, "https://www.fiverr.com/lukasodehnal", "lukasodehnal"],
 	];
+  
 	return (
 		<div>
 			<Image
@@ -58,6 +59,7 @@ function Footer() {
 				<div className="blackboxNav">
 					<p className="blogDesc copyEndName">©Lukáš Odehnal 2022-2024</p>
 				</div>
+				<div className="blackboxNavBottom"/>
 			</div>
 		</div>
 	);

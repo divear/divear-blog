@@ -16,6 +16,7 @@
 body {
   background-color: var(--bg);
   color: var(--fr);
+  background-position: bottom, top;
   padding: 0;
   margin: 0;
 }
@@ -202,7 +203,6 @@ button:hover {
 .blackboxNav {
   background-color: black;
   left: 0;
-  right: 0;
   height: 7vh;
   margin: -7vh 0 0 0;
 }
