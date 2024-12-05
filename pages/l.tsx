@@ -11,11 +11,13 @@ function Secret() {
         "https://student.sspbrno.cz/~odehnal.lukas",
         "https://student.sspbrno.cz/",
         "https://student.sspbrno.cz/sftp/",
+        "https://v2grw.notion.site/V2-GRW-Podm-nky-kurzu-116ca7c93892809d9bb4e3fa1518985b",
+          
     ]
     useEffect(() => {
         setLang(localStorage.getItem("language") === "EN" ? false : true);
 
-        const handleKeyPress = (event) => {
+        const handleKeyPress = (event: any) => {
             if (event.key === 'b' || event.key === 'B') {
                 setIsVis(true)
             }

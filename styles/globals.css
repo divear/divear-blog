@@ -185,11 +185,17 @@ button:hover {
   height: auto !important;
   margin: -1vh 0 0 0;
   padding: 0;
+
+  /* background-image: url("../components/imgs/footerImg.png"); */
+  /* background-repeat: repeat-x; */
+  /* width: 100% !important; */
+  /* background-position: left;  */
 }
 .footerImg {
   margin: 0;
   padding: 0 0 5vh 0;
-  position: relative;
+  position: fixed;
+  top: 0;
 }
 .player {
   cursor: pointer;
