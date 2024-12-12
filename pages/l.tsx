@@ -12,6 +12,9 @@ function Secret() {
         "https://student.sspbrno.cz/",
         "https://student.sspbrno.cz/sftp/",
         "https://v2grw.notion.site/V2-GRW-Podm-nky-kurzu-116ca7c93892809d9bb4e3fa1518985b",
+        "https://gitlab.com/-/ide/project/lukascobit/obsidian-git-sync/edit/master/-/"
+
+
           
     ]
     useEffect(() => {
@@ -38,6 +41,10 @@ function Secret() {
                     <li><Link href={"https://sspbrno.edupage.org/user/"}>edupage </Link></li>
                     <li><Link href={"https://teams.microsoft.com/"}>teams </Link></li>
                     <li><Link href={"/aboutme#name"}>note</Link></li>
+
+
+
+                    <h1><Link href={"https://sspbrno-my.sharepoint.com/:p:/r/personal/odehnal_lukas_purkynka_cz/_layouts/15/Doc.aspx?sourcedoc=%7BE7B761DB-854D-442C-8827-2C316AA39D6E%7D&file=CEJ%20ceska%20hudba%2090.%20let.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&wdOrigin=APPHOME-WEB.DIRECT%2CAPPHOME-WEB.JUMPBACKIN&wdPreviousSession=786160de-9ee3-4c1a-8aaa-39a2bf543270&wdPreviousSessionSrc=AppHomeWeb&ct=1734032207036"}>PREZENTACE CEJ</Link></h1>
 
                     <br />
                     <div className="exactLinks">
