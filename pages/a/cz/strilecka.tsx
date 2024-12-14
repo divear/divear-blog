@@ -4,10 +4,10 @@ function Game() {
 	return (
 		<div className="content">
 			<title>Supr hra</title>
-			<h1>Shitty 3d střílečka</h1>
+			<h1>Proof of concept 3d střílečka</h1>
 			<p>
-				Hle, zde máte 3d fps střílečku vytvořenou v Godotu. Možná to i
-				bude fungovat
+				3D fps střílečka vytvořenou v Godotu.
+        Modely vytvořené v Blenderu, 
 			</p>
 			<p>Tady je android verze:</p>
 			<button
@@ -20,8 +20,12 @@ function Game() {
 			>
 				Google drive
 			</button>
-			(pokud nevíš jakou máš architekturu tak vyber tu, co se jmenuje
+      <p style={{"margin":"1vh 0 20vh 0"}}>
+
+			(pokud nevíš jakou máš architekturu, tak vyber tu, co se jmenuje
 			&quot;nevim&quot;)
+        </p>
+        
 			<br />
 		</div>
 	);
