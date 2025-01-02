@@ -57,7 +57,8 @@ function Footer() {
 					})}
 				</div>
 				<div className="blackboxNav">
-					<p className="blogDesc copyEndName">©Lukáš Odehnal 2022-2024</p>
+          {/*is this legal?*/}
+					<p className="blogDesc copyEndName">©Lukáš Odehnal 2022-{new Date().getFullYear()}</p>
 				</div>
 				<div className="blackboxNavBottom"/>
 			</div>
