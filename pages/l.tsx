@@ -44,11 +44,7 @@ function Secret() {
 
 
 
-                    <h1><Link href={"https://sspbrno-my.sharepoint.com/:p:/r/personal/odehnal_lukas_purkynka_cz/_layouts/15/Doc.aspx?sourcedoc=%7BE7B761DB-854D-442C-8827-2C316AA39D6E%7D&file=CEJ%20ceska%20hudba%2090.%20let.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&wdOrigin=APPHOME-WEB.DIRECT%2CAPPHOME-WEB.JUMPBACKIN&wdPreviousSession=786160de-9ee3-4c1a-8aaa-39a2bf543270&wdPreviousSessionSrc=AppHomeWeb&ct=1734032207036"}>PREZENTACE CEJ</Link></h1>
-                    <h1><Link href={"https://sspbrno-my.sharepoint.com/:p:/g/personal/odehnal_lukas_purkynka_cz/EbFcR1HtHLlHuv1bzayOJh4Bs6I5UkvfEwNBLku3-cHkZg?e=wsddz3"}>PREZENTACE ZPV</Link></h1>
-                    <h1><Link href={"https://sspbrno-my.sharepoint.com/:p:/g/personal/odehnal_lukas_purkynka_cz/EVeMBeBUOyBJqN8milJptBMBY8y7ILgprK-z3g4zL-6fQQ?e=2oJQ3c"}>PREZENTACE EKO</Link></h1>
-
-                    <br />
+                    <hr />
                     <div className="exactLinks">
                         {
                             links.map((e, i) => {
