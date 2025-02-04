@@ -41,7 +41,7 @@ function Secret() {
                     <li><Link href={"https://sspbrno.edupage.org/user/"}>edupage </Link></li>
                     <li><Link href={"https://teams.microsoft.com/"}>teams </Link></li>
                     <li><Link href={"/aboutme#name"}>note</Link></li>
-
+                    <li>Set-WinUserLanguageList -Force en-US,cs</li>
 
 
                     <hr />
