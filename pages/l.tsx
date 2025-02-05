@@ -1,31 +1,44 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import Meta from "../components/Meta";
+import { app, getFirestore, addDoc, collection, getDocs } from "../components/firebase";
+const db = getFirestore(app);
 
 function Secret() {
     const [isVis, setIsVis] = useState(false)
+    const [dbLinks, setDbLinks] = useState<any>([""])
 
     const [lang, setLang] = useState(false);
     const links = [
-        "https://materialy.cekuj.net/",
         "https://student.sspbrno.cz/~odehnal.lukas",
         "https://student.sspbrno.cz/",
         "https://student.sspbrno.cz/sftp/",
-        "https://v2grw.notion.site/V2-GRW-Podm-nky-kurzu-116ca7c93892809d9bb4e3fa1518985b",
-        "https://gitlab.com/-/ide/project/lukascobit/obsidian-git-sync/edit/master/-/"
 
 
           
     ]
     useEffect(() => {
         setLang(localStorage.getItem("language") === "EN" ? false : true);
+         (async function() {
+            let linksDbTempList = []
+            const querySnapshot = await getDocs(collection(db, "links"));
+            setDbLinks(querySnapshot)
+            console.log(querySnapshot)
+            querySnapshot.forEach((doc) => {
+              // doc.data() is never undefined for query doc snapshots
+              console.log(doc.id, " => ", doc.data());
+              linksDbTempList.push(doc.data())
+            });
+            console.log(linksDbTempList)
+            setDbLinks(linksDbTempList)
+    })(); 
 
-        const handleKeyPress = (event: any) => {
-            if (event.key === 'b' || event.key === 'B') {
-                setIsVis(true)
-            }
-        };
-        document.addEventListener('keydown', handleKeyPress);
+    const handleKeyPress = (event: any) => {
+        if (event.key === 'b' || event.key === 'B') {
+            setIsVis(true)
+        }
+    };
+    document.addEventListener('keydown', handleKeyPress);
     }, []);
 
     return (
@@ -41,7 +54,9 @@ function Secret() {
                     <li><Link href={"https://sspbrno.edupage.org/user/"}>edupage </Link></li>
                     <li><Link href={"https://teams.microsoft.com/"}>teams </Link></li>
                     <li><Link href={"/aboutme#name"}>note</Link></li>
-                    <li>Set-WinUserLanguageList -Force en-US,cs</li>
+
+
+                    <li>powershell Set-WinUserLanguageList -Force en-US,cs</li>
 
 
                     <hr />
@@ -50,6 +65,18 @@ function Secret() {
                             links.map((e, i) => {
                                 return (
                                     <li key={i}><Link href={e}>{e}</Link></li>
+                                )
+                            })
+                        }
+                    </div>
+                    <hr />
+                    <div className='dbLinks'>
+                        {
+                            dbLinks.map((e, i:number) => {
+                                console.log(e)
+                                if(!e.url) return
+                                return (
+                                    <li key={i}><Link href={e.url}>{e.name || e.url}</Link></li>
                                 )
                             })
                         }
