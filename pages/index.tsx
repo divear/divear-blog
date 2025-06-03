@@ -20,7 +20,6 @@ const socials = [
 		"https://www.youtube.com/channel/UCwWXZqqwhdVq50W3vZ4aDSg",
 		"divear",
 	],
-	[fiverr, "https://www.fiverr.com/lukasodehnal", "lukasodehnal"],
 ];
 
 const Home: NextPage = () => {
