@@ -67,9 +67,6 @@ function Aboutme() {
 				<ul>
 					<li>divear</li>
 					<li>divear0</li>
-					<li className={lang ? "" : "no"}>
-						Vítěz Purkiády 2023
-					</li>
 				</ul>
 			</article>
 			<h1 className="headerText">
