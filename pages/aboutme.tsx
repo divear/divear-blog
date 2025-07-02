@@ -132,7 +132,7 @@ function Aboutme() {
 				onClick={() => setSent(false)}
 				className={sent ? "successDiv" : "no"}
 			>
-				<h1>{lang ? "Úspěšně odesláno" : "Succesfully sent!"}</h1>
+				<h1>{lang ? "Úspěšně odesláno" : "Succesfully sent"}</h1>
 			</div>
 		</div>
 	);

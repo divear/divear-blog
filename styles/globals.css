@@ -575,6 +575,8 @@ input :hover {
     background-color: var(--dark);
     padding: 1vw;
     width: 50%;
+    margin: 2vh 0;
+    border-radius: 100vw;
   }
   .desc p {
     float: none;
@@ -787,6 +789,16 @@ input :hover {
   .bigSocials * {
     width: 20vw;
   }
+  .blogLink {
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    margin: 0 2vw;
+  }
+  .blogDesc {
+    font-size: 1rem;
+    margin: 0.5vw 0 2vw 4vw;
+  }
 }
 .imgNavod {
   /* display: grid; */
@@ -796,4 +808,7 @@ input :hover {
 }
 .imgNavod * {
   width: 40%;
+}
+.headerText{
+  margin: 5vh 0;
 }
