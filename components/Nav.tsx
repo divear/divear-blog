@@ -4,6 +4,7 @@ import pfp from "./imgs/pfp.svg";
 import burger from "./imgs/burgermenu.png";
 import Image from "next/image";
 import Link from "next/link";
+import Loading from "./Loading.tsx"
 
 function Nav() {
 	// false - english
@@ -48,6 +49,7 @@ function Nav() {
 
 	return (
 		<div className="nav">
+      <Loading/>
 			<h1
 				className="logoText"
 				onClick={() => (window.location.href = "/")}
