@@ -4,7 +4,7 @@ import pfp from "./imgs/pfp.svg";
 import burger from "./imgs/burgermenu.png";
 import Image from "next/image";
 import Link from "next/link";
-import Loading from "./Loading.tsx"
+import Loading from "./Loading"
 
 function Nav() {
 	// false - english
