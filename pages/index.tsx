@@ -1,15 +1,17 @@
 import type { NextPage } from "next";
+
 import Image from "next/image";
 import Projects from "../components/Projects";
 import Blogs from "../components/Blogs";
 import pfp from "../components/imgs/introPfp.png";
+import { FaAnglesDown } from "react-icons/fa6";
 import Meta from "../components/Meta";
 import github from "../components/imgs/socmedia/github.png";
 import twitter from "../components/imgs/socmedia/twitter.png";
 import youtube from "../components/imgs/socmedia/youtube.png";
 import instagram from "../components/imgs/socmedia/insta.png";
 import fiverr from "../components/imgs/socmedia/fiverr.png";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const socials = [
 	[github, "https://github.com/divear", "divear"],
@@ -24,6 +26,12 @@ const socials = [
 
 const Home: NextPage = () => {
 	const [lang, setLang] = useState(false);
+  const projectsRef = useRef(null);
+  const scrollToElement = () => {
+    if (projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
 	useEffect(() => {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
@@ -35,8 +43,8 @@ const Home: NextPage = () => {
 				<div className="introText">
 					<Image
 						className="introPfp"
-						height={350}
-						width={350}
+						height={250}
+						width={250}
 						src={pfp}
 						alt="pfp"
 					/>
@@ -46,8 +54,8 @@ const Home: NextPage = () => {
 					</p>
 					<button onClick={() => (location.href = "/projects")}>
 						{+lang
-							? "Podívej se na moje projekty👨‍💻"
-							: "See my projects 👨‍💻"}
+							? "Podívej se na moje projekty"
+							: "See my projects "}
 					</button>
 					<div className="bigSocials">
 						{socials.map((s, i) => {
@@ -73,7 +81,12 @@ const Home: NextPage = () => {
 				</div>
 			</div>
 			<br />
-			<Projects />
+        <button className="downbutton" onClick={scrollToElement}>
+          <FaAnglesDown />
+        </button>
+      <div ref={projectsRef} >
+        <Projects />
+      </div>
 			<Blogs />
 		</div>
 	);

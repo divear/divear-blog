@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+
+
 function Loading() {
   const [seconds, setSeconds] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);
@@ -9,19 +11,18 @@ function Loading() {
       setSeconds(prev => {
         if (prev >= 1) {
           clearInterval(interval);
-          setFadeOut(true); // Trigger fade out
+          setFadeOut(true); 
           return prev;
         }
         return prev + 1;
       });
-    }, 1); // 100ms interval
+    }, 1); // no interval now
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className={`loadingPage ${fadeOut ? 'fade-out' : ''}`}>
-      {/*<h1>Loading {seconds}</h1>*/}
     </div>
   );
 }
