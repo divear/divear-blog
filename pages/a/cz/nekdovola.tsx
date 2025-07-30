@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import Meta from "../../../components/Meta";
-import { useSpeechSynthesis } from "react-speech-kit";
 
 function Vola() {
 	const [username, setUsername] = useState("");
@@ -8,21 +7,21 @@ function Vola() {
 	const v1: any = useRef();
 	// const audio = new Audio("./volati0.wav");
 
-	const { speak, voices } = useSpeechSynthesis();
-	const czech = voices[54];
-	function generate() {
-		speak({ text: username, voice: czech });
-		setTimeout(() => {
-			v0.current.play();
-		}, 700);
-	}
-	function end() {
-		speak({ text: username, voice: czech });
-		setTimeout(() => {
-			v1.current.play();
-		}, 700);
-	}
-
+	// const { speak, voices } = useSpeechSynthesis();
+	// const czech = voices[54];
+	// function generate() {
+	// 	speak({ text: username, voice: czech });
+	// 	setTimeout(() => {
+	// 		v0.current.play();
+	// 	}, 700);
+	// }
+	// function end() {
+	// 	speak({ text: username, voice: czech });
+	// 	setTimeout(() => {
+	// 		v1.current.play();
+	// 	}, 700);
+	// }
+	//
 	return (
 		<div className="content nekdovola">
 			<Meta title="Někdo ti volá" />
