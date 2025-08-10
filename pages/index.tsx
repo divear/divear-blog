@@ -50,7 +50,7 @@ const Home: NextPage = () => {
 					/>
 					<h1>Lukáš Odehnal</h1>
 					<p className="akaDivear">
-						aka <i>divear</i>
+						alias <i>divear</i>
 					</p>
 					<button onClick={() => (location.href = "/projects")}>
 						{+lang
