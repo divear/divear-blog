@@ -4,18 +4,20 @@ import Image from "next/image";
 
 function Sewer() {
 	return (
-		<div className="content">
-			<Meta title="Sewer run" />
-			<Image
-				width={500}
-				height={300}
-				className="floatRight smallImg"
-				src="https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FxCH97m.png?alt=media&token=b47eb018-52f5-41ff-8a02-52783404ccfc"
-				alt="sewer run screenshot"
-			/>
-
-			<h1 className="pfpTitle">How I got my profile picture</h1>
-			<article>
+        <div className="content">
+            <Meta title="Sewer run" />
+            <Image
+                width={500}
+                height={300}
+                className="floatRight smallImg"
+                src="https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FxCH97m.png?alt=media&token=b47eb018-52f5-41ff-8a02-52783404ccfc"
+                alt="sewer run screenshot"
+                style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                }} />
+            <h1 className="pfpTitle">How I got my profile picture</h1>
+            <article>
 				<p>
 					Back in the time when I used to really make videogames, I made a
 					game called &quot;Sewer run&quot;. For the main character I
@@ -31,8 +33,8 @@ function Sewer() {
 					</a>
 				</p>
 			</article>
-		</div>
-	);
+        </div>
+    );
 }
 
 export default Sewer;

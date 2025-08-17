@@ -19,14 +19,17 @@ function Footer() {
 	];
   
 	return (
-		<div>
-			<Image
-				alt="footerImg"
-				draggable={false}
-				className="footerImg"
-				src={foot}
-			/>
-			<div className="footerPar">
+        <div>
+            <Image
+                alt="footerImg"
+                draggable={false}
+                className="footerImg"
+                src={foot}
+                style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                }} />
+            <div className="footerPar">
 				<div
 					onClick={() =>
 						open("https://lukas-getout.itch.io/sewer-run")
@@ -38,20 +41,23 @@ function Footer() {
 				<div className="smallSocials">
 					{socials.map((s, i) => {
 						return (
-							<button
+                            <button
 								key={i}
 								onClick={() => open(s[1].toString())}
 								className="smallSocial"
 								title={s[2].toString()}
 							>
-								<Image
-									alt={`image number ${i}`}
-									width={50}
-									height={50}
-									src={s[0]}
-								></Image>
-							</button>
-						);
+                                <Image
+                                    alt={`image number ${i}`}
+                                    width={50}
+                                    height={50}
+                                    src={s[0]}
+                                    style={{
+                                        maxWidth: "100%",
+                                        height: "auto"
+                                    }}></Image>
+                            </button>
+                        );
 					})}
 				</div>
 				<div className="blackboxNav">
@@ -60,7 +66,7 @@ function Footer() {
 				</div>
 				<div className="blackboxNavBottom"/>
 			</div>
-		</div>
-	);
+        </div>
+    );
 }
 export default Footer;

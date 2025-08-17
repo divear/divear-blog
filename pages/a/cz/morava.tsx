@@ -5,17 +5,20 @@ import Meta from "../../../components/Meta";
 
 function Morava() {
 	return (
-		<div className="content">
-			<Meta title="morava test" />
-			<h1 className="center">Příběh morava.lol</h1>
-			<Image
-				width={800}
-				height={450}
-				className="floatRight mapImg"
-				src={map}
-				alt="map image"
-			/>
-			<article>
+        <div className="content">
+            <Meta title="morava test" />
+            <h1 className="center">Příběh morava.lol</h1>
+            <Image
+                width={800}
+                height={450}
+                className="floatRight mapImg"
+                src={map}
+                alt="map image"
+                style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                }} />
+            <article>
 				<a href="https://morava.netlify.app/">Navštiv tu stránku zde</a>
 				<h1>Jak to vzniklo?</h1>
 				<p>
@@ -31,8 +34,8 @@ function Morava() {
 					</a>
 				</p>
 			</article>
-		</div>
-	);
+        </div>
+    );
 }
 
 export default Morava;

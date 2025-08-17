@@ -53,12 +53,12 @@ function Aboutme() {
 		}
 	}
 	return (
-		<div className="content">
-			<Meta title={lang ? "O mně" : "About me"} />
-			<div className="aboutmeHeader headerText center">
+        <div className="content">
+            <Meta title={lang ? "O mně" : "About me"} />
+            <div className="aboutmeHeader headerText center">
 				{lang ? "O mně" : "About me"}
 			</div>
-			<article>
+            <article>
 				<p>
 					{lang
 						? "Jsem Lukáš Odehnal, ale taky mě mužeš znát jako:"
@@ -69,29 +69,32 @@ function Aboutme() {
 					<li>divear0</li>
 				</ul>
 			</article>
-			<h1 className="headerText">
+            <h1 className="headerText">
 				{lang ? "Najdeš mě taky tady:" : "Find me here"}
 			</h1>
-			<div className="socials">
+            <div className="socials">
 				{socials.map((s, i) => {
 					return (
-						<button
+                        <button
 							key={i}
 							onClick={() => open(s[1].toString())}
 							className="social"
 						>
-							<Image
-								width={100}
-								height={100}
-								src={s[0]}
-								alt="social media icon"
-							></Image>
-							{/* <h4 className="usernameSpeci">{s[2].toString()}</h4> */}
-						</button>
-					);
+                            <Image
+                                width={100}
+                                height={100}
+                                src={s[0]}
+                                alt="social media icon"
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }}></Image>
+                            {/* <h4 className="usernameSpeci">{s[2].toString()}</h4> */}
+                        </button>
+                    );
 				})}
 			</div>
-			<form onSubmit={(e) => sendCont(e)} className="contactme">
+            <form onSubmit={(e) => sendCont(e)} className="contactme">
 				<h1 className="center headerText">
 					{lang ? "Kontaktuj mě" : "Contact me"}
 				</h1>
@@ -128,14 +131,14 @@ function Aboutme() {
 					{lang ? "Odeslat" : "Send"}
 				</button>
 			</form>
-			<div
+            <div
 				onClick={() => setSent(false)}
 				className={sent ? "successDiv" : "no"}
 			>
 				<h1>{lang ? "Úspěšně odesláno" : "Succesfully sent"}</h1>
 			</div>
-		</div>
-	);
+        </div>
+    );
 }
 
 export default Aboutme;

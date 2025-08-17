@@ -5,17 +5,20 @@ import Meta from "../../components/Meta";
 
 function Morava() {
 	return (
-		<div className="content">
-			<Meta title="morava.lol" />
-			<h1 className="center">the story of Moravia test</h1>
-			<Image
-				width={800}
-				height={450}
-				className="floatRight mapImg"
-				src={map}
-				alt="map image"
-			/>
-			<article>
+        <div className="content">
+            <Meta title="morava.lol" />
+            <h1 className="center">the story of Moravia test</h1>
+            <Image
+                width={800}
+                height={450}
+                className="floatRight mapImg"
+                src={map}
+                alt="map image"
+                style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                }} />
+            <article>
 				<a rel="noreferrer" href="https://morava.netlify.app/">
 					visit the site here
 				</a>
@@ -32,8 +35,8 @@ function Morava() {
 					The domain has expired and I am not renewing it, use the netlify one.
 				</p>
 			</article>
-		</div>
-	);
+        </div>
+    );
 }
 
 export default Morava;

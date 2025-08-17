@@ -5,31 +5,34 @@ import swipechooseImg from "../../components/imgs/projects/swipechoose/swipechoo
 
 function Swipechoose() {
 	return (
-		<div className="content swipechoose">
-			<Meta title="Swipechoose" />
-			<h1>Swipechoose: Do likes even matter?</h1>
-			<p>
+        <div className="content swipechoose">
+            <Meta title="Swipechoose" />
+            <h1>Swipechoose: Do likes even matter?</h1>
+            <p>
 				In the world of social media, likes have become an important
 				part of our online experience. But let&#39;s be real, do they
 				truly hold any meaningful value?
 			</p>
-			<Image
-				width={450}
-				height={250}
-				className="floatRight"
-				src={swipechooseImg}
-				alt="Swipechoose img"
-			/>
-			<br />
-			<p>
+            <Image
+                width={450}
+                height={250}
+                className="floatRight"
+                src={swipechooseImg}
+                alt="Swipechoose img"
+                style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                }} />
+            <br />
+            <p>
 				A site I made that doesn&#39;t use likes.
 			</p>
-			<h1>
+            <h1>
 				You can find the site here:
 				<a href="https://swipechoose.netlify.app/"> Swipechoose</a>
 			</h1>
-		</div>
-	);
+        </div>
+    );
 }
 
 export default Swipechoose;

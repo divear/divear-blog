@@ -38,17 +38,20 @@ const Home: NextPage = () => {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
 	}, []);
 	return (
-		<div>
-			<Meta title="divear" />
-			<div className="intro">
+        <div>
+            <Meta title="divear" />
+            <div className="intro">
 				<div className="introText">
 					<Image
-						className="introPfp"
-						height={250}
-						width={250}
-						src={pfp}
-						alt="pfp"
-					/>
+                        className="introPfp"
+                        height={250}
+                        width={250}
+                        src={pfp}
+                        alt="pfp"
+                        style={{
+                            maxWidth: "100%",
+                            height: "auto"
+                        }} />
 					<h1>Lukáš Odehnal</h1>
 					<p className="akaDivear">
 						alias <i>divear</i>
@@ -61,7 +64,7 @@ const Home: NextPage = () => {
 					<div className="bigSocials">
 						{socials.map((s, i) => {
 							return (
-								<button
+                                <button
 									title={s[2].toString()}
 									key={i}
 									onClick={() =>
@@ -69,28 +72,31 @@ const Home: NextPage = () => {
 									}
 									className="bigSocial"
 								>
-									<Image
-										width={100}
-										height={100}
-										src={s[0]}
-										alt="social media icon"
-									></Image>
-								</button>
-							);
+                                    <Image
+                                        width={100}
+                                        height={100}
+                                        src={s[0]}
+                                        alt="social media icon"
+                                        style={{
+                                            maxWidth: "100%",
+                                            height: "auto"
+                                        }}></Image>
+                                </button>
+                            );
 						})}
 					</div>
 				</div>
 			</div>
-			<br />
-        <button className="downbutton" onClick={scrollToElement}>
-          <DownIcon/>
-        </button>
-      <div ref={projectsRef} >
-        <Projects />
-      </div>
-			<Blogs />
-		</div>
-	);
+            <br />
+            <button className="downbutton" onClick={scrollToElement}>
+              <DownIcon/>
+            </button>
+            <div ref={projectsRef} >
+              <Projects />
+            </div>
+            <Blogs />
+        </div>
+    );
 };
 
 export default Home;

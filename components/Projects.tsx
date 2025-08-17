@@ -34,8 +34,8 @@ function Projects() {
 	}, [imgIndex]);
 
 	return (
-		<div className="content">
-			<div className="projects">
+        <div className="content">
+            <div className="projects">
 				<h1
 					onClick={() => (location.href = "projects")}
 					className="recentBlogsHeader center headerText"
@@ -45,20 +45,23 @@ function Projects() {
 				</h1>
 				{shortProjects.map((e, i) => {
 					return (
-						<div
+                        <div
 							key={i}
 							className="project"
 							onClick={() => open(e.link)}
 						>
-							<Image
-								className="showoffImage"
-								width={480}
-								height={270}
-								src={imgs[i][imgIndex] && imgs[i][imgIndex]}
-								alt="showoffImage"
-							/>
-							<br />
-							<div className="smallProjectDesc">
+                            <Image
+                                className="showoffImage"
+                                width={480}
+                                height={270}
+                                src={imgs[i][imgIndex] && imgs[i][imgIndex]}
+                                alt="showoffImage"
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }} />
+                            <br />
+                            <div className="smallProjectDesc">
 								<a
 									rel="noreferrer"
 									className="blogLink"
@@ -69,14 +72,13 @@ function Projects() {
 								</a>
 								<p>{e.desc}</p>
 							</div>
-						</div>
-					);
+                        </div>
+                    );
 				})}
 			</div>
-
-			<br />
-		</div>
-	);
+            <br />
+        </div>
+    );
 }
 
 export default Projects;

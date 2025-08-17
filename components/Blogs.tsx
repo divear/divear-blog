@@ -14,8 +14,8 @@ function Blogs() {
 		};
 	}, []);
 	return (
-		<div>
-			<div className="smallBlogs blogs">
+        <div>
+            <div className="smallBlogs blogs">
 				<h1
 					style={{
 						marginLeft: `${x / 3}px`,
@@ -27,30 +27,33 @@ function Blogs() {
 				</h1>
 				{shortBlogs.map((e, i) => {
 					return (
-						<div className="smallBlog" key={i}>
-							<div className="smallBlogDesc">
+                        <div className="smallBlog" key={i}>
+                            <div className="smallBlogDesc">
 								<Image
-									onClick={() =>
+                                    onClick={() =>
 										(location.href = `/a/${e.link}`)
 									}
-									className="showoffImage"
-									width={480}
-									height={270}
-									src={e.img}
-									alt="blog image"
-								/>
+                                    className="showoffImage"
+                                    width={480}
+                                    height={270}
+                                    src={e.img}
+                                    alt="blog image"
+                                    style={{
+                                        maxWidth: "100%",
+                                        height: "auto"
+                                    }} />
 								<br />
 								<a href={`/a/${e.link}`} className="blogLink">
 									{e.name}
 								</a>
 								<p>{e.desc}</p>
 							</div>
-						</div>
-					);
+                        </div>
+                    );
 				})}
 			</div>
-		</div>
-	);
+        </div>
+    );
 }
 
 export default Blogs;

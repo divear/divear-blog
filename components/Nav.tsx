@@ -48,49 +48,57 @@ function Nav() {
 	}
 
 	return (
-		<div className="nav">
-      <Loading/>
-			<h1
+        <div className="nav">
+            <Loading/>
+            <h1
 				className="logoText"
 				onClick={() => (window.location.href = "/")}
 			>
-				<Image width={50} height={50} src={pfp} alt="i" />
+				<Image
+                    width={50}
+                    height={50}
+                    src={pfp}
+                    alt="i"
+                    style={{
+                        maxWidth: "100%",
+                        height: "auto"
+                    }} />
 				Lukáš Odehnal
 			</h1>
-
-			<h1 onClick={show} className={isPhone ? "no" : "language"}>
+            <h1 onClick={show} className={isPhone ? "no" : "language"}>
 				{!language ? "🇬🇧" : "🇨🇿"}
 			</h1>
-
-			<div className={isPhone ? "no" : "redirs"}>
-				<Link href="/projects">
+            <div className={isPhone ? "no" : "redirs"}>
+				<Link href="/projects" legacyBehavior>
 					{!+language ? "Projects" : "Projekty"}
 				</Link>
-				<Link href="/blogs">{!+language ? "Blog" : "Články"}</Link>
-				<Link href="/aboutme">{!+language ? "About me" : "O mně"}</Link>
+				<Link href="/blogs" legacyBehavior>{!+language ? "Blog" : "Články"}</Link>
+				<Link href="/aboutme" legacyBehavior>{!+language ? "About me" : "O mně"}</Link>
 			</div>
-			<div className={modal && !isPhone ? "langModal" : "no"}>
+            <div className={modal && !isPhone ? "langModal" : "no"}>
 				<h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
 				<br />
 				<h2 onClick={() => change(false)}>🇬🇧 English</h2>
 			</div>
-			<div
+            <div
 				onClick={() => setTree(!tree)}
 				className={isPhone ? "burgerMenu" : "no"}
 			>
 				<Image
-					alt="burgerMenu"
-					src={burger}
-					width={50}
-					height={50}
-				></Image>
+                    alt="burgerMenu"
+                    src={burger}
+                    width={50}
+                    height={50}
+                    style={{
+                        maxWidth: "100%",
+                        height: "auto"
+                    }}></Image>
 			</div>
-
-			<div
+            <div
 				onClick={() => setTree(false)}
 				className={tree ? "blackOverlay" : "no"}
 			/>
-			<div
+            <div
 				onClick={() => setTree(false)}
 				className={tree ? "tree" : "no"}
 			>
@@ -99,17 +107,17 @@ function Nav() {
 					<h2 onClick={() => change(false)}>🇬🇧 English</h2>
 				</div>
 				<br />
-				<Link href="/projects">
+				<Link href="/projects" legacyBehavior>
 					{!+language ? "Projects" : "Projekty"}
 				</Link>
 				<br />
-				<Link href="/blogs">{!+language ? "Blogs" : "Blogy"}</Link>
+				<Link href="/blogs" legacyBehavior>{!+language ? "Blogs" : "Blogy"}</Link>
 				<br />
-				<Link href="/aboutme">{!+language ? "About me" : "O mně"}</Link>
+				<Link href="/aboutme" legacyBehavior>{!+language ? "About me" : "O mně"}</Link>
 				<br />
 			</div>
-		</div>
-	);
+        </div>
+    );
 }
 
 export default Nav;

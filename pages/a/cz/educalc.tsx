@@ -38,19 +38,28 @@ function Game() {
         height={300}
         src="https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Feducalc1.png?alt=media"
         alt=""
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
       <Image
         width={400}
         height={300}
         src="https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Feducalc2.png?alt=media"
         alt=""
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
       <Image
         width={400}
         height={300}
         src="https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2Feducalc3.png?alt=media"
         alt=""
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
     </div>
   );
 }

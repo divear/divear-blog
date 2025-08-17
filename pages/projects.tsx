@@ -48,18 +48,17 @@ function Projects() {
 	}, []);
 
 	return (
-		<div className="bigProjects content">
-			<h1 className="center headerText">
+        <div className="bigProjects content">
+            <h1 className="center headerText">
 				{+lang
 					? "Zajímavé věci, které jsem za ta léta vytvořil..."
 					: "Interesting things I've created over the years..."}
 			</h1>
-
-			{projects[+lang].map((e, i) => {
+            {projects[+lang].map((e, i) => {
 				return (
-					<div key={i} className="bigProject">
-						<Meta title="My projects" />
-						<button
+                    <div key={i} className="bigProject">
+                        <Meta title="My projects" />
+                        <button
 							onClick={() =>
 								imgIndex != 0
 									? setImgIndex(imgIndex - 1)
@@ -69,15 +68,18 @@ function Projects() {
 						>
 							&lt;
 						</button>
-						<Image
-							onClick={() => open(e.link)}
-							className="showoffBigImage"
-							width={isPhone ? 1440 : 960}
-							height={isPhone ? 810 : 540}
-							src={imgs[i][imgIndex]}
-							alt={`showoff image ${i}`}
-						/>
-						<button
+                        <Image
+                            onClick={() => open(e.link)}
+                            className="showoffBigImage"
+                            width={isPhone ? 1440 : 960}
+                            height={isPhone ? 810 : 540}
+                            src={imgs[i][imgIndex]}
+                            alt={`showoff image ${i}`}
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
+                        <button
 							onClick={() =>
 								imgIndex != 2
 									? setImgIndex(imgIndex + 1)
@@ -87,7 +89,7 @@ function Projects() {
 						>
 							&gt;
 						</button>
-						<div
+                        <div
 							onClick={() => open(e.link)}
 							className="desc projectDesc"
 						>
@@ -99,11 +101,11 @@ function Projects() {
 							</h3>
 							<p>{e.desc}</p>
 						</div>
-					</div>
-				);
+                    </div>
+                );
 			})}
-		</div>
-	);
+        </div>
+    );
 }
 
 export default Projects;

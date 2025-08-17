@@ -10,26 +10,29 @@ function Blogs() {
 		setLang(localStorage.getItem("language") === "EN" ? false : true);
 	}, []);
 	return (
-		<div className="content">
-			<Meta title={+lang ? "Články" : "Blogs"} />
-			<h1 className="headerText center">
+        <div className="content">
+            <Meta title={+lang ? "Články" : "Blogs"} />
+            <h1 className="headerText center">
 				{+lang ? "Moje články" : "My articles"}
 			</h1>
-			<div className="blogs">
+            <div className="blogs">
 				{blogs[+lang].map((e, i) => {
 					return (
-						<div className="blog" key={i}>
-							<div className="desc">
+                        <div className="blog" key={i}>
+                            <div className="desc">
 								<Image
-									onClick={() =>
+                                    onClick={() =>
 										(location.href = `/a/${e.link}`)
 									}
-									className="showoffImage blogImg"
-									width={1920}
-									height={1080}
-									src={e.img}
-									alt="blogimage"
-								/>
+                                    className="showoffImage blogImg"
+                                    width={1920}
+                                    height={1080}
+                                    src={e.img}
+                                    alt="blogimage"
+                                    style={{
+                                        maxWidth: "100%",
+                                        height: "auto"
+                                    }} />
 								<br />
 								<a
 									rel="noreferrer"
@@ -40,12 +43,12 @@ function Blogs() {
 								</a>
 								<p className="blogDesc">{e.desc}</p>
 							</div>
-						</div>
-					);
+                        </div>
+                    );
 				})}
 			</div>
-		</div>
-	);
+        </div>
+    );
 }
 
 export default Blogs;

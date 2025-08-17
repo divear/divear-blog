@@ -63,9 +63,7 @@ function Secret() {
                     <div className="exactLinks">
                         {
                             links.map((e, i) => {
-                                return (
-                                    <li key={i}><Link href={e}>{e}</Link></li>
-                                )
+                                return (<li key={i}><Link href={e} legacyBehavior>{e}</Link></li>);
                             })
                         }
                     </div>
@@ -75,9 +73,7 @@ function Secret() {
                             dbLinks.map((e, i:number) => {
                                 console.log(e)
                                 if(!e.url) return
-                                return (
-                                    <li key={i}><Link href={e.url}>{e.name || e.url}</Link></li>
-                                )
+                                return (<li key={i}><Link href={e.url} legacyBehavior>{e.name || e.url}</Link></li>);
                             })
                         }
                     </div>
@@ -102,7 +98,7 @@ function Secret() {
                 </button>
             </div>
         </>
-    )
+    );
 }
 
 export default Secret
