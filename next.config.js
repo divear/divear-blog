@@ -4,6 +4,7 @@ const nextConfig = {
 	images: {
 		domains: ["firebasestorage.googleapis.com", "morava.netlify.app"],
     unoptimized: true,
+      output: "export",
 	},
 };
 
