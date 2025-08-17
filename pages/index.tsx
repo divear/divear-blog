@@ -23,6 +23,7 @@ const socials = [
 		"divear",
 	],
 ];
+const DownIcon = FaAnglesDown as unknown as React.FC;
 
 const Home: NextPage = () => {
 	const [lang, setLang] = useState(false);
@@ -82,7 +83,7 @@ const Home: NextPage = () => {
 			</div>
 			<br />
         <button className="downbutton" onClick={scrollToElement}>
-          <FaAnglesDown />
+          <DownIcon/>
         </button>
       <div ref={projectsRef} >
         <Projects />
