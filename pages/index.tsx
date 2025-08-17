@@ -5,7 +5,7 @@ import Projects from "../components/Projects";
 import Blogs from "../components/Blogs";
 import pfp from "../components/imgs/introPfp.png";
 import { FaAnglesDown } from "react-icons/fa6";
-import Meta from "../components/Meta";
+import Meta from "../components/Meta"; 
 import github from "../components/imgs/socmedia/github.png";
 import twitter from "../components/imgs/socmedia/twitter.png";
 import youtube from "../components/imgs/socmedia/youtube.png";
