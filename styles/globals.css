@@ -194,8 +194,7 @@ button:hover {
 .footerImg {
   margin: 0;
   padding: 0 0 5vh 0;
-  position: fixed;
-  top: 0;
+  background-color: black;
 }
 .player {
   cursor: pointer;
@@ -246,7 +245,6 @@ button:hover {
 .introPfp {
   top: 0% !important;
   left: 50% !important;
-  transform: translate(-50%, 0);
   margin: 0;
 }
 .akaDivear {
