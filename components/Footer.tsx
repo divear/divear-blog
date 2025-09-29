@@ -20,6 +20,8 @@ function Footer() {
   
 	return (
         <div>
+      <div style={{ display: "flex", overflow: "hidden" }}>
+
             <Image
                 alt="footerImg"
                 draggable={false}
@@ -29,6 +31,17 @@ function Footer() {
                     maxWidth: "100%",
                     height: "auto"
                 }} />
+            <Image
+                alt="footerImg"
+                draggable={false}
+                className="footerImg"
+                src={foot}
+                style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    left: "100%"
+                }} />
+      </div>
             <div className="footerPar">
 				<div
 					onClick={() =>
