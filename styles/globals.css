@@ -4,13 +4,13 @@
   --bg: #022129;
   --fr: #eafbf8;
   --sec: #0c7694;
-  --secD: rgb(10, 100, 124);
-  --dark: rgb(1, 22, 28);
-  --darkM: rgba(0, 15, 19, 0.863);
-  --darkS: rgb(13, 46, 55);
-  --secBg: rgb(179, 230, 243);
-  --frTrans: rgba(179, 230, 243, 0.911);
-  --bgTrans: rgba(0, 15, 19, 0.83);
+  --secD: #0a647c;
+  --dark: #01161c;
+  --darkM: #000f13dc;
+  --darkS: #0d2e37;
+  --secBg: #b3e6f3;
+  --frTrans: #b3e6f3e8;
+  --bgTrans: #000f13d4;
 }
 
 body {
@@ -250,6 +250,12 @@ button:hover {
 .akaDivear {
   margin: -4vh 0 5vh 0;
 }
+@media only screen and (min-height: 1100px) {
+  .akaDivear {
+    margin: -1vh 0 5vh 0;
+  }
+}
+
 
 .bigProject {
   max-width: 85%;
@@ -493,17 +499,24 @@ input :hover {
   position: fixed;
   bottom: 1%;
   background-color: var(--sec);
-  animation: successSent 1s;
+  animation: successSent 2s forwards;
+  opacity: 0;
 }
 
 @keyframes successSent {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  25% {
     opacity: 1;
   }
+  100%{
+    opacity: 0;
+  }
 }
+
+
+
 .error {
   color: rgb(255, 35, 35);
   margin: 0;
@@ -587,10 +600,43 @@ input :hover {
   opacity: 0;
   pointer-events: none;
 }
+/* Container for all circles */
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
 
+/* Each circle + name */
+.circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
 
+/* The circle itself */
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0.9);
+  transition: transform 0.2s;
+}
 
+.circle:hover {
+  transform: scale(1.1);
+}
 
+/* Name under the circle */
+.circle-name {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
 
 
 
