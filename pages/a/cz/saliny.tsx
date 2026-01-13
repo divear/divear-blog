@@ -15,15 +15,30 @@ function Saliny() {
       ></iframe>
       <article>
         <h2 className="headerText">Proč?</h2>
-        <p>Svět před vznikem tohoto videa byl jiné místo.</p>
+        <p>
+          Již nežijeme ve světě, kde obsah který sledujeme má nějakou hodnotu,
+          ptát se na význam nečeho takového je chybné už z následujících důvodů:
+        </p>
+        <ol>
+          <li>
+            Smrt autora, když oddělíte autora od jeho díla, můžete si odvést
+            nové a kreativná závěry a nejste sužování tím, co "autor opravdu
+            myslel"
+          </li>
+          <li>
+            Samotný koncept hodnocení spojů hromadné dopravy je absurdní a
+            jelikož jsou 3 ze zmínených "šalin" vlastně autobusy, poukazuje je
+            to na nebrněnské turisty do Brna, kteří si myslí, že tímto pojmem
+            nazývame všechny prostředky hromadné dopravy.
+          </li>
+          <li>Když jsem to v 9. třídě dělal přišlo mi to vtipný.</li>
+        </ol>
         <h2 className="headerText">Jak?</h2>
         <p>
           Na edit videí používám <a href="https://www.gimp.org/">Gimp </a>a{" "}
           <a href="https://kdenlive.org/en/">Kdenlive</a>. Při tvorbě videa
           nebyly použity žádné psychotropní, ani jiné návykové látky.
         </p>
-        <h2 className="headerText">Proč jsou 3 z nich autobusy?</h2>
-        <p>Pojmy jsou subjektivní a moje trpělivost není nekonečná.</p>
       </article>
     </div>
   );
