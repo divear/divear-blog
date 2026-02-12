@@ -7,10 +7,10 @@ function Game() {
       <title>EduCalc</title>
       <h1>EduCalc - EduPage Calculator</h1>
       <p>
-        Wanting to calculate the grade is a feature every online schooling
-        system should have. My highschool&apos;s old system had it and I
-        don&apos;t see a reason EduPage shouldn&apos;t have it too. I have
-        decided to write a script in Rust to do exacly that.
+        Wanting to calculate your final grade is a feature every online
+        schooling system should have. My high school&apos;ts old system had it,
+        and I don&apos;tt see a reason EduPage shouldn&apos;tt have it too. I
+        have decided to write a script in Rust to do exactly that.
       </p>
       <h1>
         You can download it from the Github release or compile with Cargo:
@@ -40,8 +40,9 @@ function Game() {
         alt=""
         style={{
           maxWidth: "100%",
-          height: "auto"
-        }} />
+          height: "auto",
+        }}
+      />
       <Image
         width={400}
         height={300}
@@ -49,8 +50,9 @@ function Game() {
         alt=""
         style={{
           maxWidth: "100%",
-          height: "auto"
-        }} />
+          height: "auto",
+        }}
+      />
       <Image
         width={400}
         height={300}
@@ -58,8 +60,9 @@ function Game() {
         alt=""
         style={{
           maxWidth: "100%",
-          height: "auto"
-        }} />
+          height: "auto",
+        }}
+      />
     </div>
   );
 }
