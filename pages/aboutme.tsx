@@ -31,6 +31,7 @@ function Aboutme() {
   useEffect(() => {
     setLang(localStorage.getItem("language") === "EN" ? false : true);
   }, []);
+
   async function sendCont(e: any) {
     e.preventDefault();
     try {
@@ -39,6 +40,29 @@ function Aboutme() {
         username,
         message,
       });
+      const messageToSend = `
+      <b>${username}</b> - <i>${email}</i>
+      ${message}
+      `
+
+      const response = await fetch('/api/telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({message: messageToSend.trim()}),
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        console.log('Message sent successfully!');
+      } else {
+        console.log(`Error: ${result.error}`);
+      }
+
+
+
+
+
       setSent(true);
     } catch (e) {
       setErr(lang ? "Všechna pole jsou povinná" : "All fields are mandatory");
