@@ -34,6 +34,7 @@ function Aboutme() {
 
   async function sendCont(e: any) {
     e.preventDefault();
+    console.log(username, email, message);
     try {
       const docRef = await addDoc(collection(db, email.replaceAll("/", "")), {
         email,
