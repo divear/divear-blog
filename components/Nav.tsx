@@ -63,9 +63,6 @@ function Nav() {
         {!language ? "🇬🇧" : "🇨🇿"}
       </h1>
       <div className={isPhone ? "no" : "redirs"}>
-        <Link href="/projects" legacyBehavior>
-          {!+language ? "Projects" : "Projekty"}
-        </Link>
         <Link href="/blogs" legacyBehavior>
           {!+language ? "Blog" : "Články"}
         </Link>
