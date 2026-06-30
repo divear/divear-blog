@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-
-
+import React, { useEffect, useState } from "react";
 
 function Loading() {
   const [seconds, setSeconds] = useState(0);
@@ -8,10 +6,10 @@ function Loading() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSeconds(prev => {
+      setSeconds((prev) => {
         if (prev >= 1) {
           clearInterval(interval);
-          setFadeOut(true); 
+          setFadeOut(true);
           return prev;
         }
         return prev + 1;
@@ -21,10 +19,7 @@ function Loading() {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <div className={`loadingPage ${fadeOut ? 'fade-out' : ''}`}>
-    </div>
-  );
+  return <div className={`loadingPage ${fadeOut ? "fade-out" : ""}`}></div>;
 }
 
 export default Loading;

@@ -22,90 +22,81 @@ import projects from "./projects.json";
 import Meta from "../components/Meta";
 
 const imgs = [
-	[swipechoose0, swipechoose1, swipechoose2],
-	[morava, morava1, morava2],
-	[malo, malo1, malo2],
-	[chalky, chalky1, chalky2],
-	[drby, drby1, drby2],
-	[postine, postine1, postine2],
+  [swipechoose0, swipechoose1, swipechoose2],
+  [morava, morava1, morava2],
+  [malo, malo1, malo2],
+  [chalky, chalky1, chalky2],
+  [drby, drby1, drby2],
+  [postine, postine1, postine2],
 ];
 
 function Projects() {
-	const [imgIndex, setImgIndex] = useState(0);
-	const [lang, setLang] = useState(false);
-	const [isPhone, setIsPhone] = useState(false);
+  const [imgIndex, setImgIndex] = useState(0);
+  const [lang, setLang] = useState(false);
+  const [isPhone, setIsPhone] = useState(false);
 
-	useEffect(() => {
-		setTimeout(() => {
-			if (imgIndex === 2) {
-				setImgIndex(0);
-				return;
-			}
-			setImgIndex(imgIndex + 1);
-		}, 9000);
-		setLang(localStorage.getItem("language") === "EN" ? false : true);
-		setIsPhone(window.innerWidth < 830);
-	}, []);
+  useEffect(() => {
+    setTimeout(() => {
+      if (imgIndex === 2) {
+        setImgIndex(0);
+        return;
+      }
+      setImgIndex(imgIndex + 1);
+    }, 9000);
+    setLang(localStorage.getItem("language") === "EN" ? false : true);
+    setIsPhone(window.innerWidth < 830);
+  }, []);
 
-	return (
-        <div className="bigProjects content">
-            <h1 className="center headerText">
-				{+lang
-					? "Zajímavé věci, které jsem za ta léta vytvořil..."
-					: "Interesting things I've created over the years..."}
-			</h1>
-            {projects[+lang].map((e, i) => {
-				return (
-                    <div key={i} className="bigProject">
-                        <Meta title="My projects" />
-                        <button
-							onClick={() =>
-								imgIndex != 0
-									? setImgIndex(imgIndex - 1)
-									: setImgIndex(2)
-							}
-							className="scrolls scrollLeft"
-						>
-							&lt;
-						</button>
-                        <Image
-                            onClick={() => open(e.link)}
-                            className="showoffBigImage"
-                            width={isPhone ? 1440 : 960}
-                            height={isPhone ? 810 : 540}
-                            src={imgs[i][imgIndex]}
-                            alt={`showoff image ${i}`}
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto"
-                            }} />
-                        <button
-							onClick={() =>
-								imgIndex != 2
-									? setImgIndex(imgIndex + 1)
-									: setImgIndex(0)
-							}
-							className="scrolls scrollRight"
-						>
-							&gt;
-						</button>
-                        <div
-							onClick={() => open(e.link)}
-							className="desc projectDesc"
-						>
-							<h3
-								onClick={() => open(e.link)}
-								className="projectLink"
-							>
-								{e.name}
-							</h3>
-							<p>{e.desc}</p>
-						</div>
-                    </div>
-                );
-			})}
-        </div>
-    );
+  return (
+    <div className="bigProjects content">
+      <h1 className="center headerText">
+        {+lang
+          ? "Zajímavé věci, které jsem za ta léta vytvořil..."
+          : "Interesting things I've created over the years..."}
+      </h1>
+      {projects[+lang].map((e, i) => {
+        return (
+          <div key={i} className="bigProject">
+            <Meta title="My projects" />
+            <button
+              onClick={() =>
+                imgIndex != 0 ? setImgIndex(imgIndex - 1) : setImgIndex(2)
+              }
+              className="scrolls scrollLeft"
+            >
+              &lt;
+            </button>
+            <Image
+              onClick={() => open(e.link)}
+              className="showoffBigImage"
+              width={isPhone ? 1440 : 960}
+              height={isPhone ? 810 : 540}
+              src={imgs[i][imgIndex]}
+              alt={`showoff image ${i}`}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
+            />
+            <button
+              onClick={() =>
+                imgIndex != 2 ? setImgIndex(imgIndex + 1) : setImgIndex(0)
+              }
+              className="scrolls scrollRight"
+            >
+              &gt;
+            </button>
+            <div onClick={() => open(e.link)} className="desc projectDesc">
+              <h3 onClick={() => open(e.link)} className="projectLink">
+                {e.name}
+              </h3>
+              <p>{e.desc}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default Projects;

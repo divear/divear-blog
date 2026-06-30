@@ -44,25 +44,21 @@ function Aboutme() {
       const messageToSend = `
       <b>${username}</b> - <i>${email}</i>
       ${message}
-      `
+      `;
 
-      const response = await fetch('/api/telegram', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({message: messageToSend.trim()}),
+      const response = await fetch("/api/telegram", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: messageToSend.trim() }),
       });
 
       const result = await response.json();
-      
+
       if (result.success) {
-        console.log('Message sent successfully!');
+        console.log("Message sent successfully!");
       } else {
         console.log(`Error: ${result.error}`);
       }
-
-
-
-
 
       setSent(true);
     } catch (e) {
