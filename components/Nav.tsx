@@ -47,16 +47,7 @@ function Nav() {
     <div className="nav">
       <Loading />
       <h1 className="logoText" onClick={() => (window.location.href = "/")}>
-        <Image
-          width={50}
-          height={50}
-          src={pfp}
-          alt="i"
-          style={{
-            maxWidth: "100%",
-            height: "auto",
-          }}
-        />
+        <Image width={50} height={50} src={pfp} alt="i" />
         Lukáš Odehnal
       </h1>
       <h1 onClick={show} className={isPhone ? "no" : "language"}>
@@ -99,10 +90,6 @@ function Nav() {
           <h2 onClick={() => change(true)}>🇨🇿 Česky</h2>
           <h2 onClick={() => change(false)}>🇬🇧 English</h2>
         </div>
-        <br />
-        <Link href="/projects" legacyBehavior>
-          {!+language ? "Projects" : "Projekty"}
-        </Link>
         <br />
         <Link href="/blogs" legacyBehavior>
           {!+language ? "Blogs" : "Blogy"}

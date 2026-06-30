@@ -256,7 +256,6 @@ button:hover {
   }
 }
 
-
 .bigProject {
   max-width: 85%;
   color: var(--secBg);
@@ -510,12 +509,10 @@ input :hover {
   25% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 }
-
-
 
 .error {
   color: rgb(255, 35, 35);
@@ -544,20 +541,20 @@ input :hover {
 .endedTimer {
   font-size: 5rem !important;
 }
-.downbutton{
+.downbutton {
   background-color: transparent;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.5;
 }
-.downbutton:hover{
+.downbutton:hover {
   animation: hoverDown 1s;
   font-size: 3vw;
   background-color: transparent;
   opacity: 1;
 }
-.downbutton:active{
+.downbutton:active {
   color: var(--sec);
   animation: hoverDown 1s;
   font-size: 3vw;
@@ -565,7 +562,7 @@ input :hover {
   opacity: 1;
 }
 
-@keyframes hoverDown{
+@keyframes hoverDown {
   from {
     font-size: 2vw;
   }
@@ -582,10 +579,10 @@ input :hover {
 .imgNavod * {
   width: 40%;
 }
-.headerText{
+.headerText {
   margin: 5vh 0;
 }
-.loadingPage{
+.loadingPage {
   transition: opacity 1.5s ease;
   position: fixed;
   background: var(--bg);
@@ -622,7 +619,7 @@ input :hover {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0,0,0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0.9);
   transition: transform 0.2s;
 }
 
@@ -637,17 +634,6 @@ input :hover {
   color: #fff;
   font-weight: 500;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 1800px) and (min-width: 1547px) {
   .bigProject {
@@ -727,6 +713,11 @@ input :hover {
   article {
     width: 100%;
     margin: 2vw;
+  }
+  .mainActionButton {
+    border-radius: 4vw !important;
+    margin: -3vh 3vw 3vh 3vw;
+    padding: 3vw;
   }
   .intro {
     width: 90%;
@@ -876,9 +867,11 @@ input :hover {
     font-size: 2rem;
   }
   .introPfp {
-    width: 2vw !important;
+    width: 90vw !important;
+    /* padding: 300vw; */
+    /* background-color: red; */
     left: 50% !important;
-    transform: translate(-50%, 0);
+    /* transform: translate(-50%, 0); */
   }
   .blackboxNav {
     background-color: black;
@@ -910,7 +903,7 @@ input :hover {
     font-size: 1rem;
     margin: 0.5vw 0 2vw 4vw;
   }
-  .downbutton{
-    display:none;
+  .downbutton {
+    display: none;
   }
 }

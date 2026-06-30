@@ -5,22 +5,30 @@ import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 import { getAnalytics, logEvent } from "firebase/analytics";
 
 const firebaseConfig = {
-	apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
 
-	authDomain: process.env.NEXT_PUBLIC_AUTHDOMAIN,
+  authDomain: process.env.NEXT_PUBLIC_AUTHDOMAIN,
 
-	projectId: process.env.NEXT_PUBLIC_PROJECTID,
+  projectId: process.env.NEXT_PUBLIC_PROJECTID,
 
-	storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
 
-	messagingSenderId: process.env.NEXT_PUBLIC_SENDERID,
-	measurementId: process.env.NEXT_PUBLIC_TRACKID,
+  messagingSenderId: process.env.NEXT_PUBLIC_SENDERID,
+  measurementId: process.env.NEXT_PUBLIC_TRACKID,
 
-	appId: process.env.NEXT_PUBLIC_APPID,
+  appId: process.env.NEXT_PUBLIC_APPID,
 };
 
 // Initialize Firebase
 
 const app = initializeApp(firebaseConfig);
 
-export { app, getFirestore, collection, addDoc, getAnalytics, logEvent, getDocs };
+export {
+  app,
+  getFirestore,
+  collection,
+  addDoc,
+  getAnalytics,
+  logEvent,
+  getDocs,
+};
