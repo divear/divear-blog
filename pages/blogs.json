@@ -1,5 +1,5 @@
-[
-  [
+{
+  "en": [
     {
       "name": "EduCalc",
       "desc": "EduPage average grade calculator",
@@ -25,7 +25,7 @@
       "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FScreenshot_20260426_104046.png?alt=media&token=8e5ab057-42cf-40b0-bb6f-6d9c5715c1b9"
     }
   ],
-  [
+  "cs": [
     {
       "name": "EduCalc",
       "desc": "EduPage kalkulačka průmeru známek",
@@ -57,4 +57,4 @@
       "img": "https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FScreenshot_20260426_104046.png?alt=media"
     }
   ]
-]
+}

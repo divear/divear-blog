@@ -12,6 +12,7 @@ import youtube from "../components/imgs/socmedia/youtube.png";
 import instagram from "../components/imgs/socmedia/insta.png";
 import fiverr from "../components/imgs/socmedia/fiverr.png";
 import { useEffect, useState, useRef } from "react";
+import { useTranslate } from "@tolgee/react";
 
 const socials = [
   [github, "https://github.com/divear", "divear"],
@@ -26,9 +27,10 @@ const socials = [
 const DownIcon = FaAnglesDown as unknown as React.FC;
 
 const Home: NextPage = () => {
-  const [lang, setLang] = useState(false);
+  const { t } = useTranslate();
   const [isPhone, setIsPhone] = useState(false);
-  const projectsRef = useRef(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+
   const scrollToElement = () => {
     if (projectsRef.current) {
       projectsRef.current.scrollIntoView({ behavior: "smooth" });
@@ -36,27 +38,25 @@ const Home: NextPage = () => {
   };
 
   useEffect(() => {
-    setLang(localStorage.getItem("language") === "EN" ? false : true);
     setIsPhone(window.innerWidth < 830);
   }, []);
+
   return (
     <div>
       <Meta title="divear" />
       <div className="intro">
         <div className="introText">
-          {
-            <Image
-              className="introPfp"
-              height={450}
-              width={450}
-              src={pfp}
-              alt="pfp"
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-              }}
-            />
-          }
+          <Image
+            className="introPfp"
+            height={450}
+            width={450}
+            src={pfp}
+            alt="pfp"
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
+          />
           <h1>Lukáš Odehnal</h1>
           <p className="akaDivear">
             alias <i>divear</i>
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
             className="mainActionButton"
             onClick={() => (location.href = "/projects")}
           >
-            {+lang ? "Podívej se na moje projekty" : "See my projects "}
+            {t("home_cta_projects", "See my projects")}
           </button>
           <div className="bigSocials">
             {socials.map((s, i) => {
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
                       maxWidth: "100%",
                       height: "auto",
                     }}
-                  ></Image>
+                  />
                 </button>
               );
             })}

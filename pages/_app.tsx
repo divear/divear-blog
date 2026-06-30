@@ -9,8 +9,32 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import * as gtag from "../lib/gtag";
 
+// Tolgee imports
+import { TolgeeProvider, DevTools, FormatSimple, Tolgee } from "@tolgee/react";
+// Fixed paths pointing to your messages folder
+import enLocale from "../messages/en.json";
+import csLocale from "../messages/cs.json";
+
+// Initialize Tolgee instance with .init() appended at the end
+const tolgee = Tolgee()
+  .use(FormatSimple())
+  .use(DevTools())
+  .updateDefaults({
+    apiKey: process.env.NEXT_PUBLIC_TOLGEE_API_KEY,
+    apiUrl: process.env.NEXT_PUBLIC_TOLGEE_API_URL,
+    staticData: {
+      en: enLocale,
+      cs: csLocale,
+    },
+  })
+  .init({
+    defaultLanguage: "en",
+    availableLanguages: ["en", "cs"],
+  });
+
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
+
   useEffect(() => {
     const analytics = getAnalytics(app);
     logEvent(analytics, "opened");
@@ -24,8 +48,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       router.events.off("hashChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
   return (
-    <>
+    <TolgeeProvider
+      tolgee={tolgee}
+      fallback="Loading..."
+      forceLanguage={router.locale}
+    >
       <Script
         async={true}
         strategy="beforeInteractive"
@@ -53,7 +82,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Nav />
       <Component {...pageProps} className="content" />
       <Footer />
-    </>
+    </TolgeeProvider>
   );
 }
 

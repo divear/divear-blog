@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 
 import github from "../components/imgs/socmedia/github.png";
 import twitter from "../components/imgs/socmedia/twitter.png";
@@ -7,6 +7,7 @@ import instagram from "../components/imgs/socmedia/insta.png";
 import Image from "next/image";
 import Meta from "../components/Meta";
 import { app, getFirestore, addDoc, collection } from "../components/firebase";
+import { useTranslate } from "@tolgee/react";
 const db = getFirestore(app);
 
 const socials = [
@@ -21,21 +22,21 @@ const socials = [
 ];
 
 function Aboutme() {
-  const [lang, setLang] = useState(false);
+  const { t } = useTranslate();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [sent, setSent] = useState(false);
   const [err, setErr] = useState("");
 
-  useEffect(() => {
-    setLang(localStorage.getItem("language") === "EN" ? false : true);
-  }, []);
-
   async function sendCont(e: any) {
     e.preventDefault();
     console.log(username, email, message);
     try {
+      if (!username || !email || !message) {
+        throw new Error("Missing fields");
+      }
+
       const docRef = await addDoc(collection(db, email.replaceAll("/", "")), {
         email,
         username,
@@ -61,21 +62,20 @@ function Aboutme() {
       }
 
       setSent(true);
+      setErr("");
     } catch (e) {
-      setErr(lang ? "Všechna pole jsou povinná" : "All fields are mandatory");
-
+      setErr(t("contact_err_mandatory", "All fields are mandatory"));
       console.error("Error adding document: ", e);
     }
   }
+
   return (
     <div className="content">
-      <Meta title={lang ? "O mně" : "About me"} />
+      <Meta title={t("about_me_title", "About me")} />
       <div className="aboutmeHeader headerText center">
-        {lang ? "O mně" : "About me"}
+        {t("about_me_title", "About me")}
       </div>
-      <h1 className="headerText">
-        {lang ? "Najdeš mě tady:" : "Find me here"}
-      </h1>
+      <h1 className="headerText">{t("find_me_here", "Find me here")}</h1>
       <div className="socials">
         {socials.map((s, i) => {
           return (
@@ -93,18 +93,17 @@ function Aboutme() {
                   maxWidth: "100%",
                   height: "auto",
                 }}
-              ></Image>
-              {/* <h4 className="usernameSpeci">{s[2].toString()}</h4> */}
+              />
             </button>
           );
         })}
       </div>
       <form onSubmit={(e) => sendCont(e)} className="contactme">
         <h1 className="center headerText">
-          {lang ? "Kontaktuj mě" : "Contact me"}
+          {t("contact_me_header", "Contact me")}
         </h1>
         <p className={err ? "error" : "no"}>{err}</p>
-        <label htmlFor="name">{lang ? "Jméno" : "Name"}</label>
+        <label htmlFor="name">{t("contact_label_name", "Name")}</label>
         <input
           className="contactInputs"
           onChange={(e) => setUsername(e.target.value)}
@@ -120,7 +119,9 @@ function Aboutme() {
           type="email"
           id="email"
         />
-        <label htmlFor="message">{lang ? "Vaše zpráva" : "Your message"}</label>
+        <label htmlFor="message">
+          {t("contact_label_message", "Your message")}
+        </label>
         <textarea
           className="contactInputs"
           name="message"
@@ -129,16 +130,16 @@ function Aboutme() {
           value={message}
           cols={20}
           rows={5}
-        ></textarea>
+        />
         <button type="submit" className="sendButton">
-          {lang ? "Odeslat" : "Send"}
+          {t("contact_button_send", "Send")}
         </button>
       </form>
       <div
         onClick={() => setSent(false)}
         className={sent ? "successDiv" : "no"}
       >
-        <h1>{lang ? "Úspěšně odesláno" : "Succesfully sent"}</h1>
+        <h1>{t("contact_success_sent", "Successfully sent")}</h1>
       </div>
     </div>
   );

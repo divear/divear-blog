@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "npm run i18n:pull && next build",
+    "start": "next start",
+    "i18n:pull": "tolgee pull --api-key your_project_api_key_here --output ./messages"
   },
   "dependencies": {
+    "@tolgee/react": "^7.1.1",
     "express": "^4.18.2",
     "firebase": "^9.15.0",
     "next": "15.4.10",
@@ -17,6 +20,7 @@
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
+    "@tolgee/cli": "^2.20.0",
     "@types/express": "^4.17.14",
     "@types/node": "^17.0.31",
     "@types/react": "19.1.10",

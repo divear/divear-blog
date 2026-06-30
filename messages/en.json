@@ -1,0 +1,20 @@
+{
+  "current_language_code": "en",
+  "recent_articles_header": "Recent articles",
+  "my_projects_header": "My projects",
+  "nav_blog": "Blog",
+  "nav_blogs_plural": "Blogs",
+  "nav_about_me": "About me",
+  "about_me_title": "About me",
+  "find_me_here": "Find me here",
+  "contact_me_header": "Contact me",
+  "contact_err_mandatory": "All fields are mandatory",
+  "contact_label_name": "Name",
+  "contact_label_message": "Your message",
+  "contact_button_send": "Send",
+  "contact_success_sent": "Successfully sent",
+  "clipboard_copied": "Copied",
+  "blogs_meta_title": "Blogs",
+  "my_articles_header": "My articles",
+  "home_cta_projects": "See my projects"
+}

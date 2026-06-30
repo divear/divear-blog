@@ -28,3 +28,6 @@
 [x] fix language changing bug on aboutme page
 [x] fix burger menu not in aboutme
 [x] firebase analytics
+
+
+[ ] make tolgee work individual articles

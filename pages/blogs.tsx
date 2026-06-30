@@ -1,22 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import blogs from "./blogs.json";
 import Meta from "../components/Meta";
 import Image from "next/image";
+import { useTranslate, useTolgee } from "@tolgee/react";
 
 function Blogs() {
-  const [lang, setLang] = useState(false);
+  const { t } = useTranslate();
+  const tolgee = useTolgee();
 
-  useEffect(() => {
-    setLang(localStorage.getItem("language") === "EN" ? false : true);
-  }, []);
+  // Get the real-time language code from Tolgee instance
+  const tolgeeLang = tolgee.getLanguage();
+
+  // Strict fallback validation: if Tolgee hasn't loaded or isn't 'cs', default to 'en'
+  const currentLocale = tolgeeLang === "cs" ? "cs" : "en";
+
+  // Safely grab the array. Even if the JSON file is malformed, fall back to an empty array so it never crashes
+  const localBlogs = blogs[currentLocale] || blogs["en"] || [];
+
   return (
     <div className="content">
-      <Meta title={+lang ? "Články" : "Blogs"} />
+      <Meta title={t("blogs_meta_title", "Blogs")} />
       <h1 className="headerText center">
-        {+lang ? "Moje články" : "My articles"}
+        {t("my_articles_header", "My articles")}
       </h1>
       <div className="blogs">
-        {blogs[+lang].map((e, i) => {
+        {localBlogs.map((e, i) => {
           return (
             <div className="blog" key={i}>
               <div className="desc">

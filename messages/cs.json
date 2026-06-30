@@ -1,0 +1,20 @@
+{
+  "current_language_code": "cs",
+  "recent_articles_header": "Nedávné články",
+  "my_projects_header": "Moje projekty",
+  "nav_blog": "Články",
+  "nav_blogs_plural": "Blogy",
+  "nav_about_me": "O mně",
+  "about_me_title": "O mně",
+  "find_me_here": "Najdeš mě tady:",
+  "contact_me_header": "Kontaktuj mě",
+  "contact_err_mandatory": "Všechna pole jsou povinná",
+  "contact_label_name": "Jméno",
+  "contact_label_message": "Vaše zpráva",
+  "contact_button_send": "Odeslat",
+  "contact_success_sent": "Úspěšně odesláno",
+  "clipboard_copied": "Zkopírováno",
+  "blogs_meta_title": "Články",
+  "my_articles_header": "Moje články",
+  "home_cta_projects": "Podívej se na moje projekty"
+}

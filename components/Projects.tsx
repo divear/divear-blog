@@ -7,78 +7,86 @@ import swipechoose0 from "../components/imgs/projects/swipechoose/swipechoose0.p
 import swipechoose1 from "../components/imgs/projects/swipechoose/swipechoose1.png";
 import swipechoose2 from "../components/imgs/projects/swipechoose/swipechoose2.png";
 import projects from "../pages/projects.json";
-// ^ this is hell
+import { useTranslate, useTolgee } from "@tolgee/react";
 
 const imgs = [
-	[swipechoose0, swipechoose1, swipechoose2],
-	[morava, morava1, morava2],
+  [swipechoose0, swipechoose1, swipechoose2],
+  [morava, morava1, morava2],
 ];
 
 function Projects() {
-	const [imgIndex, setImgIndex] = useState(0);
-	const [lang, setLang] = useState(false);
-	const shortProjects = [projects[+lang][0], projects[+lang][1]];
+  const { t } = useTranslate();
+  const tolgee = useTolgee();
+  const [imgIndex, setImgIndex] = useState(0);
 
-	useEffect(() => {
-		setLang(localStorage.getItem("language") === "EN" ? false : true);
-	}, []);
+  // Get real-time language code from your active Tolgee engine instance
+  const tolgeeLang = tolgee.getLanguage();
 
-	useEffect(() => {
-		setTimeout(() => {
-			if (imgIndex === 2) {
-				setImgIndex(0);
-				return;
-			}
-			setImgIndex(imgIndex + 1);
-		}, 8000);
-	}, [imgIndex]);
+  // Map the string language code back to matching index keys safely (0 = EN, 1 = CS)
+  const arrayIndex = tolgeeLang === "cs" ? 1 : 0;
 
-	return (
-        <div className="content">
-            <div className="projects">
-				<h1
-					onClick={() => (location.href = "projects")}
-					className="recentBlogsHeader center headerText"
-				>
-					{+lang ? "Moje projekty" : "My projects"}
-					<br />
-				</h1>
-				{shortProjects.map((e, i) => {
-					return (
-                        <div
-							key={i}
-							className="project"
-							onClick={() => open(e.link)}
-						>
-                            <Image
-                                className="showoffImage"
-                                width={480}
-                                height={270}
-                                src={imgs[i][imgIndex] && imgs[i][imgIndex]}
-                                alt="showoffImage"
-                                style={{
-                                    maxWidth: "100%",
-                                    height: "auto"
-                                }} />
-                            <br />
-                            <div className="smallProjectDesc">
-								<a
-									rel="noreferrer"
-									className="blogLink"
-									href={e.link}
-									target="_blank"
-								>
-									{e.name}
-								</a>
-								<p>{e.desc}</p>
-							</div>
-                        </div>
-                    );
-				})}
-			</div>
-            <br />
-        </div>
-    );
+  // Safely pull matching projects list array or fallback to index 0 safely
+  const localProjects = projects[arrayIndex] || projects[0] || [];
+  const shortProjects = localProjects
+    ? [localProjects[0], localProjects[1]]
+    : [];
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (imgIndex === 2) {
+        setImgIndex(0);
+        return;
+      }
+      setImgIndex(imgIndex + 1);
+    }, 8000);
+    return () => clearTimeout(timer);
+  }, [imgIndex]);
+
+  return (
+    <div className="content">
+      <div className="projects">
+        <h1
+          onClick={() => (window.location.href = "projects")}
+          className="recentBlogsHeader center headerText"
+        >
+          {t("my_projects_header", "My projects")}
+          <br />
+        </h1>
+        {shortProjects.map((e: any, i: number) => {
+          if (!e) return null;
+          return (
+            <div key={i} className="project" onClick={() => open(e.link)}>
+              <Image
+                className="showoffImage"
+                width={480}
+                height={270}
+                src={imgs[i]?.[imgIndex] || swipechoose0}
+                alt="showoffImage"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+              <br />
+              <div className="smallProjectDesc">
+                <a
+                  rel="noreferrer"
+                  className="blogLink"
+                  href={e.link}
+                  target="_blank"
+                  onClick={(event) => event.stopPropagation()}
+                >
+                  {e.name}
+                </a>
+                <p>{e.desc}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <br />
+    </div>
+  );
 }
 
 export default Projects;
