@@ -20,6 +20,7 @@ import swipechoose1 from "../components/imgs/projects/swipechoose/swipechoose1.p
 import swipechoose2 from "../components/imgs/projects/swipechoose/swipechoose2.png";
 import projects from "./projects.json";
 import Meta from "../components/Meta";
+import { useTranslate, useTolgee } from "@tolgee/react";
 
 const imgs = [
   [swipechoose0, swipechoose1, swipechoose2],
@@ -31,43 +32,46 @@ const imgs = [
 ];
 
 function Projects() {
+  const { t } = useTranslate();
+  const tolgee = useTolgee();
+
+  const isCzech = tolgee.getLanguage() === "cs";
+  const langIndex = isCzech ? 1 : 0;
+
   const [imgIndex, setImgIndex] = useState(0);
-  const [lang, setLang] = useState(false);
   const [isPhone, setIsPhone] = useState(false);
 
+  // Auto-scrolling slider timing loop
   useEffect(() => {
-    setTimeout(() => {
-      if (imgIndex === 2) {
-        setImgIndex(0);
-        return;
-      }
-      setImgIndex(imgIndex + 1);
+    const interval = setInterval(() => {
+      setImgIndex((prev) => (prev === 2 ? 0 : prev + 1));
     }, 9000);
-    setLang(localStorage.getItem("language") === "EN" ? false : true);
+
     setIsPhone(window.innerWidth < 830);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="bigProjects content">
       <h1 className="center headerText">
-        {+lang
-          ? "Zajímavé věci, které jsem za ta léta vytvořil..."
-          : "Interesting things I've created over the years..."}
+        {t(
+          "projects_header",
+          "Interesting things I've created over the years...",
+        )}
       </h1>
-      {projects[+lang].map((e, i) => {
+      {projects[langIndex].map((e, i) => {
         return (
           <div key={i} className="bigProject">
             <Meta title="My projects" />
             <button
-              onClick={() =>
-                imgIndex != 0 ? setImgIndex(imgIndex - 1) : setImgIndex(2)
-              }
+              onClick={() => setImgIndex((prev) => (prev !== 0 ? prev - 1 : 2))}
               className="scrolls scrollLeft"
             >
               &lt;
             </button>
             <Image
-              onClick={() => open(e.link)}
+              onClick={() => window.open(e.link, "_blank")}
               className="showoffBigImage"
               width={isPhone ? 1440 : 960}
               height={isPhone ? 810 : 540}
@@ -79,17 +83,16 @@ function Projects() {
               }}
             />
             <button
-              onClick={() =>
-                imgIndex != 2 ? setImgIndex(imgIndex + 1) : setImgIndex(0)
-              }
+              onClick={() => setImgIndex((prev) => (prev !== 2 ? prev + 1 : 0))}
               className="scrolls scrollRight"
             >
               &gt;
             </button>
-            <div onClick={() => open(e.link)} className="desc projectDesc">
-              <h3 onClick={() => open(e.link)} className="projectLink">
-                {e.name}
-              </h3>
+            <div
+              onClick={() => window.open(e.link, "_blank")}
+              className="desc projectDesc"
+            >
+              <h3 className="projectLink">{e.name}</h3>
               <p>{e.desc}</p>
             </div>
           </div>
