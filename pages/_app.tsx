@@ -6,34 +6,34 @@ import Footer from "../components/Footer";
 import Script from "next/script";
 import { getAnalytics, app, logEvent } from "../components/firebase.js";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import * as gtag from "../lib/gtag";
 
-// Tolgee imports
+// Tolgee imports (Removed BackendFetch here)
 import { TolgeeProvider, DevTools, FormatSimple, Tolgee } from "@tolgee/react";
-// Fixed paths pointing to your messages folder
 import enLocale from "../messages/en.json";
 import csLocale from "../messages/cs.json";
 
-// Initialize Tolgee instance with .init() appended at the end
-const tolgee = Tolgee()
-  .use(FormatSimple())
-  .use(DevTools())
-  .updateDefaults({
-    apiKey: process.env.NEXT_PUBLIC_TOLGEE_API_KEY,
-    apiUrl: process.env.NEXT_PUBLIC_TOLGEE_API_URL,
-    staticData: {
-      en: enLocale,
-      cs: csLocale,
-    },
-  })
-  .init({
-    defaultLanguage: "en",
-    availableLanguages: ["en", "cs"],
-  });
-
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
+
+  const tolgee = useMemo(() => {
+    return Tolgee()
+      .use(FormatSimple())
+      .use(DevTools()) // Essential for Alt + Click cloud interaction
+      .updateDefaults({
+        apiKey: process.env.NEXT_PUBLIC_TOLGEE_API_KEY,
+        apiUrl: process.env.NEXT_PUBLIC_TOLGEE_API_URL,
+        staticData: {
+          en: enLocale,
+          cs: csLocale, // Pairs your local cs.json values directly to your cloud dashboard key
+        },
+      })
+      .init({
+        defaultLanguage: "en",
+        availableLanguages: ["en", "cs"],
+      });
+  }, []);
 
   useEffect(() => {
     const analytics = getAnalytics(app);
@@ -50,17 +50,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router.events]);
 
   return (
-    <TolgeeProvider
-      tolgee={tolgee}
-      fallback="Loading..."
-      forceLanguage={router.locale}
-    >
+    <TolgeeProvider tolgee={tolgee} fallback="Loading...">
       <Script
         async={true}
         strategy="beforeInteractive"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3177879883146014"
       />
-      {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}

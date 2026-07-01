@@ -5,12 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Loading from "./Loading";
 import { useTranslate, useTolgee } from "@tolgee/react";
+import { useRouter } from "next/router";
 
 function Nav() {
   const { t } = useTranslate();
   const tolgee = useTolgee();
+  const router = useRouter();
 
-  // Read current active language directly from the Tolgee instance context
   const currentLanguage = tolgee.getLanguage();
   const isCzech = currentLanguage === "cs";
 
@@ -20,6 +21,21 @@ function Nav() {
 
   useEffect(() => {
     setIsPhone(window.innerWidth < 830);
+
+    // 1. Check for a previously saved user setting
+    const savedLanguage = localStorage.getItem("language");
+
+    if (savedLanguage === "cs" || savedLanguage === "en") {
+      tolgee.changeLanguage(savedLanguage);
+    } else {
+      // 2. Fallback to location/browser settings if no manual choice exists
+      const browserLang = window.navigator.language.split("-")[0]; // E.g., 'cs-CZ' -> 'cs'
+      const targetLocale =
+        browserLang === "cs" || browserLang === "sk" ? "cs" : "en";
+
+      tolgee.changeLanguage(targetLocale);
+      localStorage.setItem("language", targetLocale);
+    }
   }, []);
 
   function show() {
@@ -30,8 +46,22 @@ function Nav() {
     setModal(false);
     setTree(false);
 
-    // Updates the global vocabulary stream in real-time with no route changes or page refreshes
+    // Save the explicit user preference to localStorage
+    localStorage.setItem("language", targetLocale);
+
+    // Update the global vocabulary stream in real-time
     tolgee.changeLanguage(targetLocale);
+
+    // Handle paths for specific individual article pages (/a/...)
+    if (window.location.pathname.startsWith("/a/")) {
+      const currentPath = window.location.pathname;
+
+      if (targetLocale === "cs" && !currentPath.startsWith("/a/cz/")) {
+        window.location.href = currentPath.replace("/a/", "/a/cz/");
+      } else if (targetLocale === "en" && currentPath.startsWith("/a/cz/")) {
+        window.location.href = currentPath.replace("/a/cz/", "/a/");
+      }
+    }
   }
 
   return (

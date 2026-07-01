@@ -3,38 +3,40 @@ import Meta from "../../components/Meta";
 import Image from "next/image";
 
 function Sewer() {
-	return (
-        <div className="content">
-            <Meta title="Sewer run" />
-            <Image
-                width={500}
-                height={300}
-                className="floatRight smallImg"
-                src="https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FxCH97m.png?alt=media&token=b47eb018-52f5-41ff-8a02-52783404ccfc"
-                alt="sewer run screenshot"
-                style={{
-                    maxWidth: "100%",
-                    height: "auto"
-                }} />
-            <h1 className="pfpTitle">How I got my profile picture</h1>
-            <article>
-				<p>
-					Back in the time when I used to really make videogames, I made a
-					game called &quot;Sewer run&quot;. For the main character I
-					drew a neat little guy with a gun/walking stick. A while
-					later I just made it my profile picture
-					<br />
-					<a
-						rel="noreferrer"
-						target="_blank"
-						href="https://lukas-getout.itch.io/sewer-run"
-					>
-						You can play the game here.
-					</a>
-				</p>
-			</article>
-        </div>
-    );
+  return (
+    <div className="content">
+      <Meta title="Sewer run" />
+      <Image
+        width={500}
+        height={300}
+        className="floatRight smallImg"
+        src="https://firebasestorage.googleapis.com/v0/b/personalsite-f2369.appspot.com/o/img%2FxCH97m.png?alt=media&token=b47eb018-52f5-41ff-8a02-52783404ccfc"
+        alt="sewer run screenshot"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }}
+      />
+      <h1 className="pfpTitle">How I got my profile picture</h1>
+
+      <article style={{ maxWidth: "100%", height: "70vh" }}>
+        <p>
+          Back in the time when I used to really make videogames, I made a game
+          called &quot;Sewer run&quot;. For the main character I drew a neat
+          little guy with a gun/walking stick. A while later I just made it my
+          profile picture
+          <br />
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://lukas-getout.itch.io/sewer-run"
+          >
+            You can play the game here.
+          </a>
+        </p>
+      </article>
+    </div>
+  );
 }
 
 export default Sewer;

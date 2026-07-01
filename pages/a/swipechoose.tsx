@@ -4,35 +4,44 @@ import Image from "next/image";
 import swipechooseImg from "../../components/imgs/projects/swipechoose/swipechoose0.png";
 
 function Swipechoose() {
-	return (
-        <div className="content swipechoose">
-            <Meta title="Swipechoose" />
-            <h1>Swipechoose: Do likes even matter?</h1>
-            <p>
-				In the world of social media, likes have become an important
-				part of our online experience. But let&#39;s be real, do they
-				truly hold any meaningful value?
-			</p>
-            <Image
-                width={450}
-                height={250}
-                className="floatRight"
-                src={swipechooseImg}
-                alt="Swipechoose img"
-                style={{
-                    maxWidth: "100%",
-                    height: "auto"
-                }} />
-            <br />
-            <p>
-				A site I made that doesn&#39;t use likes.
-			</p>
-            <h1>
-				You can find the site here:
-				<a href="https://swipechoose.netlify.app/"> Swipechoose</a>
-			</h1>
-        </div>
-    );
+  return (
+    <div className="content swipechoose">
+      <Meta title="Swipechoose" />
+      <h1>Swipechoose: Do likes even matter?</h1>
+      <p>
+        In the world of social media, likes have become an important part of our
+        online experience. But let&#39;s be real, do they truly hold any
+        meaningful value?
+      </p>
+      <p>
+        Made more as a <abbr title="Proof Of Concept">POC</abbr> than a real
+        attempt to make a successful social media site, even BeReal turned out
+        to be a passing fad and right before it&apos;s expected death, it turned
+        into an ad space for corporations. I guess we have learned that there is
+        truly only one way to do social media.
+      </p>
+      <Image
+        width={450}
+        height={250}
+        className="floatRight"
+        src={swipechooseImg}
+        alt="Swipechoose img"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }}
+      />
+      <br />
+      <p>A site I made that doesn&#39;t use likes.</p>
+      <h1>
+        You can find the site here:
+        <a href="https://swipechoose.netlify.app/"> Swipechoose</a>
+      </h1>
+      <br />
+      <br />
+      <br />
+    </div>
+  );
 }
 
 export default Swipechoose;
