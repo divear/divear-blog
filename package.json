@@ -8,7 +8,7 @@
     "lint": "next lint",
     "build": "npm run i18n:pull && next build",
     "start": "next start",
-    "i18n:pull": "tolgee pull --api-key your_project_api_key_here --output ./messages"
+    "i18n:pull": "tolgee pull --path ./messages"
   },
   "dependencies": {
     "@tolgee/react": "^7.1.1",
